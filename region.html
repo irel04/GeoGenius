@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <title>GeoGenius</title>
+</head>
+<body>
+    <h2 class="title">SELECT REGION</h2>
+    <div class="slide-container">
+        <div class="wiper mySwiper slide-content">
+            <div class="swiper-wrapper main-card">
+                <div class="swiper-slide card">
+                    <img class="image" src="Selection-Image/africa-region.png" width="300" height="300">
+                    <h4 class="regions">AFRICA</h4>
+                </div>
+                <div class="swiper-slide card">
+                    <img class="image" src="Selection-Image/asia-region.png" width="300" height="300">
+                    <h4 class="regions">ASIA</h4>
+                </div>
+                <div class="swiper-slide card">
+                    <img class="image" src="Selection-Image/oceania-region.png" width="300" height="300">
+                    <h4 class="regions">OCEANIA</h4>
+                </div>
+                <div class="swiper-slide card">
+                    <img class="image" src="Selection-Image/north-america-region.png" width="300" height="300">
+                    <h4 class="regions">NORTH AMERICA</h4>
+                </div>
+                <div class="swiper-slide card">
+                    <img class="image" src="Selection-Image/south-america-region.png" width="300" height="300">
+                    <h4 class="regions">SOUTH AMERICA</h4>
+                </div>
+                <div class="swiper-slide card">
+                    <img class="image" src="Selection-Image/europe-region.png" width="300" height="300">
+                    <h4 class="regions">EUROPE</h4>
+                </div>     
+            </div>
+        </div>
+    </div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-pagination"></div>
+    
+   
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 3,
+        spaceBetween: 50,
+        loop: true,
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+        });
+    </script>
+</body>
+</html>

@@ -3,29 +3,28 @@ html {
     height: 100%;
     background-color: white;
 }
-
 ul {
     list-style: none;
 }
 .homepage_btn li {
-    border: 1px solid black;
+    border: 1px solclass black;
     width: 300px;
     height: 40px;
 }
-#title{
+.title{
     text-align: center;
     font-size: 50px;
     margin-top: 80px;
     margin-bottom: 80px;
 }
-#container
+.container
 {
     width: 100%;
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
 }
-#container #box
+.container .box
 {
     float: left;
     position: relative;
@@ -35,7 +34,7 @@ ul {
     background: beige;
     border-radius: 20px;
 }
-#container #box:before
+.container .box:before
 {
     content: '';
     position: absolute;
@@ -50,22 +49,56 @@ ul {
     transition: transform 0.5s;
     opacity: 50%;
 }
-#container #box:hover::before{
+.container .box:hover::before{
     transform: scaleY(1);
     transform-origin: bottom;
     transition: transform 0.5s;
 }
-#image{
+.image{
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
 }
-#choices{
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
+.choices{
     font-size: 30px;
     font-family: Arial;
     text-align: center;
     margin-top: -90px;
+}
+
+/* Select Region */
+
+.swiper
+{
+    width: 800px;
+}
+.slide-container
+{
+    min-width: 100%;
+    justify-content: center;
+}
+.slide-content
+{
+    margin: 0 100px;
+    
+}
+.main-card .card
+{
+    justify-content: space-evenly;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 30px;
+    width: 300px;
+    height: 400px;
+    box-shadow: 20px 40px 45px rgba(0,0,0,0.1);
+    background: beige;
+    border-radius: 20px;
+}
+.regions
+{
+    font-size: 30px;
+    font-family: Arial;
+    text-align: center;
+    margin-top: 5px;
 }
