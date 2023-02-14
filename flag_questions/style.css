@@ -67,7 +67,7 @@ h1 {
 .flags {
     display: flex;
     align-items: center;
-    flex-direction: column;
+    flex-direction: row;
     text-align: center;
     padding: 2rem 1.5rem;
 }
@@ -76,10 +76,6 @@ h1 {
     width: 400px;
     height: 250px;
 } */
-
-.flags .flags-img {
-    width: 100%;
-}
 
 .flags .flag-image img {
     width: 100%;
