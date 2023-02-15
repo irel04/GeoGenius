@@ -18,5 +18,15 @@
             "botswana_flag"
         ],
         "right_answer": "botswana_flag"
-    }
+    },
+    {
+        "img": "burkina_flag",
+        "options": [
+            "burkina_flag", 
+            "cameroon_flag", 
+            "comoros_flag", 
+            "anola_flag"
+        ],
+        "right_answer": "burkina_flag"
+    },
 ]
