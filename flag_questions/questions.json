@@ -1,0 +1,22 @@
+[
+    {
+        "img": "benin_flag",
+        "options": [
+            "botswana_flag", 
+            "chad_flag", 
+            "angola_flag", 
+            "benin_flag"
+        ],
+        "right_answer": "benin_flag"
+    },
+    {
+        "img": "botswana_flag",
+        "options": [
+            "burkina_flag", 
+            "burundi_flag", 
+            "comoros_flag", 
+            "botswana_flag"
+        ],
+        "right_answer": "botswana_flag"
+    }
+]
