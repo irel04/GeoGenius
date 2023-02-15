@@ -47,6 +47,7 @@ h1 {
     padding-right: 1.5rem;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 60px;
 }
 
 .box {
@@ -59,7 +60,7 @@ h1 {
 
 .box .count {
     position: absolute;
-    top: 15%;
+    top: 23%;
     /* margin-right: 100px; */
     display: flex;
     font-size: 1.5rem;
@@ -77,7 +78,7 @@ h1 {
     align-items: center;
     flex-direction: row;
     text-align: center;
-    padding: 2rem 1.5rem;
+    padding: 2rem 1.5rem 0rem 12rem;
 }
 
 /* .flags img {
@@ -98,23 +99,23 @@ h1 {
 }
 
 .flags .flag-options ul {
-    width: 100%;
-    height: 100%;
-    margin-left: 100px;
     display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    
+    flex-direction: row;
+    width: 400px;
+    margin-left: 100px;
 }
 
-.flags .flag-options ul li {
+.flags .flag-options ul div {
+    margin-right: 40px;
+}
+
+.flags .flag-options ul div li {
     font-size: 1.5rem;
     text-transform: capitalize;
-    margin-right: 1rem;
     margin-bottom: 1.5rem;
     background-color: var(--white);
-    padding: 1rem;
     border-radius: .5rem;
+    padding: 30px 15px 30px 15px;
     color: var(--violet);
     cursor: pointer;
     box-shadow: 0 .5rem .5rem rgba(0 0 0 / .3);
@@ -139,7 +140,7 @@ h1 {
 
 
 /* For making the quiz container responsive */
-@media(min-width: 576){
+/* @media(min-width: 576){
     .container{
         width: 540px;
     }
@@ -173,7 +174,7 @@ h1 {
     .container{
         width: 1320px;
     }
-}
+} */
 
 /* Score */
 h3 {

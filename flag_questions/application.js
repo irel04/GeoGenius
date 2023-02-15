@@ -1,5 +1,9 @@
-const canvas = document.getElementById('canvas1');
-const ctx = canvas.getContext('2d');
-canvas.width = 230;
-canvas.height = 100
-// Africa Array of Questions
+function getQuestions(){
+    let myRequest = new XMLHttpRequest();
+    myRequest.onreadystatechange =function(){
+        if(this.readyState === 4 && this.status === 200){
+            let questions = JSON.parse(this.responseText)
+        }
+    }
+    
+}
