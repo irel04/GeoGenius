@@ -17,7 +17,7 @@ function getQuestions(){
         if(this.readyState === 4 && this.status === 200){
             let questions = JSON.parse(this.responseText)
             // Number of items per region
-            let qCount = 1;
+            let qCount = 10;
             questionNum(qCount)
             // call the function for generate questions
             generateQuestion(questions[currentIndex], qCount)
@@ -33,16 +33,16 @@ function getQuestions(){
                     // Check answer after 500ms
                     setTimeout(()=>{
                         check_answer(rightAnswer, qCount);
-                    }, 500)
-
+                    }, 500);
                     setTimeout(()=>{
                         //Remove previous image 
                         flag_img.src='';
                         // Remove All Classes 
                         li.classList.remove('active');
                         li.classList.remove('success');
+                        li.classList.remove('wrong');
                         // Add questions again
-                        generateQuestion(questions[currentIndex], qCount)
+                        generateQuestion(questions[currentIndex], qCount);
                     }, 1000)
                 })                
             })
