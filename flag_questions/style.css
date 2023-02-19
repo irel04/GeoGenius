@@ -14,11 +14,13 @@
 }
 
 html {
+    width: 100%;
     font-family: 'Gothic A1', sans-serif;
     font-size: 62.5%;
-    font-weight: 400;
+    font-weight: 900;
     line-height: 1.6;   
     scroll-behavior: smooth;
+    background-color: #EDEDED;
 }
 
 /* To undo bulleting style */
@@ -32,38 +34,28 @@ a {
 
 /* For headers */
 h1 {
-    margin-left: 100px;
     text-align: center;
-    font-size: 2.5 rem;
+    font-size: 3.5 rem;
     text-transform: capitalize;
     color: var(--violet);
-    padding: 2 rem 0;
+    margin: 80px 0 80px 0;
 }
 
-
-/* for Containers of the div */
-.container {
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 60px;
-}
-
-.box {
+.status {
+    position: absolute;
+    top: 1%;
+    left: 100px;
     display: flex;
     align-items: center;
     flex-direction: column;
-    justify-content: space-between;
-    flex-wrap: wrap;
 }
 
-.box .count {
+.status .count {
     position: absolute;
-    top: 26%;
+    top: 60%;
+    font-size: 1.8rem;
     /* margin-right: 100px; */
     display: flex;
-    font-size: 1.5rem;
     width: 150px;
     font-weight: 700;
     color: var(--violet);
@@ -71,14 +63,19 @@ h1 {
     padding: 2rem;
 }
 
-/* style of the flags */
-.flags {
+/* for Containers of the div */
+.container {
+    width: 100%;
     display: flex;
-    width: 80%;
-    align-items: center;
-    flex-direction: row;
-    text-align: center;
-    padding: 2rem 1.5rem 0rem 12rem;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+/* style of the flags */
+.flag {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 
 /* .flags img {
@@ -86,36 +83,43 @@ h1 {
     height: 250px;
 } */
 
-.flags .flag-image img {
-    width: 100%;
-    height: 20rem;
+.flag-image img {
+    width: 480px;
+    height: 320px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
     animation: zoom-in-zoom-out 3s ease-in infinite;
 }
 
 /* Styling the choices for the questions */
-
-.flags .flag-options {
+.flag-options {
     margin-top: 2rem;
+    margin: 30px 0 30px 0;
+    align-content: center;
 }
 
-.flags .flag-options ul {
+.flag-options ul {
     display: flex;
-    flex-direction: row;
-    width: 400px;
-    margin-left: 100px;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 
-.flags .flag-options ul div {
-    margin-right: 40px;
+.flag-options ul div {
+    width: 300px;
+    justify-content: space-around;
+    margin: 10px;
 }
 
-.flags .flag-options ul div li {
-    font-size: 1.5rem;
+.flag-options ul li {
+    height: 130px;
+    font-size: 2.5rem;
+    text-align: center;
     text-transform: capitalize;
-    margin-bottom: 1.5rem;
     background-color: var(--white);
-    border-radius: .5rem;
-    padding: 30px 15px 30px 15px;
+    border-radius: 1.5rem;
+    margin-bottom: 20px;
+    padding: 43px;
     color: var(--violet);
     cursor: pointer;
     box-shadow: 0 .5rem .5rem rgba(0 0 0 / .3);
@@ -200,28 +204,28 @@ h3 {
     margin-top: 50px;
     width: 80%;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     padding: 2rem;
     border-radius: .5rem;
 
 }
 
 .score .right {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     color: var(--violet);
     width: 150px;
 }
 
-.flags .flag-options ul li.active {
+.flag-options ul li.active {
     background-color: var(--violet);
     color: var(--white);
 }
 
-.flags .flag-options ul li.success {
+.flag-options ul li.success {
     background-color: #1eb53a;
 }
 
-.flags .flag-options ul li.wrong {
+.flag-options ul li.wrong {
     background-color: red;
 }
 
@@ -231,11 +235,11 @@ h3 {
     h1,h3, .box, .count{
         font-size: 3rem;
     }
-    .flags .flag-image {
+    .container .flag-image {
         width: 30rem;
     }
 
-    .flags .flag-options ul li {
+    .container .flag-options ul li {
         width: 100%;
     }
 }
@@ -247,7 +251,7 @@ h3 {
 }
 
 @media(min-width: 991px){
-    .flags .flag-options ul li:hover {
+    .container .flag-options ul li:hover {
         background-color: var(--violet);
         color: var(--white);
     }
