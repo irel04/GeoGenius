@@ -8,31 +8,39 @@ let score = document.querySelector('h3 span');
 let scoreDiv = document.querySelector('.score');
 let correctAns = document.querySelector('.score .right span');
 
+
 let currentIndex=0;
 let rightAnswer = 0;
+let qCount = 1;
 
 function getQuestions(){
     let myRequest = new XMLHttpRequest();
     myRequest.onreadystatechange =function(){
         if(this.readyState === 4 && this.status === 200){
             let questions = JSON.parse(this.responseText)
-            // Number of items per region
-            let qCount = 10;
-            questionNum(qCount)
+            //Shuffling the questions
+            let Africa = questions[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+            
+            questions = Africa.sort(() => Math.random() - Math.random()).slice(0, 10)
             // call the function for generate questions
             generateQuestion(questions[currentIndex], qCount)
+            questionNum(qCount)
 
             flagLis.forEach(li => {
                 li.addEventListener('click', () => {
                     let rightAnswer = questions[currentIndex].right_answer;
                     li.classList.add('active');
-
-                    // increase index
+                    
+                    // Number of items per region
+                    
+                    // increment index and the number of the item (qcount)
                     currentIndex++;
-
+                    qCount++
+                    
                     // Check answer after 500ms
                     setTimeout(()=>{
                         check_answer(rightAnswer, qCount);
+                        questionNum(qCount)
                     }, 500);
                     setTimeout(()=>{
                         //Remove previous image 
@@ -84,8 +92,8 @@ function check_answer(rAnswer, count){
                 score.innerHTML = rightAnswer;
             }else {
                 flagLis[i].classList.add('wrong');
-
             }
         }
     }
+   
 }
