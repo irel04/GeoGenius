@@ -12,7 +12,7 @@ let correctAns = document.querySelector('.score .right span');
 let currentIndex=0;
 let rightAnswer = 0;
 let qCount = 1;
-const Africa = [];
+let Africa = []
 
 function getQuestions(){
     let myRequest = new XMLHttpRequest();
@@ -22,8 +22,11 @@ function getQuestions(){
             //Shuffling the questions
             
             // select_regions(questions);
+            
+            select_regions(questions);
+
             // console.log(Africa);
-            questions = questions.sort(() => Math.random() - Math.random()).slice(0, 10);
+            questions = Africa.sort(() => Math.random() - Math.random()).slice(0, 10);
             // call the function for generate questions
             generateQuestion(questions[currentIndex], qCount);
             questionNum(qCount);
@@ -69,14 +72,13 @@ function questionNum(num){
 };
 
 // This is for iterating the needed questions base on the user input
-// function select_regions(questions){
-//     for (i){
-        
-//         Africa.push(questions[i])
-//         console.log(questions[i])
-//     }
+function select_regions(questions){
+    for (let i = 0; i < 10; i++){
+        Africa.push(questions[i])
+        console.log(questions[i])
+    }
 
-// }
+}
 
 function generateQuestion(obj, count){
     if(currentIndex < count){
