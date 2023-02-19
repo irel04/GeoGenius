@@ -12,6 +12,7 @@ let correctAns = document.querySelector('.score .right span');
 let currentIndex=0;
 let rightAnswer = 0;
 let qCount = 1;
+const Africa = [];
 
 function getQuestions(){
     let myRequest = new XMLHttpRequest();
@@ -19,12 +20,13 @@ function getQuestions(){
         if(this.readyState === 4 && this.status === 200){
             let questions = JSON.parse(this.responseText)
             //Shuffling the questions
-            let Africa = questions[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
             
-            questions = Africa.sort(() => Math.random() - Math.random()).slice(0, 10)
+            // select_regions(questions);
+            // console.log(Africa);
+            questions = questions.sort(() => Math.random() - Math.random()).slice(0, 10);
             // call the function for generate questions
-            generateQuestion(questions[currentIndex], qCount)
-            questionNum(qCount)
+            generateQuestion(questions[currentIndex], qCount);
+            questionNum(qCount);
 
             flagLis.forEach(li => {
                 li.addEventListener('click', () => {
@@ -64,7 +66,17 @@ getQuestions();
 
 function questionNum(num){
     countSpan.innerHTML = num
-}
+};
+
+// This is for iterating the needed questions base on the user input
+// function select_regions(questions){
+//     for (i){
+        
+//         Africa.push(questions[i])
+//         console.log(questions[i])
+//     }
+
+// }
 
 function generateQuestion(obj, count){
     if(currentIndex < count){
