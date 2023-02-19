@@ -7,12 +7,26 @@ let flagLis = document.querySelectorAll('.flag-options ul li');
 let score = document.querySelector('h3 span');
 let scoreDiv = document.querySelector('.score');
 let correctAns = document.querySelector('.score .right span');
-
+let chosen_region = "Europe"
 
 let currentIndex=0;
 let rightAnswer = 0;
 let qCount = 1;
-let Africa = []
+
+//Africa array for the question
+let Africa = [];
+
+// Asia array for the question
+let Asia =[];
+
+// Europe array for the question
+let Europe =[];
+
+// North_South_America array for the question
+let North_South_America =[];
+
+// Ocenia array for the question
+let Oceania =[];
 
 function getQuestions(){
     let myRequest = new XMLHttpRequest();
@@ -21,12 +35,27 @@ function getQuestions(){
             let questions = JSON.parse(this.responseText)
             //Shuffling the questions
             
-            // select_regions(questions);
+            if(chosen_region == "Africa"){
+                region_selector(questions)
+                questions = Africa.sort(() => Math.random() - Math.random()).slice(0, 10)
+            }
+            else if (chosen_region == "Asia"){
+                region_selector(questions)
+                questions = Asia.sort(() => Math.random() - Math.random()).slice(0, 10)
+            }
+            else if (chosen_region == "Europe"){
+                region_selector(questions)
+                questions = Europe.sort(() => Math.random() - Math.random()).slice(0, 10)
+            }
+            else if (chosen_region == "North and South America"){
+                region_selector(questions)
+                questions = North_South_America.sort(() => Math.random() - Math.random()).slice(0, 10)
+            }
+            else if (chosen_region == "Oceania"){
+                region_selector(questions)
+                questions = Oceania.sort(() => Math.random() - Math.random()).slice(0, 10)
+            }
             
-            select_regions(questions);
-
-            // console.log(Africa);
-            questions = Africa.sort(() => Math.random() - Math.random()).slice(0, 10);
             // call the function for generate questions
             generateQuestion(questions[currentIndex], qCount);
             questionNum(qCount);
@@ -72,17 +101,38 @@ function questionNum(num){
 };
 
 // This is for iterating the needed questions base on the user input
-function select_regions(questions){
-    for (let i = 0; i < 10; i++){
-        Africa.push(questions[i])
-        console.log(questions[i])
+function region_selector(questions){
+    if (chosen_region == "Africa"){
+        for (let i = 0; i < 10; i++){
+            Africa.push(questions[i])
+        }
     }
+    else if (chosen_region == "Asia"){
+        for (let i = 10; i < 20; i++){
+            Asia.push(questions[i])
+        }
+    }
+    else if (chosen_region == "Europe"){
+        for (let i = 20; i < 30; i++){
+            Europe.push(questions[i])
+        }
+    }
+    else if (chosen_region == "North and South America"){
+        for (let i = 30; i < 40; i++){
+            North_South_America.push(questions[i])
+        }
+    }
+    else if (chosen_region == "Oceania"){
+        for (let i = 40; i < 50; i++){
+            Oceania.push(questions[i])
+        }
+    }
+    }
+    
 
-}
-
-function generateQuestion(obj, count){
+function generateQuestion(obj, count, country){
     if(currentIndex < count){
-        flag_img.src= `Africa/Flags/${obj.img}`;
+        flag_img.src= `Europe/Flags/${obj.img}`;
         // for generating options
         flagLis.forEach((li, i) => {
             // dynamic id of every list
@@ -108,6 +158,5 @@ function check_answer(rAnswer, count){
                 flagLis[i].classList.add('wrong');
             }
         }
-    }
-   
+    }  
 }
