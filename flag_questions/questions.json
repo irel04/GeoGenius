@@ -286,11 +286,11 @@
         "img": "Greece Flag.png",
         "options": [
             "Belgium",
-	        "Czech Republic Flag",
+	        "France",
             "Burma",
-            "Bosnia and Herzegovina"
+            "Greece"
         ],
-        "right_answer": "Bosnia and Herzegovina"
+        "right_answer": "Greece"
     },
     {
         "img": "France Flag.png",
@@ -371,7 +371,7 @@
             "Mexico",
             "Argentina",
             "Cuba",
-	        "Dominica"
+	        "Peru"
         ],
         "right_answer": "Cuba"
     },
@@ -436,7 +436,7 @@
 	        "Micronesia",
             "Vanuatu"
         ],
-        "right_answer": "New Zealand"
+        "right_answer": "Vanuatu"
     },
     {
         "img": "Samoa Flag.png",
