@@ -7,7 +7,7 @@ let flagLis = document.querySelectorAll('.flag-options ul li');
 let score = document.querySelector('h3 span');
 let scoreDiv = document.querySelector('.score');
 let correctAns = document.querySelector('.score .right span');
-let chosen_region = "Europe"
+let chosen_region = "Africa"
 
 let currentIndex=0;
 let rightAnswer = 0;
@@ -57,7 +57,7 @@ function getQuestions(){
             }
             
             // call the function for generate questions
-            generateQuestion(questions[currentIndex], qCount);
+            generateQuestion(questions[currentIndex], qCount, chosen_region);
             questionNum(qCount);
 
             flagLis.forEach(li => {
@@ -84,7 +84,7 @@ function getQuestions(){
                         li.classList.remove('success');
                         li.classList.remove('wrong');
                         // Add questions again
-                        generateQuestion(questions[currentIndex], qCount);
+                        generateQuestion(questions[currentIndex], qCount, chosen_region);
                     }, 1000)
                 })                
             })
@@ -130,9 +130,9 @@ function region_selector(questions){
     }
     
 
-function generateQuestion(obj, count, country){
+function generateQuestion(obj, count, region){
     if(currentIndex < count){
-        flag_img.src= `Europe/Flags/${obj.img}`;
+        flag_img.src= `${region}/Flags/${obj.img}`;
         // for generating options
         flagLis.forEach((li, i) => {
             // dynamic id of every list
