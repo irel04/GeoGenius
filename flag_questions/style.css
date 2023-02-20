@@ -37,30 +37,27 @@ h1 {
     font-size: 3.5 rem;
     text-transform: capitalize;
     color: var(--violet);
-    margin: 80px 0 80px 0;
+    margin: 50px 0 30px 0;
 }
 
+/* For Status */
 .status {
-    position: absolute;
-    top: 1%;
-    left: 100px;
     display: flex;
-    align-items: center;
-    flex-direction: column;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-left: 80px;
+    margin-right: 80px;
+    margin-bottom: 60px;
+    border-bottom: 0.1em solid #c0bfd2;
 }
 
-.status .count {
-    position: absolute;
-    top: 60%;
-    font-size: 1.8rem;
-    /* margin-right: 100px; */
+.box {
     display: flex;
-    width: 150px;
-    font-weight: 700;
-    color: var(--violet);
-    text-transform: capitalize;
-    padding: 2rem;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 300px;
 }
+
 
 /* for Containers of the div */
 .container {
@@ -182,15 +179,6 @@ h1 {
     }
 } */
 
-/* Score */
-h3 {
-    font-size: 2rem;
-    padding: 2rem 0;
-    text-transform: capitalize;
-    color: var(--violet);
-    padding: 2rem;
-}
-
 #Newgame {
     border: none;
     background-color: var(--violet);
@@ -202,22 +190,47 @@ h3 {
     letter-spacing: .1rem;
 }
 
-.score {
-    margin-top: 50px;
-    width: 80%;
-    display: flex;
-    flex-direction: column;
-    padding: 2rem;
-    border-radius: .5rem;
 
-}
-
+/* Score */
 .score .right {
-    font-size: 1.8rem;
+    font-size: 2rem;
+    padding: 2rem 0;
+    text-transform: capitalize;
     color: var(--violet);
-    width: 150px;
+    padding: 2rem;
 }
 
+/* Questions */
+.count .item {
+    font-size: 2rem;
+    padding: 2rem 0;
+    text-transform: capitalize;
+    color: var(--violet);
+    padding: 2rem;
+}
+
+/* Timer */
+.timer .time-left {
+    font-size: 2rem;
+    text-transform: capitalize;
+    color: var(--violet);
+}
+
+.timer {
+    background-color: var(--white);
+    width: 5.5em;
+    height: 1.8em;
+    border-radius: 1.8em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 80%;
+    box-shadow: 0 .5rem .5rem rgba(0 0 0 / .3);
+}
+
+.settings ul li.active {
+    color: var(--white);
+}
 .options ul li.active {
     background-color: var(--violet);
     color: var(--white);
@@ -234,7 +247,7 @@ h3 {
 
 /* Making the elements responsive */
 @media(min-width: 375px){
-    h1,h3, .box, .count{
+    h1,h3, .status, .count{
         font-size: 3rem;
     }
     .container .image {
