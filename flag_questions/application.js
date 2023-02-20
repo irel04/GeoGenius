@@ -11,8 +11,8 @@ let category_header = document.querySelector('.header h1')
 let timeLeft = document.querySelector(".time-left");
 
 // Change the value to navigate from the regions and category
-let chosen_region = "Asia";
-let choosenCategory = "Flags";
+let chosen_region = "Africa";
+let choosenCategory = "Maps";
 
 let currentIndex=0;
 let rightAnswer = 0;
