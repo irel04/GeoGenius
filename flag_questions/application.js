@@ -148,7 +148,6 @@ function region_selector(questions, category){
     console.log(questions[50])
     let q_range = 0
     let starting_range = 0
-    count = 11;
     clearInterval(countDown);
     timerDisplay();
     if(category == "Flags"){
