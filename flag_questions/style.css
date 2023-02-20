@@ -5,7 +5,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    outline: none;
 }
 
 :root {
@@ -73,9 +72,11 @@ h1 {
 
 /* style of the flags */
 .flag {
+    width: 700px;
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
+    padding: 25px;
 }
 
 /* .flags img {
@@ -91,11 +92,11 @@ h1 {
     align-content: center;
     animation: zoom-in-zoom-out 3s ease-in infinite;
 }
-
+.flag-image {
+    width: 50%;
+}
 /* Styling the choices for the questions */
 .flag-options {
-    margin-top: 2rem;
-    margin: 30px 0 30px 0;
     align-content: center;
 }
 
@@ -119,7 +120,7 @@ h1 {
     background-color: var(--white);
     border-radius: 1.5rem;
     margin-bottom: 20px;
-    padding: 43px;
+    padding: 50px;
     color: var(--violet);
     cursor: pointer;
     box-shadow: 0 .5rem .5rem rgba(0 0 0 / .3);
