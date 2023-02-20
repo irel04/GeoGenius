@@ -15,7 +15,7 @@ let timeLeft = document.querySelector(".time-left");
 
 // Change the value to navigate from the regions and category
 let chosen_region = "Africa";
-let choosenCategory = "Maps";
+let choosenCategory = "Flags";
 
 let currentIndex=0;
 let number_of_correct = 0;
