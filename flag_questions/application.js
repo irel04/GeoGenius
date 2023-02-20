@@ -11,8 +11,8 @@ let correctAns = document.querySelector('.score .right span');
 let category_header = document.querySelector('.header h1')
 
 // Change the value to navigate from the regions and category
-let chosen_region = "Africa";
-let choosenCategory = "Maps";
+let chosen_region = "Asia";
+let choosenCategory = "Flags";
 
 let currentIndex=0;
 let rightAnswer = 0;

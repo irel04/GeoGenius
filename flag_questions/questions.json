@@ -99,40 +99,43 @@
         ],
         "right_answer": "Ghana"
     },
+
+
+
     {
-        "img": "Japan Flag.png",
+        "img": "Afghanistan Flag.png",
         "options": [
             "Japan",
             "Armenia",
 	        "Bhutan",
             "Burundi"
         ],
-        "right_answer": "Japan"
-    },
-    {
-        "img": "Bahrain Flag.png",
-        "options": [
-            "Bahrain",
-            "Bangladesh",
-	        "Nepal",
-            "Bhutan"
-        ],
-        "right_answer": "Bahrain"
+        "right_answer": "Afghanistan"
     },
     {
         "img": "Brunei Flag.png",
         "options": [
-            "Cambodia",
-            "Burma",
-            "Brunei",
-	        "Japan"
+            "Bahrain",
+            "Bangladesh",
+	        "Brunei",
+            "Bhutan"
         ],
         "right_answer": "Brunei"
     },
     {
+        "img": "Cambodia Flag.png",
+        "options": [
+            "Cambodia",
+            "Laos",
+            "Brunei",
+	        "Thailand"
+        ],
+        "right_answer": "Cambodia"
+    },
+    {
         "img": "Philippines Flag.png",
         "options": [
-            "Egypt",
+            "Malaysia",
             "Philippines",
 	        "Bahrain",
             "Burundi"
@@ -140,64 +143,64 @@
         "right_answer": "Philippines"
     },
     {
-        "img": "Armenia Flag.png",
+        "img": "Turkmenistan Flag.png",
         "options": [
-            "Bhutan",
-            "Bahrain",
-	        "Japan",
-            "Armenia"
+            "Turkey",
+            "Uzbekistan",
+	        "Turkmenistan",
+            "Pakistan"
         ],
-        "right_answer": "Armenia"
+        "right_answer": "Turkmenistan"
     },
     {
-        "img": "Bangladesh Flag.png",
+        "img": "Laos Flag.png",
         "options": [
-            "Brunei",
-	        "Bahrain",
-            "Cambodia",
-            "Bangladesh"
+            "Mongolia",
+	        "Thailand",
+            "Laos",
+            "Malaysia"
         ],
-        "right_answer": "Bangladesh"
+        "right_answer": "Laos"
     },
     {
-        "img": "Burma Flag.png",
+        "img": "Mongolia Flag.png",
         "options": [
-            "Philippines",
-            "Burma",
-            "Japan",
-	        "Brunei"
+            "Plasetine",
+            "Mongolia",
+            "Sri Lanka",
+	        "China"
         ],
-        "right_answer": "Burma"
+        "right_answer": "Mongolia"
     },
     {
-        "img": "Nepal Flag.png",
+        "img": "Taiwan Flag.png",
         "options": [
-            "Nepal",
-            "Armenia",
-	        "Philippines",
+            "Thailand",
+            "Singapore",
+	        "Vietname",
             "Bahrain"
         ],
-        "right_answer": "Nepal"
+        "right_answer": "Taiwan"
     },
     {
-        "img": "Bhutan Flag.png",
+        "img": "Kyrgyzstan Flag.png",
         "options": [
-            "Bhutan",
-            "Brunei",
-            "Chad",
-	        "Cambodia"
+            "Kazakhstan",
+            "Tajikistan",
+            "Uzbekistan",
+	        "Kyrgyzstan"
         ],
-        "right_answer": "Bhutan"
+        "right_answer": "Kyrgyzstan"
     },
     {
-        "img": "Cambodia Flag.png",
+        "img": "India Flag.png",
         "options": [
-            "Cambodia",
             "Burma",
-	        "Armenia",
-            "Philippines"
+            "India",
+	        "Israel",
+            "Pakistan"
         ],
-        "right_answer": "Cambodia"
+        "right_answer": "India"
     },
     {
         "img": "Albania Flag.png",
