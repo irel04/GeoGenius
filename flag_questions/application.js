@@ -43,7 +43,7 @@ let Oceania =[];
 const timerDisplay = () => {
     countDown = setInterval(() => {
         count--;
-        timeLeft.innerHTML = '$(count)s';
+        timeLeft.innerHTML = `${count}s`;
         if (count == 0) {
             clearInterval(countDown);           
         }
@@ -110,6 +110,8 @@ function getQuestions(){
                             li.classList.remove('wrong');
                             // Add questions again
                             generateQuestion(questions[currentIndex], qCount, chosen_region, choosenCategory);
+                            timerDisplay();
+                            count = 11;
                         }
                     }, 1000)
 
@@ -122,14 +124,16 @@ function getQuestions(){
                             summary_score.innerHTML = number_of_correct;
                         }
                     }, 1002);
-                        
+                    clearInterval(countDown);
+                    option.forEach((elements) => {
+                        elements.disabled = true;
+                    });
                 })                
             })
         }
     }
     myRequest.open("GET", "questions.json", true);
     myRequest.send();
-
 }
 getQuestions();
 
@@ -143,6 +147,8 @@ function region_selector(questions, category){
     console.log(questions[50])
     let q_range = 0
     let starting_range = 0
+    clearInterval(countDown);
+    timerDisplay();
     if(category == "Flags"){
         q_range = 10;
         category_header.innerHTML = "GUESS THE FLAGS"

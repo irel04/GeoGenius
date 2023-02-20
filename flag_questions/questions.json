@@ -99,16 +99,13 @@
         ],
         "right_answer": "Ghana"
     },
-
-
-
     {
         "img": "Afghanistan Flag.png",
         "options": [
-            "Japan",
+            "Afghanistan",
             "Armenia",
-	        "Bhutan",
-            "Burundi"
+	        "Oman",
+            "Yemen"
         ],
         "right_answer": "Afghanistan"
     },
@@ -177,8 +174,8 @@
         "options": [
             "Thailand",
             "Singapore",
-	        "Vietname",
-            "Bahrain"
+	        "Taiwan",
+            "Vietnam"
         ],
         "right_answer": "Taiwan"
     },
@@ -248,7 +245,7 @@
             "Andorra",
             "Greece",
 	        "Albania",
-            "Philippines"
+            "Finland"
         ],
         "right_answer": "Andorra"
     },
@@ -504,8 +501,9 @@
     },
     {
         "img": "Angola Map.png",
+        "img": "Angola Map.png",
         "options": [
-            "Central African Republic",
+            "Eswatini",
             "Comoros",
             "Burundi",
             "Angola"
@@ -514,200 +512,203 @@
     },
     {
         "img": "Benin Map.png",
+        "img": "Benin Map.png",
         "options": [
             "Chad",
             "Benin",
-            "Burkina Faso",
-            "Congo"
+            "Djibouti",
+            "Algeria"
         ],
         "right_answer": "Benin"
     },
     {
         "img": "Botswana Map.png",
+        "img": "Botswana Map.png",
         "options": [
             "Botswana",
-            "Angola",
-            "Cameroon",
-            "Comoros"
+            "Gambia",
+            "Kenya",
+            "Lesotho"
         ],
         "right_answer": "Botswana"
     },
     {
-        "img": "Ghana Map.png",
-        "options": [
-            "Burkina Faso",
-            "argentina",
-	        "Benin",
-            "Congo"
-        ],
-        "right_answer": "Ghana"
-    },
-    {
         "img": "Burundi Map.png",
         "options": [
+            "Liberia",
             "Burundi",
-            "Botswana",
-	        "Angola",
-            "Comoros"
+	        "Morocco",
+            "Senegal"
         ],
         "right_answer": "Burundi"
     },
     {
         "img": "Cameroon Map.png",
+        "img": "Cameroon Map.png",
         "options": [
-            "guatemala",
-            "Burkina Faso",
-            "Cameroon",
-	        "Benin"
+            "Tunisia",
+            "Uganda",
+	        "Cameroon",
+            "Eritrea"
         ],
         "right_answer": "Cameroon"
     },
     {
-        "img": "Eritrea Map.png",
-        "options": [
-            "guatemala",
-	        "Angola",
-            "Central African Republic",
-            "Botswana"
-        ],
-        "right_answer": "Eritrea"
-    },
-    {
         "img": "Chad Map.png",
         "options": [
-            "guatemala",
-	        "Benin",
-            "Cameroon",
-            "Chad"
+            "Ethiopia",
+            "Gabon",
+            "Chad",
+	        "Zimbabwe"
         ],
         "right_answer": "Chad"
     },
     {
-        "img": "Comoros Map.png",
+        "img": "Comoros.png",
         "options": [
-            "Botswana",
-	        "Central African Republic",
-            "Comoros",
-            "Burundi"
+            "Zambia",
+	        "Sudan",
+            "Nigeria",
+            "Comoros"
         ],
         "right_answer": "Comoros"
     },
     {
         "img": "Egypt Map.png",
         "options": [
-            "Cameroon",
-            "Chad",
-            "Burkina Faso",
-            "Egypt"
+            "Egypt",
+	        "Rwanda",
+            "Mauritius",
+            "Seychelles"
         ],
         "right_answer": "Egypt"
     },
     {
-        "img": "Afghanistan Map.png",
+        "img": "Eritrea Map.png",
         "options": [
-            "Afghanistan",
-            "Armenia",
-	        "Bhutan",
-            "Burundi"
+            "Togo",
+	        "Eritrea",
+            "Benin",
+            "Tunisia"
         ],
-        "right_answer": "Afghanistan"
+        "right_answer": "Eritrea"
+    },
+    {
+        "img": "Ghana.png",
+        "options": [
+            "Madagascar",
+            "Gambia",
+            "Ghana",
+            "Congo"
+        ],
+        "right_answer": "Ghana"
+    },
+    {
+        "img": "Armenia Map.png",
+        "options": [
+            "Azerbaijan",
+            "Armenia",
+	        "Georgia",
+            "Kyrgyzstan"
+        ],
+        "right_answer": "Armenia"
     },
     {
         "img": "Bahrain Map.png",
         "options": [
             "Bahrain",
-            "Bangladesh",
-	        "Azerbaijan",
-            "Bhutan"
+            "Kuwait",
+	        "Syria",
+            "Oman"
         ],
         "right_answer": "Bahrain"
     },
     {
-        "img": "Brunei Map.png",
-        "options": [
-            "Cambodia",
-            "Burma",
-            "Brunei",
-	        "Afghanistan"
-        ],
-        "right_answer": "Brunei"
-    },
-    {
-        "img": "Philippines Map.png",
-        "options": [
-            "Central African Republic",
-            "Philippines",
-	"Bahrain",
-            "Burundi"
-        ],
-        "right_answer": "Philippines"
-    },
-    {
-        "img": "Armenia Map.png",
-        "options": [
-            "Bhutan",
-            "Bahrain",
-	"Afghanistan",
-            "Armenia"
-        ],
-        "right_answer": "Armenia"
-    },
-    {
         "img": "Bangladesh Map.png",
         "options": [
-            "Brunei",
-	"Bahrain",
-            "Cambodia",
-            "Bangladesh"
+            "Burma",
+            "Nepal",
+            "Bangladesh",
+	        "Thailand"
         ],
         "right_answer": "Bangladesh"
     },
     {
-        "img": "Burma Map.png",
-        "options": [
-            "Philippines",
-            "Burma",
-            "Afghanistan",
-	"Brunei"
-        ],
-        "right_answer": "Burma"
-    },
-    {
-        "img": "Azerbaijan Map.png",
-        "options": [
-            "Azerbaijan",
-            "Armenia",
-	"Philippines",
-            "Bahrain"
-        ],
-        "right_answer": "Azerbaijan"
-    },
-    {
         "img": "Bhutan Map.png",
         "options": [
-            "Bhutan",
-            "Brunei",
-            "Chad",
-	"Cambodia"
+            "Malaysia",
+            "Sri Lanka",
+	        "Taiwan",
+            "Bhuatn"
         ],
         "right_answer": "Bhutan"
     },
     {
+        "img": "Brunei Map.png",
+        "options": [
+            "East Timor",
+            "Brunei",
+	        "Singapore",
+            "Maldives"
+        ],
+        "right_answer": "Armenia"
+    },
+    {
+        "img": "Burma Map.png",
+        "options": [
+            "Thailand",
+	        "Laos",
+            "Cambodia",
+            "Burma"
+        ],
+        "right_answer": "Burma"
+    },
+    {
         "img": "Cambodia Map.png",
         "options": [
-            "Cambodia",
-            "Burma",
-	"Armenia",
-            "Philippines"
+            "Laos",
+            "Thailand",
+            "Malaysia",
+	        "Bangladesh"
         ],
         "right_answer": "Cambodia"
+    },
+    {
+        "img": "Japan Map.png",
+        "options": [
+            "Taiwan",
+            "South Korea",
+	        "Japan",
+            "Malaysia"
+        ],
+        "right_answer": "Japan"
+    },
+    {
+        "img": "Nepal Map.png",
+        "options": [
+            "Nepal",
+            "India",
+            "Pakistan",
+	        "Bhutan"
+        ],
+        "right_answer": "Nepal"
+    },
+    {
+        "img": "Philippines Map.png",
+        "options": [
+            "Cambodia",
+            "Malaysia",
+	        "Indonesia",
+            "Philippines"
+        ],
+        "right_answer": "Philippines"
     },
     {
         "img": "Albania_Map.png",
         "options": [
             "Austria",
             "Albania",
-	"Bulgaria",
+	        "Bulgaria",
             "Andorra"
         ],
         "right_answer": "Albania"
@@ -717,8 +718,8 @@
         "options": [
             "Belgium",
             "Belarus",
-            "Bosnia and Herzegovina",
-	"Denmark"
+            "Poland",
+	        "Denmark"
         ],
         "right_answer": "Belarus"
     },
@@ -726,7 +727,7 @@
         "img": "Bulgaria_Map.png",
         "options": [
             "Croatia",
-	"Cambodia",
+	        "Cambodia",
             "Czech Republic Flag",
             "Bulgaria"
         ],
@@ -746,9 +747,9 @@
         "img": "Andorra_Map.png",
         "options": [
             "Andorra",
-            "Bosnia and Herzegovina",
-	"Albania",
-            "Philippines"
+            "Austria",
+	        "Latvia",
+            "Germany"
         ],
         "right_answer": "Andorra"
     },
@@ -759,6 +760,7 @@
             "Burma",
             "Belgium",
 	        "Bosnia and Herzegovina"
+	        "Bosnia and Herzegovina"
         ],
         "right_answer": "Belgium"
     },
@@ -766,47 +768,48 @@
         "img": "Croatia_Map.png",
         "options": [
             "Croatia",
-            "Denmark",
+            "Hungary",
 	        "Belarus",
-            "Albania"
+            "Serbia"
         ],
         "right_answer": "Croatia"
     },
     {
         "img": "Austria_Map.png",
         "options": [
-            "Cambodia",
+            "Spain",
             "Austria",
-	        "Andorra",
-            "Belarus"
+	        "Itay",
+            "Romania"
         ],
         "right_answer": "Austria"
     },
     {
-        "img": "Bosnia_and_Herzegovina_Map.png",
+        "img": "Greece_Map.png",
         "options": [
             "Belgium",
-	 "Czech Republic Flag",
-            "Burma",
-            "Bosnia and Herzegovina"
+	        "Ukraine",
+            "Greece",
+            "Finland"
         ],
-        "right_answer": "Bosnia and Herzegovina"
+        "right_answer": "Greece"
     },
     {
-        "img": "Czech_Republic_Map.png",
+        "img": "France_Map.png",
         "options": [
-            "Cambodia",
-            "Czech Republic Flag",
+            "Sweden",
+            "Netherlands",
             "Croatia",
-	        "Austria"
+	        "France"
         ],
-        "right_answer": "Czech Republic Flag"
+        "right_answer": "France"
     },
     {
         "img": "Argentina Map.png",
+        "img": "Argentina Map.png",
         "options": [
-            "Belize",
-            "Austria",
+            "Bolivia",
+            "Chile",
 	        "Brazil",
             "Argentina"
         ],
@@ -814,148 +817,157 @@
     },
     {
         "img": "Brazil Map.png",
+        "img": "Brazil Map.png",
         "options": [
-            "Chile",
+            "Peru",
             "Brazil",
-	        "Bolivia",
+	        "Suriname",
             "Colombia"
         ],
         "right_answer": "Brazil"
     },
     {
         "img": "Costa Map.png",
+        "img": "Costa Map.png",
         "options": [
             "Costa Rica",
             "Bolivia",
             "Belarus",
 	        "Chile"
+	        "Chile"
         ],
         "right_answer": "Costa Rica"
     },
     {
-        "img": "Dominican_republic.png",
+        "img": "Panama Map.png",
         "options": [
-            "Dominican Republic",
+            "Panama",
             "Dominica",
 	        "Argentina",
-            "Belarus"
+            "Peru"
         ],
-        "right_answer": "Dominican Republic"
+        "right_answer": "Panama"
     },
     {
         "img": "Belize Map.png",
+        "img": "Belize Map.png",
         "options": [
             "Belize",
-            "Austria",
+            "Honduras",
 	        "Brazil",
-            "Colombia"
+            "Venezuela"
         ],
         "right_answer": "Belize"
     },
     {
-        "img": "Chile Map.png",
+        "img": "Chile map.png",
         "options": [
-            "Cuba",
-            "Dominica",
-	        "Costa Rica",
-            "Chile"
+            "Ecuador",
+            "Chile",
+	        "Nicaragua",
+            "Panama"
         ],
         "right_answer": "Chile"
     },
     {
         "img": "Cuba Map.png",
+        "img": "Cuba Map.png",
         "options": [
-            "Dominican Republic",
-            "Argentina",
+            "Paraguay",
+            "Panama",
             "Cuba",
-	        "Dominica"
+	        "Guatemala"
         ],
         "right_answer": "Cuba"
     },
     {
         "img": "Bolivia Map.png",
+        "img": "Bolivia Map.png",
         "options": [
 	        "Brazil",
-            "Cambodia",
-            "Belize",
-            "Bolivia"
+            "Paraguay",
+            "Argentina",
+            "Uruguay"
         ],
         "right_answer": "Bolivia"
     },
     {
         "img": "Colombia Map.png",
+        "img": "Colombia Map.png",
         "options": [
-            "Cambodia",
+            "Venezuela",
             "Colombia",
-	        "Belize",
-            "Costa Rica"
+	        "Guyana",
+            "Ecuador"
         ],
         "right_answer": "Colombia"
     },
     {
-        "img": "Dominica Map.png",
+        "img": "Mexico Map.png",
         "options": [
-            "Bolivia",
-            "Dominica",
-            "Dominican Republic",
-	        "Argentina"
+            "Brazil",
+            "Peru",
+            "Venezuela",
+	        "Mexico"
         ],
-        "right_answer": "Dominica"
+        "right_answer": "Mexico"
     },
     {
         "img": "Australia Map.png",
         "options": [
             "Australia",
-            "Marshall Islands",
-            "New Zealand",
+            "Micronesia",
+            "Vanuatu",
 	        "Samoa"
         ],
         "right_answer": "Australia"
     },
     {
-        "img": "Marshall Islands Map.png",
+        "img": "Vanuatu Map.png",
         "options": [
-            "Australia",
-            "Marshall Islands",
+            "Tonga",
+            "Vanuatu",
 	        "Fiji",
-            "New Zealand"
+            "Kiribati"
         ],
-        "right_answer": "Marshall Islands"
-    },
-    {
-        "img": "New Zealand Map.png",
-        "options": [
-            "Australia",
-            "Marshall Islands",
-	        "Micronesia",
-            "New Zealand"
-        ],
-        "right_answer": "New Zealand"
-    },
-    {
-        "img": "Samoa.png",
-        "options": [
-            "Cambodia",
-            "Samoa",
-            "Micronesia",
-	        "Palau"
-        ],
-        "right_answer": "Samoa"
+        "right_answer": "Vanuatu"
     },
     {
         "img": "Fiji Map.png",
         "options": [
             "Samoa",
-            "Fiji",
-            "Palau",
-	        "Marshall Islands"
+            "Nauru",
+	        "Palau",
+            "Fiji"
         ],
         "right_answer": "Fiji"
+    },
+    {
+        "img": "Samoa.png",
+        "options": [
+            "Australia",
+            "Samoa",
+            "Micronesia",
+	        "Palau"
+	        "Palau"
+        ],
+        "right_answer": "Samoa"
+    },
+    {
+        "img": "Tuvalu Map.png",
+        "options": [
+            "Samoa",
+            "Micronesia",
+            "Palau",
+	        "Tuvalu"
+        ],
+        "right_answer": "Tuvalu"
     },
     {
         "img": "Micronesia Map.png",
         "options": [
             "Fiji",
+	        "Kiribati",
 	        "Kiribati",
             "Micronesia",
             "Palau"
@@ -968,7 +980,7 @@
             "Micronesia",
             "Palau",
             "Samoa",
-	        "Papua New Guinea"
+	        "Tonga"
         ],
         "right_answer": "Palau"
     },
@@ -978,6 +990,7 @@
             "Kiribati",
             "Papua New Guinea",
             "Nauru",
+	        "Australia"
 	        "Australia"
         ],
         "right_answer": "Kiribati"
@@ -989,17 +1002,19 @@
             "Papua New Guinea",
             "Nauru",
 	        "Samoa"
+	        "Samoa"
         ],
         "right_answer": "Nauru"
     },
     {
-        "img": "Papua New Guinea.png",
+        "img": "Tonga Map.png",
         "options": [
             "Kiribati",
-            "Papua New Guinea",
+            "Tonga",
             "Nauru",
 	        "New Zealand"
+	        "New Zealand"
         ],
-        "right_answer": "Papua New Guinea"
+        "right_answer": "Tonga"
     }
 ]

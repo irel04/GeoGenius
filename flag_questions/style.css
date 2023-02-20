@@ -19,7 +19,7 @@ html {
     font-weight: 900;
     line-height: 1.6;   
     scroll-behavior: smooth;
-    background-color: #EDEDED;
+    background-image: url(bg.png);
 }
 
 /* To undo bulleting style */
