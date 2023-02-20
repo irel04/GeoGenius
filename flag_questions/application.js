@@ -15,7 +15,8 @@ let timeLeft = document.querySelector(".time-left");
 
 // Change the value to navigate from the regions and category
 let chosen_region = "Africa";
-let choosenCategory = "Maps";
+let chosenCategory = sessionStorage.getItem('category');
+
 
 let currentIndex=0;
 let number_of_correct = 0;
@@ -59,28 +60,28 @@ function getQuestions(){
             //Shuffling the questions
             
             if(chosen_region == "Africa"){
-                region_selector(questions, choosenCategory)
+                region_selector(questions, chosenCategory)
                 questions = Africa.sort(() => Math.random() - Math.random()).slice(0, 10)
             }
             else if (chosen_region == "Asia"){
-                region_selector(questions, choosenCategory)
+                region_selector(questions, chosenCategory)
                 questions = Asia.sort(() => Math.random() - Math.random()).slice(0, 10)
             }
             else if (chosen_region == "Europe"){
-                region_selector(questions, choosenCategory)
+                region_selector(questions, chosenCategory)
                 questions = Europe.sort(() => Math.random() - Math.random()).slice(0, 10)
             }
             else if (chosen_region == "North and South America"){
-                region_selector(questions, choosenCategory)
+                region_selector(questions, chosenCategory)
                 questions = North_South_America.sort(() => Math.random() - Math.random()).slice(0, 10)
             }
             else if (chosen_region == "Oceania"){
-                region_selector(questions, choosenCategory)
+                region_selector(questions, chosenCategory)
                 questions = Oceania.sort(() => Math.random() - Math.random()).slice(0, 10)
             }
             
             // call the function for generate questions
-            generateQuestion(questions[currentIndex], qCount, chosen_region, choosenCategory);
+            generateQuestion(questions[currentIndex], qCount, chosen_region, chosenCategory);
             questionNum(qCount);
 
             QLis.forEach(li => {
@@ -109,7 +110,7 @@ function getQuestions(){
                             li.classList.remove('success');
                             li.classList.remove('wrong');
                             // Add questions again
-                            generateQuestion(questions[currentIndex], qCount, chosen_region, choosenCategory);
+                            generateQuestion(questions[currentIndex], qCount, chosen_region, chosenCategory);
                             timerDisplay();
                             count = 11;
                         }
