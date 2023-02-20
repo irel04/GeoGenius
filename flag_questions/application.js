@@ -11,7 +11,6 @@ let correctAns = document.querySelector('.score .right span');
 let category_header = document.querySelector('.header h1')
 let summaryDiv = document.getElementsByClassName('summary');
 let summary_score = document.querySelector('#total_score span');
-console.log(summary_score)
 let timeLeft = document.querySelector(".time-left");
 
 // Change the value to navigate from the regions and category
@@ -148,7 +147,6 @@ function region_selector(questions, category){
     console.log(questions[50])
     let q_range = 0
     let starting_range = 0
-    count = 11;
     clearInterval(countDown);
     timerDisplay();
     if(category == "Flags"){
