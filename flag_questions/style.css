@@ -40,6 +40,48 @@ h1 {
     margin: 50px 0 30px 0;
 }
 
+
+/* Dropdown Button -- Settings */
+.dropdown {
+    position: absolute;
+    top: 50px;
+    left: 40px;
+}
+.settings{
+    width: 100px;
+    float: inline-end;
+    margin-left: 80px;
+}
+
+.settings a {
+    font-size: 16px;
+    display: block;
+    align-items: center;
+    padding: 5px 20px;
+}
+
+.settings a:hover {
+    background: #EEE;
+}
+
+.btn {
+    color: var(--violet);
+    border: none;
+    padding: 10px;
+    width: 120px;
+    background: none;
+    cursor: pointer;
+}
+
+.btn i {
+    background: none;
+    font-size: 60px;
+}
+
+.hide {
+    display: none;
+}
+
 /* For Status */
 .status {
     display: flex;
