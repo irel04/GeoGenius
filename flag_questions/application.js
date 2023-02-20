@@ -12,6 +12,8 @@ let category_header = document.querySelector('.header h1')
 let summaryDiv = document.getElementsByClassName('summary');
 let summary_score = document.querySelector('#total_score span');
 let timeLeft = document.querySelector(".time-left");
+let dropdownBtn = document.querySelector(".btn");
+let dropdownMenu = document.querySelector('.settings');
 
 // Change the value to navigate from the regions and category
 let chosen_region = "Africa";
@@ -38,6 +40,12 @@ let North_South_America =[];
 
 // Ocenia array for the question
 let Oceania =[];
+
+// Dropdown Button
+dropdownBtn.addEventListener('click', () => {
+    // Get dropdown settings and hide class
+    dropdownMenu.classList.toggle('hide');
+});
 
 // Timer
 const timerDisplay = () => {
