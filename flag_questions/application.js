@@ -12,6 +12,7 @@ let category_header = document.querySelector('.header h1')
 let summaryDiv = document.getElementsByClassName('summary');
 let summary_score = document.querySelector('#total_score span');
 console.log(summary_score)
+let timeLeft = document.querySelector(".time-left");
 
 // Change the value to navigate from the regions and category
 let chosen_region = "Asia";
@@ -20,6 +21,10 @@ let choosenCategory = "Flags";
 let currentIndex=0;
 let number_of_correct = 0;
 let qCount = 1;
+
+let count = 11;
+let countDown;
+
 //Africa array for the question
 let Africa = [];
 
@@ -34,6 +39,18 @@ let North_South_America =[];
 
 // Ocenia array for the question
 let Oceania =[];
+
+// Timer
+const timerDisplay = () => {
+    countDown = setInterval(() => {
+        count--;
+        timeLeft.innerHTML = '$(count)s';
+        if (count == 0) {
+            clearInterval(countDown);           
+        }
+    }, 1000);
+}
+
 
 function getQuestions(){
     let myRequest = new XMLHttpRequest();
@@ -206,4 +223,3 @@ function check_answer(rAnswer, count){
         }
     }  
 };
-
