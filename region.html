@@ -106,5 +106,34 @@
         },
         });
     </script>
+    <!-- For selecting regions -->
+    <script>
+        const select_region = document.getElementsByClassName('swiper-slide')
+        console.log(select_region[0])
+        select_region[0].addEventListener('click', ()=>{
+            window.location = 'category.html'
+            sessionStorage.setItem('region', 'Africa')
+        })
+        select_region[1].addEventListener('click', ()=>{
+            window.location = 'category.html'
+            sessionStorage.setItem('region', 'Asia')
+        })
+        select_region[2].addEventListener('click', ()=>{
+            window.location = 'category.html'
+            sessionStorage.setItem('region', 'Oceania')
+        })
+        select_region[3].addEventListener('click', ()=>{
+            window.location = 'category.html'
+            sessionStorage.setItem('region', 'North and South America')
+        })
+        select_region[4].addEventListener('click', ()=>{
+            window.location = 'category.html'
+            sessionStorage.setItem('region', 'North and South America')
+        })
+        select_region[5].addEventListener('click', ()=>{
+            window.location = 'category.html'
+            sessionStorage.setItem('region', 'North and South America')
+        })
+    </script>
 </body>
 </html>
