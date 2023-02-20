@@ -1,4 +1,5 @@
 //Select elements
+let question_container = document.querySelector('.container');
 let countSpan = document.querySelector('.count span');
 let imgDiv = document.querySelector('.image');
 let question_image = document.querySelector('.image img');
@@ -8,6 +9,9 @@ let score = document.querySelector('h3 span');
 let scoreDiv = document.querySelector('.score');
 let correctAns = document.querySelector('.score .right span');
 let category_header = document.querySelector('.header h1')
+let summaryDiv = document.getElementsByClassName('summary');
+let summary_score = document.querySelector('#total_score span');
+console.log(summary_score)
 let timeLeft = document.querySelector(".time-left");
 
 // Change the value to navigate from the regions and category
@@ -15,7 +19,7 @@ let chosen_region = "Africa";
 let choosenCategory = "Maps";
 
 let currentIndex=0;
-let rightAnswer = 0;
+let number_of_correct = 0;
 let qCount = 1;
 
 let count = 11;
@@ -108,11 +112,18 @@ function getQuestions(){
                             // Add questions again
                             generateQuestion(questions[currentIndex], qCount, chosen_region, choosenCategory);
                         }
-                        else (()=>{
-
-                        })
-                        
                     }, 1000)
+
+                    setTimeout(() => {
+                        if (qCount === 10){
+                            question_components = document.getElementsByClassName('content')
+                            question_components[0].style.display ='None'
+                            question_components[1].style.display ='None'
+                            summaryDiv[0].style.display='flex';
+                            summary_score.innerHTML = number_of_correct;
+                        }
+                    }, 1002);
+                        
                 })                
             })
         }
@@ -126,6 +137,7 @@ getQuestions();
 function questionNum(num){
     countSpan.innerHTML = num
 };
+
 // This is for iterating the needed questions base on the user input
 function region_selector(questions, category){
     // THis will determine what intervals that should be selected on the qjson
@@ -144,7 +156,7 @@ function region_selector(questions, category){
         starting_range = 50
     }
     else if (category == "Capital"){
-
+        
     }
     
     // This will separate questions based on the set interval of the choosen category
@@ -203,8 +215,8 @@ function check_answer(rAnswer, count){
             choosenAnswer = QLis[i].dataset.answer;
             if (rAnswer == choosenAnswer){;
                 QLis[i].classList.add('success');
-                rightAnswer++;
-                score.innerHTML = rightAnswer;
+                number_of_correct ++;
+                score.innerHTML = number_of_correct ;
             }else {
                 QLis[i].classList.add('wrong');
             }

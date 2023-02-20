@@ -501,6 +501,7 @@
     },
     {
         "img": "Angola Map.png",
+        "img": "Angola Map.png",
         "options": [
             "Eswatini",
             "Comoros",
@@ -511,6 +512,7 @@
     },
     {
         "img": "Benin Map.png",
+        "img": "Benin Map.png",
         "options": [
             "Chad",
             "Benin",
@@ -520,6 +522,7 @@
         "right_answer": "Benin"
     },
     {
+        "img": "Botswana Map.png",
         "img": "Botswana Map.png",
         "options": [
             "Botswana",
@@ -540,6 +543,7 @@
         "right_answer": "Burundi"
     },
     {
+        "img": "Cameroon Map.png",
         "img": "Cameroon Map.png",
         "options": [
             "Tunisia",
@@ -756,6 +760,7 @@
             "Burma",
             "Belgium",
 	        "Bosnia and Herzegovina"
+	        "Bosnia and Herzegovina"
         ],
         "right_answer": "Belgium"
     },
@@ -801,6 +806,7 @@
     },
     {
         "img": "Argentina Map.png",
+        "img": "Argentina Map.png",
         "options": [
             "Bolivia",
             "Chile",
@@ -810,6 +816,7 @@
         "right_answer": "Argentina"
     },
     {
+        "img": "Brazil Map.png",
         "img": "Brazil Map.png",
         "options": [
             "Peru",
@@ -821,10 +828,12 @@
     },
     {
         "img": "Costa Map.png",
+        "img": "Costa Map.png",
         "options": [
             "Costa Rica",
             "Bolivia",
             "Belarus",
+	        "Chile"
 	        "Chile"
         ],
         "right_answer": "Costa Rica"
@@ -840,6 +849,7 @@
         "right_answer": "Panama"
     },
     {
+        "img": "Belize Map.png",
         "img": "Belize Map.png",
         "options": [
             "Belize",
@@ -861,6 +871,7 @@
     },
     {
         "img": "Cuba Map.png",
+        "img": "Cuba Map.png",
         "options": [
             "Paraguay",
             "Panama",
@@ -871,6 +882,7 @@
     },
     {
         "img": "Bolivia Map.png",
+        "img": "Bolivia Map.png",
         "options": [
 	        "Brazil",
             "Paraguay",
@@ -880,6 +892,7 @@
         "right_answer": "Bolivia"
     },
     {
+        "img": "Colombia Map.png",
         "img": "Colombia Map.png",
         "options": [
             "Venezuela",
@@ -936,6 +949,7 @@
             "Samoa",
             "Micronesia",
 	        "Palau"
+	        "Palau"
         ],
         "right_answer": "Samoa"
     },
@@ -953,6 +967,7 @@
         "img": "Micronesia Map.png",
         "options": [
             "Fiji",
+	        "Kiribati",
 	        "Kiribati",
             "Micronesia",
             "Palau"
@@ -976,6 +991,7 @@
             "Papua New Guinea",
             "Nauru",
 	        "Australia"
+	        "Australia"
         ],
         "right_answer": "Kiribati"
     },
@@ -986,6 +1002,7 @@
             "Papua New Guinea",
             "Nauru",
 	        "Samoa"
+	        "Samoa"
         ],
         "right_answer": "Nauru"
     },
@@ -995,6 +1012,7 @@
             "Kiribati",
             "Tonga",
             "Nauru",
+	        "New Zealand"
 	        "New Zealand"
         ],
         "right_answer": "Tonga"

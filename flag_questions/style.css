@@ -179,17 +179,6 @@ h1 {
     }
 } */
 
-#Newgame {
-    border: none;
-    background-color: var(--violet);
-    padding: 1.5rem;
-    color: var(--white);
-    cursor: pointer;
-    font-size: 1.8rem;
-    font-weight: bold;
-    letter-spacing: .1rem;
-}
-
 
 /* Score */
 .score .right {
@@ -244,6 +233,33 @@ h1 {
     background-color: red;
 }
 
+/* This is for the summary div */
+.summary {
+    background-color: #1eb53a;
+    display: none;
+    position: absolute;
+    top: 50%;
+    width: 50%;
+    height: 20%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.summary #total_score {
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+.summary #choose_next{
+    border: none;
+    background-color: var(--violet);
+    padding: 1.5rem;
+    color: var(--white);
+    cursor: pointer;
+    font-size: 1.8rem;
+    font-weight: bold;
+    letter-spacing: .1rem;
+    
+}
 
 /* Making the elements responsive */
 @media(min-width: 375px){
