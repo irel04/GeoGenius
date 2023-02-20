@@ -1,4 +1,5 @@
 //Select elements
+let question_container = document.querySelector('.container');
 let countSpan = document.querySelector('.count span');
 let imgDiv = document.querySelector('.image');
 let question_image = document.querySelector('.image img');
@@ -10,13 +11,12 @@ let correctAns = document.querySelector('.score .right span');
 let category_header = document.querySelector('.header h1')
 
 // Change the value to navigate from the regions and category
-let chosen_region = "Asia";
-let choosenCategory = "Flags";
+let chosen_region = "Africa";
+let choosenCategory = "Maps";
 
 let currentIndex=0;
 let rightAnswer = 0;
 let qCount = 1;
-
 //Africa array for the question
 let Africa = [];
 
@@ -92,11 +92,14 @@ function getQuestions(){
                             // Add questions again
                             generateQuestion(questions[currentIndex], qCount, chosen_region, choosenCategory);
                         }
-                        else (()=>{
-
-                        })
-                        
                     }, 1000)
+
+                    setTimeout(() => {
+                        if (qCount === 10){
+                            question_container.innerHTML ="";
+                        }
+                    }, 1002);
+                        
                 })                
             })
         }
@@ -110,6 +113,7 @@ getQuestions();
 function questionNum(num){
     countSpan.innerHTML = num
 };
+
 // This is for iterating the needed questions base on the user input
 function region_selector(questions, category){
     // THis will determine what intervals that should be selected on the qjson
