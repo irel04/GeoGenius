@@ -14,7 +14,7 @@ let summary_score = document.querySelector('#total_score span');
 let timeLeft = document.querySelector(".time-left");
 
 // Change the value to navigate from the regions and category
-let chosen_region = "Africa";
+let chosen_region = "Asia";
 let choosenCategory = "Flags";
 
 let currentIndex=0;
