@@ -8,6 +8,8 @@ let score = document.querySelector('h3 span');
 let scoreDiv = document.querySelector('.score');
 let correctAns = document.querySelector('.score .right span');
 let category_header = document.querySelector('.header h1')
+
+// Change the value to navigate from the regions and category
 let chosen_region = "Asia";
 let choosenCategory = "Flags";
 
