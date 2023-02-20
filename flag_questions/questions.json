@@ -199,9 +199,6 @@
         ],
         "right_answer": "Cambodia"
     },
-    
-
-
     {
         "img": "Albania Flag.png",
         "options": [
@@ -302,9 +299,6 @@
         ],
         "right_answer": "France"
     },
-    
-
-
     {
         "img": "Argentina Flag.png",
         "options": [
@@ -404,10 +398,7 @@
 	        "Argentina"
         ],
         "right_answer": "Peru"
-    },
-    
-
-    
+    },    
     {
         "img": "Australia Flag.png",
         "options": [
@@ -507,5 +498,105 @@
 	        "Vanuatu"
         ],
         "right_answer": "Tuvalu"
+    },
+    {
+        "img": "Angola_map.png",
+        "options": [
+            "Central African Republic",
+            "Comoros",
+            "Burundi",
+            "Angola"
+        ],
+        "right_answer": "Angola"
+    },
+    {
+        "img": "Benin_map.png",
+        "options": [
+            "Chad",
+            "Benin",
+            "Burkina Faso",
+            "Congo"
+        ],
+        "right_answer": "Benin"
+    },
+    {
+        "img": "Botswana_map.png",
+        "options": [
+            "Botswana",
+            "Angola",
+            "Cameroon",
+            "Comoros"
+        ],
+        "right_answer": "Botswana"
+    },
+    {
+        "img": "Burkina Faso_map.png",
+        "options": [
+            "Burkina Faso",
+            "argentina",
+	        "Benin",
+            "Congo"
+        ],
+        "right_answer": "Burkina Faso"
+    },
+    {
+        "img": "Burundi_map.png",
+        "options": [
+            "Burundi",
+            "Botswana",
+	        "Angola",
+            "Comoros"
+        ],
+        "right_answer": "Burundi"
+    },
+    {
+        "img": "Cameroon_map.png",
+        "options": [
+            "guatemala",
+            "Burkina Faso",
+            "Cameroon",
+	        "Benin"
+        ],
+        "right_answer": "Cameroon"
+    },
+    {
+        "img": "Central African Republic_map.png",
+        "options": [
+            "guatemala",
+	        "Angola",
+            "Central African Republic",
+            "Botswana"
+        ],
+        "right_answer": "Central African Republic"
+    },
+    {
+        "img": "Chad_map.png",
+        "options": [
+            "guatemala",
+	        "Benin",
+            "Cameroon",
+            "Chad"
+        ],
+        "right_answer": "Chad"
+    },
+    {
+        "img": "Comoros_map.png",
+        "options": [
+            "Botswana",
+	        "Central African Republic",
+            "Comoros",
+            "Burundi"
+        ],
+        "right_answer": "Comoros"
+    },
+    {
+        "img": "Congo, Democratic Republic of the_map.png",
+        "options": [
+            "Cameroon",
+            "Chad",
+            "Burkina Faso",
+            "Congo"
+        ],
+        "right_answer": "Congo"
     }
 ]

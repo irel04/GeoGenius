@@ -7,8 +7,8 @@ let QLis = document.querySelectorAll('.options ul li');
 let score = document.querySelector('h3 span');
 let scoreDiv = document.querySelector('.score');
 let correctAns = document.querySelector('.score .right span');
-let chosen_region = "Africa"
-let choosenCategory = "Flags"
+let chosen_region = "Oceania";
+let choosenCategory = "Flags";
 
 let currentIndex=0;
 let rightAnswer = 0;
@@ -107,18 +107,23 @@ getQuestions();
 function questionNum(num){
     countSpan.innerHTML = num
 };
-
 // This is for iterating the needed questions base on the user input
 function region_selector(questions, category){
-    // THis will determine what intervals should be selected on the qjson
+    // THis will determine what intervals that should be selected on the qjson
+    console.log(questions[50])
     let q_range = 0
     let starting_range = 0
     if(category == "Flags"){
         q_range = 10;
+
     }
     else if(category == "Maps"){
         q_range = 60;
+        console.log(question_image.style)
         starting_range = 50
+    }
+    else if (category == "Capital"){
+
     }
     
     // This will separate questions based on the set interval of the choosen category
@@ -126,24 +131,29 @@ function region_selector(questions, category){
         for (starting_range; starting_range < q_range; starting_range++){
             Africa.push(questions[starting_range])
         }
+        console.log(Africa)
     }
     else if (chosen_region == "Asia"){
-        for (starting_range + 10; starting_range < q_range + 10; starting_range++){
+        starting_range += 10;
+        for (starting_range; starting_range < q_range + 10; starting_range++){
             Asia.push(questions[starting_range])
         }
     }
     else if (chosen_region == "Europe"){
-        for (starting_range + 20; starting_range < q_range + 20; starting_range++){
+        starting_range += 20;
+        for (starting_range; starting_range < q_range + 20; starting_range++){
             Europe.push(questions[starting_range])
         }
     }
     else if (chosen_region == "North and South America"){
-        for (starting_range + 30; starting_range < q_range + 30; starting_range++){
+        starting_range += 30;
+        for (starting_range; starting_range < q_range + 30; starting_range++){
             North_South_America.push(questions[starting_range])
         }
     }
     else if (chosen_region == "Oceania"){
-        for (starting_range + 40; starting_range < q_range + 40; starting_range++){
+        starting_range += 40;
+        for (starting_range; starting_range < q_range + 40; starting_range++){
             Oceania.push(questions[starting_range])
         }
     }
