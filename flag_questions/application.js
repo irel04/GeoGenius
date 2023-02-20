@@ -7,7 +7,8 @@ let QLis = document.querySelectorAll('.options ul li');
 let score = document.querySelector('h3 span');
 let scoreDiv = document.querySelector('.score');
 let correctAns = document.querySelector('.score .right span');
-let chosen_region = "Oceania";
+let category_header = document.querySelector('.header h1')
+let chosen_region = "Asia";
 let choosenCategory = "Flags";
 
 let currentIndex=0;
@@ -115,10 +116,12 @@ function region_selector(questions, category){
     let starting_range = 0
     if(category == "Flags"){
         q_range = 10;
+        category_header.innerHTML = "GUESS THE FLAGS"
 
     }
     else if(category == "Maps"){
         q_range = 60;
+        category_header.innerHTML = "GUESS THE COUNTRY"
         console.log(question_image.style)
         starting_range = 50
     }
