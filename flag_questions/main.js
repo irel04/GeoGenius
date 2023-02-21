@@ -17,7 +17,6 @@ let dropdownMenu = document.querySelector('.settings');
 
 // Change the value to navigate from the regions and category
 let chosen_region = sessionStorage.getItem('region');
-console.log(chosen_region)
 let chosenCategory = sessionStorage.getItem('category');
 
 
@@ -25,7 +24,7 @@ let currentIndex=0;
 let number_of_correct = 0;
 let qCount = 1;
 
-let count = 6;
+let count = 2;
 let countDown;
 
 //Africa array for the question
@@ -50,16 +49,19 @@ dropdownBtn.addEventListener('click', () => {
 });
 
 // Timer
-const timerDisplay = () => {
+function timerDisplay(q_parameter){
     countDown = setInterval(() => {
         count--;
         timeLeft.innerHTML = `${count}s`;
         if (count == 0) {
             clearInterval(countDown);
-            count = 6
+            count = 2;
+            // increment index and the number of the item (qcount)
+            currentIndex++;
+            if (qCount < 10) qCount++;
+            generateQuestion(q_parameter[currentIndex], qCount, chosen_region, chosenCategory);
             
         }
-    console.log(countDown)
     }, 1000);
 }
 
@@ -94,7 +96,10 @@ function getQuestions(){
             // call the function for generate questions
             generateQuestion(questions[currentIndex], qCount, chosen_region, chosenCategory);
             questionNum(qCount);
-
+            timerDisplay(questions);
+            
+            count = 2
+            
             QLis.forEach(li => {
                 li.addEventListener('click', () => {
                     let rightAnswer = questions[currentIndex].right_answer;
@@ -121,8 +126,7 @@ function getQuestions(){
                             li.classList.remove('wrong');
                             // Add questions again
                             generateQuestion(questions[currentIndex], qCount, chosen_region, chosenCategory);
-                            timerDisplay();
-                            count = 6;
+                          
                         }
                     }, 1000)
 
@@ -137,11 +141,12 @@ function getQuestions(){
                     }, 1002);
 
                     clearInterval(countDown);
-                    option.forEach((elements) => {
-                        elements.disabled = true;
-                    });
+                    // options.forEach((elements) => {
+                    //     elements.disabled = true;
+                    // });
                 })                
             })
+            
         }
     }
     myRequest.open("GET", "questions.json", true);
@@ -156,11 +161,8 @@ function questionNum(num){
 // This is for iterating the needed questions base on the user input
 function region_selector(questions, category){
     // THis will determine what intervals that should be selected on the qjson
-    console.log(questions[50])
     let q_range = 0
     let starting_range = 0
-    clearInterval(countDown);
-    timerDisplay();
     if(category == "Flags"){
         q_range = 10;
         category_header.innerHTML = "GUESS THE FLAGS"
@@ -169,11 +171,12 @@ function region_selector(questions, category){
     else if(category == "Maps"){
         q_range = 60;
         category_header.innerHTML = "GUESS THE COUNTRY"
-        console.log(question_image.style)
         starting_range = 50
     }
     else if (category == "Capital"){
-        
+        q_range = 110;
+        category_header.innerHTML = "GUESS THE CAPITAL"
+        starting_range = 100
     }
     
     // This will separate questions based on the set interval of the choosen category
@@ -181,7 +184,6 @@ function region_selector(questions, category){
         for (starting_range; starting_range < q_range; starting_range++){
             Africa.push(questions[starting_range])
         }
-        console.log(Africa)
     }
     else if (chosen_region == "Asia"){
         starting_range += 10;
