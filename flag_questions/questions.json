@@ -999,5 +999,305 @@
 	        "New Zealand"
         ],
         "right_answer": "Tonga"
+    },
+    {
+        "img": "Abuja_Nigeria.png",
+        "options": [
+            "Abuja",
+            "Algiers",
+            "Luan",
+	        "Porto-Novo"
+        ],
+        "right_answer": "Abuja"
+    },
+    {
+        "img": "Antananarivo_Madagascar.png",
+        "options": [
+            "Gaborone",
+            "Algiers",
+            "Luan",
+            "Antananarivo"
+        ],
+        "right_answer": "Antananarivo"
+    },
+    {
+        "img": "Cairo_Egypt.png",
+        "options": [
+            "Cairo",
+            "Algiers",
+            "Antananarivo",
+            "Gaborone"
+        ],
+        "right_answer": "Cairo"
+    },
+    {
+        "img": "Dodoma_Tanzania.png",
+        "options": [
+            "Cairo",
+            "Algiers",
+            "Abuja",
+            "Dodoma"
+        ],
+        "right_answer": "Dodoma"
+    },
+    {
+        "img": "Harare_Zimbabwe.png",
+        "options": [
+            "Cairo",
+            "Gaborone",
+            "Harare",
+            "Abuja"
+        ],
+        "right_answer": "Harare"
+    },
+    {
+        "img": "Kampala_Uganda.png",
+        "options": [
+            "Abuja",
+            "Kampala",
+            "Luan",
+            "Rabat"
+        ],
+        "right_answer": "Kampala"
+    },
+    {
+        "img": "Khartoum_Sudan.png",
+        "options": [
+            "Khartoum",
+            "Tripoli",
+            "Abuja",
+            "Kampala"
+        ],
+        "right_answer": "Khartoum"
+    },
+    {
+        "img": "Nairobi_Kenya.png",
+        "options": [
+            "Abuja",
+            "Nairobi",
+            "Rabat",
+            "Tripoli"
+        ],
+        "right_answer": "Nairobi"
+    },
+    {
+        "img": "Rabat_Morocco.png",
+        "options": [
+            "Praia",
+            "Rabat",
+            "Luan",
+            "Bangui"
+        ],
+        "right_answer": "Rabat"
+    },
+    {
+        "img": "Tripoli_Libya.png",
+        "options": [
+            "Tripoli",
+            "Algiers",
+            "Cairo",
+            "Asmara"
+        ],
+        "right_answer": "Tripoli"
+    },
+    {
+        "img": "Abu Dhabi_UAE.png",
+        "options": [
+            "Kabul",
+            "Abu Dhabi",
+            "New Delhi",
+            "Astana"
+        ],
+        "right_answer": "Abu Dhabi"
+    },
+    {
+        "img": "Bangkok_Thailand.png",
+        "options": [
+            "Tokyo",
+            "Kabul",
+            "Phnom Penh",
+            "Bangkok"
+        ],
+        "right_answer": "Bangkok"
+    },
+    {
+        "img": "Beijing_China.png",
+        "options": [
+            "Beijing",
+            "Manila",
+            "Male",
+            "Beirut"
+        ],
+        "right_answer": "Beijing"
+    },
+    {
+        "img": "Jerusalem_Israel.png",
+        "options": [
+            "Kuala Lumpur",
+            "Vientiane",
+            "Jerusalem",
+            "Baghdad"
+        ],
+        "right_answer": "Jerusalem"
+    },
+    {
+        "img": "Male_Maldives.png",
+        "options": [
+            "Male",
+            "Amman",
+            "Luan",
+            "Doha"
+        ],
+        "right_answer": "Male"
+    },
+    {
+        "img": "Manila_Philippines.png",
+        "options": [
+            "Riyadh",
+            "Manila",
+            "Seoul",
+            "Tokyo"
+        ],
+        "right_answer": "Manila"
+    },
+    {
+        "img": "Pyongyang_North Korea.png",
+        "options": [
+            "Seoul",
+            "Taipei",
+            "Pyongyang",
+            "Ashgabat"
+        ],
+        "right_answer": "Pyongyang"
+    },
+    {
+        "img": "Seoul_South Korea.png",
+        "options": [
+            "Pyongyang",
+            "Ramallah",
+            "Seoul",
+            "Muscat"
+        ],
+        "right_answer": "Seoul"
+    },
+    {
+        "img": "Singapore_Singapore.png",
+        "options": [
+            "Kathmandu",
+            "Singapore",
+            "Islamabad",
+            "Pyongyang"
+        ],
+        "right_answer": "Singapore"
+    },
+    {
+        "img": "Tokyo_Japan.png",
+        "options": [
+            "Taipei",
+            "Beijing",
+            "Tokyo",
+            "Jakarta"
+        ],
+        "right_answer": "Tokyo"
+    },
+    {
+        "img": "Havana_Cuba.png",
+        "options": [
+            "Havana",
+            "Managua",
+            "San Jose",
+            "Nassau"
+        ],
+        "right_answer": "Havana"
+    },
+    {
+        "img": "Kingston_Jamaica.png",
+        "options": [
+            "Havana",
+            "Kingston",
+            "Ottawa",
+            "Mexico"
+        ],
+        "right_answer": "Kingston"
+    },
+    {
+        "img": "Managua_Nicaragua.png",
+        "options": [
+            "Managua",
+            "Belmopan",
+            "Castries",
+            "Roseau"
+        ],
+        "right_answer": "Managua"
+    },
+    {
+        "img": "Mexico_Mexico.png",
+        "options": [
+            "Washington, D.C.",
+            "Panama City",
+            "Mexico",
+            "San Salvador"
+        ],
+        "right_answer": "Mexico"
+    },
+    {
+        "img": "Nassau_Bahamas.png",
+        "options": [
+            "Kingston",
+            "Roseau",
+            "Nassau",
+            "Havana"
+        ],
+        "right_answer": "Nassau"
+    },
+    {
+        "img": "Ottawa_Canada.png",
+        "options": [
+            "Saint George's",
+            "Ottawa",
+            "San Jose",
+            "Castries"
+        ],
+        "right_answer": "Ottawa"
+    },
+    {
+        "img": "Port-au-Prince_Haiti.png",
+        "options": [
+            "Port-au-Prince",
+            "Santo Domingo",
+            "San Salvador",
+            "Belmopan"
+        ],
+        "right_answer": "Port-au-Prince"
+    },
+    {
+        "img": "Santo Domingo_Dominican Republic.png",
+        "options": [
+            "Roseau",
+            "Kingston",
+            "Managua",
+            "Santo Domingo"
+        ],
+        "right_answer": "Santo Domingo"
+    },
+    {
+        "img": "Tegucigalpa_Honduras.png",
+        "options": [
+            "Tegucigalpa",
+            "Sa Jose",
+            "Bridgetown",
+            "Saint John's"
+        ],
+        "right_answer": "Tegucigalpa"
+    },
+    {
+        "img": "Washington, D.C._USA.png",
+        "options": [
+            "Bridgetown",
+            "Washington, D.C.",
+            "Kingston",
+            "Saint George's"
+        ],
+        "right_answer": "Washington, D.C."
     }
 ]
