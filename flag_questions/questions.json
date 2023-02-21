@@ -999,5 +999,105 @@
 	        "New Zealand"
         ],
         "right_answer": "Tonga"
+    },
+    {
+        "img": "Abuja_Nigeria.png",
+        "options": [
+            "Abuja",
+            "Algiers",
+            "Luan",
+	        "Porto-Novo"
+        ],
+        "right_answer": "Abuja"
+    },
+    {
+        "img": "Antananarivo_Madagascar.png",
+        "options": [
+            "Gaborone",
+            "Algiers",
+            "Luan",
+            "Antananarivo"
+        ],
+        "right_answer": "Antananarivo"
+    },
+    {
+        "img": "Cairo_Egypt.png",
+        "options": [
+            "Cairo",
+            "Algiers",
+            "Antananarivo",
+            "Gaborone"
+        ],
+        "right_answer": "Cairo"
+    },
+    {
+        "img": "Dodoma_Tanzania.png",
+        "options": [
+            "Cairo",
+            "Algiers",
+            "Abuja",
+            "Dodoma"
+        ],
+        "right_answer": "Dodoma"
+    },
+    {
+        "img": "Harare_Zimbabwe.png",
+        "options": [
+            "Cairo",
+            "Gaborone",
+            "Harare",
+            "Abuja"
+        ],
+        "right_answer": "Harare"
+    },
+    {
+        "img": "Kampala_Uganda.png",
+        "options": [
+            "Abuja",
+            "Kampala",
+            "Luan",
+            "Rabat"
+        ],
+        "right_answer": "Kampala"
+    },
+    {
+        "img": "Khartoum_Sudan.png",
+        "options": [
+            "Khartoum",
+            "Tripoli",
+            "Abuja",
+            "Kampala"
+        ],
+        "right_answer": "Khartoum"
+    },
+    {
+        "img": "Nairobi_Kenya.png",
+        "options": [
+            "Abuja",
+            "Nairobi",
+            "Rabat",
+            "Tripoli"
+        ],
+        "right_answer": "Nairobi"
+    },
+    {
+        "img": "Rabat_Morocco.png",
+        "options": [
+            "Praia",
+            "Rabat",
+            "Luan",
+            "Bangui"
+        ],
+        "right_answer": "Rabat"
+    },
+    {
+        "img": "Tripoli_Libya.png",
+        "options": [
+            "Tripoli",
+            "Algiers",
+            "Cairo",
+            "Asmara"
+        ],
+        "right_answer": "Tripoli"
     }
 ]
