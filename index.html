@@ -12,9 +12,9 @@
         <h1>GeoGenius</h1>
         <div class="options">
             <ul class="homepage_btn">
-                <li>Play</li>
-                <li>Settings</li>
-                <li>Exit</li>
+                <li id="play">Play</li>
+                <li id="settings">Settings</li>
+                <li id="exit">Exit</li>
             </ul>
         </div>
     </div>
@@ -22,6 +22,25 @@
     <video id="bg-video" autoplay muted loop>
         <source src="bg1.mp4" type="video/mp4">
     </video>
+    <script>
+        const play_bttn = document.getElementById('play');
+        const setting_bttn = document.getElementById('settings');
+        const exit_bttn = document.getElementById('exit')
+        play_bttn.addEventListener('click', ()=>{
+            window.location = 'region.html'
+        });
+
+        exit_bttn.addEventListener('click', ()=>{
+            exit_prompt = confirm('You are about to exit!');
+            if (exit_prompt == true){
+                window.location = 'https://www.google.com/'
+            }
+            
+        })
+
+
+        
+    </script>
 
 </body>
 </html>
