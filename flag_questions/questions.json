@@ -1099,5 +1099,105 @@
             "Asmara"
         ],
         "right_answer": "Tripoli"
+    },
+    {
+        "img": "Abu Dhabi_UAE.png",
+        "options": [
+            "Kabul",
+            "Abu Dhabi",
+            "New Delhi",
+            "Astana"
+        ],
+        "right_answer": "Abu Dhabi"
+    },
+    {
+        "img": "Bangkok_Thailand.png",
+        "options": [
+            "Tokyo",
+            "Kabul",
+            "Phnom Penh",
+            "Bangkok"
+        ],
+        "right_answer": "Bangkok"
+    },
+    {
+        "img": "Beijing_China.png",
+        "options": [
+            "Beijing",
+            "Manila",
+            "Male",
+            "Beirut"
+        ],
+        "right_answer": "Beijing"
+    },
+    {
+        "img": "Jerusalem_Israel.png",
+        "options": [
+            "Kuala Lumpur",
+            "Vientiane",
+            "Jerusalem",
+            "Baghdad"
+        ],
+        "right_answer": "Jerusalem"
+    },
+    {
+        "img": "Male_Maldives.png",
+        "options": [
+            "Male",
+            "Amman",
+            "Luan",
+            "Doha"
+        ],
+        "right_answer": "Male"
+    },
+    {
+        "img": "Manila_Philippines.png",
+        "options": [
+            "Riyadh",
+            "Manila",
+            "Seoul",
+            "Tokyo"
+        ],
+        "right_answer": "Manila"
+    },
+    {
+        "img": "Pyongyang_North Korea.png",
+        "options": [
+            "Seoul",
+            "Taipei",
+            "Pyongyang",
+            "Ashgabat"
+        ],
+        "right_answer": "Pyongyang"
+    },
+    {
+        "img": "Seoul_South Korea.png",
+        "options": [
+            "Pyongyang",
+            "Ramallah",
+            "Seoul",
+            "Muscat"
+        ],
+        "right_answer": "Seoul"
+    },
+    {
+        "img": "Singapore_Singapore.png",
+        "options": [
+            "Kathmandu",
+            "Singapore",
+            "Islamabad",
+            "Pyongyang"
+        ],
+        "right_answer": "Singapore"
+    },
+    {
+        "img": "Tokyo_Japan.png",
+        "options": [
+            "Taipei",
+            "Beijing",
+            "Tokyo",
+            "Jakarta"
+        ],
+        "right_answer": "Tokyo"
     }
 ]
