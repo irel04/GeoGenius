@@ -25,7 +25,7 @@ let currentIndex=0;
 let number_of_correct = 0;
 let qCount = 1;
 
-let count = 11;
+let count = 6;
 let countDown;
 
 //Africa array for the question
@@ -55,11 +55,13 @@ const timerDisplay = () => {
         count--;
         timeLeft.innerHTML = `${count}s`;
         if (count == 0) {
-            clearInterval(countDown);           
+            clearInterval(countDown);
+            count = 6
+            
         }
+    console.log(countDown)
     }, 1000);
 }
-
 
 function getQuestions(){
     let myRequest = new XMLHttpRequest();
@@ -98,7 +100,6 @@ function getQuestions(){
                     let rightAnswer = questions[currentIndex].right_answer;
                     li.classList.add('active');
                     
-                    // Number of items per region
                     
                     // increment index and the number of the item (qcount)
                     currentIndex++;
@@ -109,7 +110,7 @@ function getQuestions(){
                         check_answer(rightAnswer, qCount);
                         questionNum(qCount)
                     }, 500);
-
+                    
                     setTimeout(()=>{
                         if (qCount < 10){
                             //Remove previous image 
@@ -121,7 +122,7 @@ function getQuestions(){
                             // Add questions again
                             generateQuestion(questions[currentIndex], qCount, chosen_region, chosenCategory);
                             timerDisplay();
-                            count = 11;
+                            count = 6;
                         }
                     }, 1000)
 
@@ -134,6 +135,7 @@ function getQuestions(){
                             summary_score.innerHTML = number_of_correct;
                         }
                     }, 1002);
+
                     clearInterval(countDown);
                     option.forEach((elements) => {
                         elements.disabled = true;
