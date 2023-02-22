@@ -24,7 +24,7 @@ let currentIndex=0;
 let number_of_correct = 0;
 let qCount = 1;
 
-let count = 2;
+let count = 11;
 let countDown;
 
 //Africa array for the question
@@ -54,13 +54,16 @@ function timerDisplay(q_parameter){
         count--;
         timeLeft.innerHTML = `${count}s`;
         if (count == 0) {
-            clearInterval(countDown);
-            count = 2;
-            // increment index and the number of the item (qcount)
-            currentIndex++;
-            if (qCount < 10) qCount++;
-            generateQuestion(q_parameter[currentIndex], qCount, chosen_region, chosenCategory);
-            
+            if (qCount < 10){
+                currentIndex++;
+                qCount++;
+                count = 11;
+                generateQuestion(q_parameter[currentIndex], qCount, chosen_region, chosenCategory);
+                questionNum(qCount)
+            }
+            else if (qCount >= 10){
+                clearInterval(countDown)
+            }
         }
     }, 1000);
 }
@@ -93,22 +96,25 @@ function getQuestions(){
                 questions = Oceania.sort(() => Math.random() - Math.random()).slice(0, 10)
             }
             
+            question_image.addEventListener('load', () => {
+                count = 11;
+                timerDisplay(q_parameter);
+                clearInterval(countDown);
+            })
+
             // call the function for generate questions
             generateQuestion(questions[currentIndex], qCount, chosen_region, chosenCategory);
             questionNum(qCount);
-            timerDisplay(questions);
-            
-            count = 2
-            
+            timerDisplay(questions)
             QLis.forEach(li => {
                 li.addEventListener('click', () => {
                     let rightAnswer = questions[currentIndex].right_answer;
                     li.classList.add('active');
                     
-                    
-                    // increment index and the number of the item (qcount)
-                    currentIndex++;
-                    if (qCount < 10) qCount++;
+                    if (qCount < 10){
+                        // increment index and the number of the item (qcount)
+                        currentIndex++;
+                        qCount++};
                     
                     // Check answer after 500ms
                     setTimeout(()=>{
@@ -126,7 +132,6 @@ function getQuestions(){
                             li.classList.remove('wrong');
                             // Add questions again
                             generateQuestion(questions[currentIndex], qCount, chosen_region, chosenCategory);
-                          
                         }
                     }, 1000)
 
@@ -137,10 +142,10 @@ function getQuestions(){
                             question_components[1].style.display ='None'
                             summaryDiv[0].style.display='flex';
                             summary_score.innerHTML = number_of_correct;
+                            clearInterval(countDown)
+                            timeLeft.innerHTML = 0;
                         }
                     }, 1002);
-
-                    clearInterval(countDown);
                     // options.forEach((elements) => {
                     //     elements.disabled = true;
                     // });
