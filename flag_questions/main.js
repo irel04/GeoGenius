@@ -24,7 +24,23 @@ let currentIndex=0;
 let number_of_correct = 0;
 let qCount = 1;
 
-let count = 11;
+// Selecting difficulty function()
+function selected_difficulty (){
+    if (sessionStorage.getItem('difficulty') == 'Easy'){
+        return 21
+    }
+    else if (sessionStorage.getItem('difficulty') == 'Medium'){
+        return 16
+    }
+    else if (sessionStorage.getItem('difficulty') == 'Hard'){
+        return 6
+    }
+    
+    
+}
+
+
+let count = selected_difficulty();
 let countDown;
 
 //Africa array for the question
@@ -57,7 +73,7 @@ function timerDisplay(q_parameter){
             if (qCount < 10){
                 currentIndex++;
                 qCount++;
-                count = 11;
+                count = selected_difficulty();
                 generateQuestion(q_parameter[currentIndex], qCount, chosen_region, chosenCategory);
                 questionNum(qCount)
             }
@@ -97,7 +113,7 @@ function getQuestions(){
             }
             
             question_image.addEventListener('load', () => {
-                count = 11;
+                count = selected_difficulty();
                 timerDisplay(q_parameter);
                 clearInterval(countDown);
             })

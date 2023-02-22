@@ -30,6 +30,7 @@
         background: beige;
         border-radius: 20px;
         overflow: hidden;
+        cursor: pointer;
     }
 
     .box:before {
@@ -89,5 +90,21 @@
             <img class="image" src="Selection-Image/hard-mode.png" width="400" height="400">
         </div>
     </div>
+<script>
+    const choose_difficulty = document.getElementsByClassName('box');
+    choose_difficulty[0].addEventListener('click', () =>{
+        window.location = 'region.html';
+        sessionStorage.setItem('difficulty', 'Easy')
+    })
+    choose_difficulty[1].addEventListener('click', () =>{
+        window.location = 'region.html';
+        sessionStorage.setItem('difficulty', 'Medium')
+    })
+    choose_difficulty[2].addEventListener('click', () =>{
+        window.location = 'region.html';
+        sessionStorage.setItem('difficulty', 'Hard')
+    })
+
+</script>
 </body>
 </html>
