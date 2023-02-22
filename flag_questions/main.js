@@ -94,12 +94,16 @@ function timerDisplay(q_parameter){
 }
 
 function getQuestions(){
+    // BG Music
+    game_music = new Audio();
+    game_music.src = 'on_game_music.wav';
+    game_music.play();
+
     let myRequest = new XMLHttpRequest();
     myRequest.onreadystatechange =function(){
         if(this.readyState === 4 && this.status === 200){
             let questions = JSON.parse(this.responseText)
             //Shuffling the questions
-            
             if(chosen_region == "Africa"){
                 region_selector(questions, chosenCategory)
                 questions = Africa.sort(() => Math.random() - Math.random()).slice(0, 10)
@@ -138,9 +142,6 @@ function getQuestions(){
                         setTimeout(()=>{
                             check_answer(rightAnswer, qCount);
                             questionNum(qCount);
-                            timerDisplay(questions);
-                            clearInterval(countDown);
-                            count = selected_difficulty();
                         }, 500);
                         
                         setTimeout(()=>{
@@ -152,18 +153,19 @@ function getQuestions(){
                             li.classList.remove('wrong');
                             // Add questions again
                             generateQuestion(questions[currentIndex], chosen_region, chosenCategory);
+                            timerDisplay();
+                            clearInterval(countDown);
+                            count = selected_difficulty();
                         }, 1000)
-
-
                     }
-                    else if (currentIndex == 10){
+                    else if (currentIndex + 1 == 10){
                         setTimeout(() => {
-                        
                             question_components = document.getElementsByClassName('content')
                             question_components[0].style.display ='None'
                             question_components[1].style.display ='None'
                             summaryDiv[0].style.display='flex';
                             summary_score.innerHTML = number_of_correct;
+                            
                             timeLeft.innerHTML = 0;
                         }, 1000);
 
