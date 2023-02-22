@@ -33,7 +33,7 @@ function selected_difficulty (){
         return 16
     }
     else if (sessionStorage.getItem('difficulty') == 'Hard'){
-        return 6
+        return 3
     }
     
     
@@ -67,19 +67,28 @@ dropdownBtn.addEventListener('click', () => {
 // Timer
 function timerDisplay(q_parameter){
     countDown = setInterval(() => {
-        count--;
+        if (count > 0){
+            count--;
+        }
         timeLeft.innerHTML = `${count}s`;
         if (count == 0) {
-            if (qCount < 10){
-                currentIndex++;
-                qCount++;
-                count = selected_difficulty();
-                generateQuestion(q_parameter[currentIndex], qCount, chosen_region, chosenCategory);
-                questionNum(qCount)
+            currentIndex++;
+            qCount++;
+            generateQuestion(q_parameter[currentIndex], chosen_region, chosenCategory);
+            questionNum(qCount)
+
+            if (currentIndex < 10) {
+                count = selected_difficulty()
             }
-            else if (qCount >= 10){
-                clearInterval(countDown)
-            }
+
+            if (currentIndex == 10){
+                question_components = document.getElementsByClassName('content')
+                question_components[0].style.display ='None'
+                question_components[1].style.display ='None'
+                summaryDiv[0].style.display='flex';
+                summary_score.innerHTML = number_of_correct;
+                
+            } 
         }
     }, 1000);
 }
@@ -112,34 +121,29 @@ function getQuestions(){
                 questions = Oceania.sort(() => Math.random() - Math.random()).slice(0, 10)
             }
             
-            question_image.addEventListener('load', () => {
-                count = selected_difficulty();
-                timerDisplay(q_parameter);
-                clearInterval(countDown);
-            })
-
             // call the function for generate questions
-            generateQuestion(questions[currentIndex], qCount, chosen_region, chosenCategory);
+            generateQuestion(questions[currentIndex], chosen_region, chosenCategory)
             questionNum(qCount);
-            timerDisplay(questions)
+            timerDisplay(questions);
             QLis.forEach(li => {
                 li.addEventListener('click', () => {
                     let rightAnswer = questions[currentIndex].right_answer;
                     li.classList.add('active');
                     
-                    if (qCount < 10){
+                    if (currentIndex + 1 < 10){
                         // increment index and the number of the item (qcount)
                         currentIndex++;
-                        qCount++};
-                    
-                    // Check answer after 500ms
-                    setTimeout(()=>{
-                        check_answer(rightAnswer, qCount);
-                        questionNum(qCount)
-                    }, 500);
-                    
-                    setTimeout(()=>{
-                        if (qCount < 10){
+                        qCount++
+                        // Check answer after 500ms
+                        setTimeout(()=>{
+                            check_answer(rightAnswer, qCount);
+                            questionNum(qCount);
+                            timerDisplay(questions);
+                            clearInterval(countDown);
+                            count = selected_difficulty();
+                        }, 500);
+                        
+                        setTimeout(()=>{
                             //Remove previous image 
                             question_image.src='';
                             // Remove All Classes 
@@ -147,24 +151,24 @@ function getQuestions(){
                             li.classList.remove('success');
                             li.classList.remove('wrong');
                             // Add questions again
-                            generateQuestion(questions[currentIndex], qCount, chosen_region, chosenCategory);
-                        }
-                    }, 1000)
+                            generateQuestion(questions[currentIndex], chosen_region, chosenCategory);
+                        }, 1000)
 
-                    setTimeout(() => {
-                        if (qCount === 10){
+
+                    }
+                    else if (currentIndex == 10){
+                        setTimeout(() => {
+                        
                             question_components = document.getElementsByClassName('content')
                             question_components[0].style.display ='None'
                             question_components[1].style.display ='None'
                             summaryDiv[0].style.display='flex';
                             summary_score.innerHTML = number_of_correct;
-                            clearInterval(countDown)
                             timeLeft.innerHTML = 0;
-                        }
-                    }, 1002);
-                    // options.forEach((elements) => {
-                    //     elements.disabled = true;
-                    // });
+                        }, 1000);
+
+                    }
+                    
                 })                
             })
             
@@ -176,7 +180,9 @@ function getQuestions(){
 getQuestions();
 
 function questionNum(num){
-    countSpan.innerHTML = num
+    if(currentIndex < 10){
+        countSpan.innerHTML = num
+    }
 };
 
 // This is for iterating the needed questions base on the user input
@@ -233,8 +239,8 @@ function region_selector(questions, category){
     }
     
 
-function generateQuestion(obj, count, region, category){
-    if(currentIndex < count){
+function generateQuestion(obj,region, category){
+    if(currentIndex < 10){
         question_image.src= `${region}/${category}/${obj.img}`;
         // for generating options
         QLis.forEach((li, i) => {
