@@ -127,6 +127,7 @@ function getQuestions(){
                 region_selector(questions, chosenCategory)
                 questions = Oceania.sort(() => Math.random() - Math.random()).slice(0, 10)
             }
+            console.log(questions)
             
             // call the function for generate questions
             generateQuestion(questions[currentIndex], chosen_region, chosenCategory)
@@ -169,6 +170,7 @@ function getQuestions(){
                             summaryDiv[0].style.display='flex';
                             summary_score.innerHTML = number_of_correct;
                             count = 0;
+                            localStorage.setItem('score', number_of_correct)
                         }, 1000);
 
                     }

@@ -111,30 +111,69 @@
     <!-- For selecting regions -->
     <script>
         const select_region = document.getElementsByClassName('swiper-slide')
-        console.log(select_region[0])
-        select_region[0].addEventListener('click', ()=>{
+
+        select_region[1].style.background = 'red'
+        select_region[2].style.background = 'red'
+        select_region[3].style.background = 'red'
+        select_region[4].style.background = 'red'
+        select_region[5].style.background = 'red'
+        
+        select_region[0].addEventListener('click', (e)=>{
             window.location = 'category.html'
             sessionStorage.setItem('region', 'Africa')
         })
-        select_region[1].addEventListener('click', ()=>{
-            window.location = 'category.html'
-            sessionStorage.setItem('region', 'Asia')
+        if (localStorage.getItem('score') > 8){
+            select_region[1].style.background = ''
+            select_region[1].addEventListener('click', (e)=>{
+            if(localStorage.getItem('score') > 8){
+                window.location = 'category.html'
+                sessionStorage.setItem('region', 'Asia')
+            }
+            else{
+                e.preventDefault();
+            }
+            
         })
-        select_region[2].addEventListener('click', ()=>{
+        }
+
+
+      
+       
+        select_region[2].addEventListener('click', (e)=>{
+            if(localStorage.getItem('score') < 8){
+                e.preventDefault();
+            }
+            else{
             window.location = 'category.html'
             sessionStorage.setItem('region', 'Oceania')
+            }
         })
-        select_region[3].addEventListener('click', ()=>{
+        select_region[3].addEventListener('click', (e)=>{
+            if(localStorage.getItem('score') < 8){
+                e.preventDefault();
+            }
+            else{
             window.location = 'category.html'
             sessionStorage.setItem('region', 'North and South America')
+            }
         })
-        select_region[4].addEventListener('click', ()=>{
+        select_region[4].addEventListener('click', (e)=>{
+            if(localStorage.getItem('score') < 8){
+                e.preventDefault();
+            }
+            else{
             window.location = 'category.html'
             sessionStorage.setItem('region', 'North and South America')
+            }
         })
-        select_region[5].addEventListener('click', ()=>{
+        select_region[5].addEventListener('click', (e)=>{
+            if(localStorage.getItem('score') < 8){
+                e.preventDefault();
+            }
+            else{
             window.location = 'category.html'
-            sessionStorage.setItem('region', 'North and South America')
+            sessionStorage.setItem('region', 'Europe')
+            }
         })
         
     </script>
