@@ -39,7 +39,7 @@ function selected_difficulty (){
     
 }
 
-
+// Setting the timer
 let count = selected_difficulty();
 let countDown;
 
@@ -87,6 +87,8 @@ function timerDisplay(q_parameter){
                 question_components[1].style.display ='None'
                 summaryDiv[0].style.display='flex';
                 summary_score.innerHTML = number_of_correct;
+                clearInterval(countDown);
+                count = 0;
                 
             } 
         }
@@ -95,9 +97,10 @@ function timerDisplay(q_parameter){
 
 function getQuestions(){
     // BG Music
-    game_music = new Audio();
-    game_music.src = 'on_game_music.wav';
-    game_music.play();
+    // game_music = new Audio();
+    // game_music.src = 'on_game_music.wav';
+    // game_music.play();
+    // game_music.loop = true;
 
     let myRequest = new XMLHttpRequest();
     myRequest.onreadystatechange =function(){
@@ -165,8 +168,7 @@ function getQuestions(){
                             question_components[1].style.display ='None'
                             summaryDiv[0].style.display='flex';
                             summary_score.innerHTML = number_of_correct;
-                            
-                            timeLeft.innerHTML = 0;
+                            count = 0;
                         }, 1000);
 
                     }
