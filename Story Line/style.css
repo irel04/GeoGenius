@@ -1,0 +1,94 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #000336;
+}
+
+.slider {
+    width: 960px;
+    height: 540px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.slides {
+    width: 1000%;
+    height: 900px;
+    display: flex;
+}
+.slides input {
+    display: none;
+}
+.slide {
+    width: 20%;
+    transition: 2s;
+}
+
+.slide img {
+    width: 960px;
+    height: 540px;
+}
+
+/* styling for manual slide navigation */
+
+.nav-manual {
+    position: absolute;
+    width: 800px;
+    margin-top: -340px;
+    display: flex;
+    justify-content: center;
+}
+
+.manual-btn {
+    border: 2px solid #D5F3FE;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+    margin: 10px;
+}
+
+.manual-btn:not(:last-child) {
+    margin-right: 40px;
+}
+
+.manual-btn:hover {
+    background: #D5F3FE;
+}
+
+#radio1:checked ~ .first {
+    margin-left: 0;
+}
+
+#radio2:checked ~ .first {
+    margin-left: -14.3%;
+}
+
+#radio3:checked ~ .first {
+    margin-left: -33.33%;
+}
+
+#radio4:checked ~ .first {
+    margin-left: -60%;
+}
+
+#radio5:checked ~ .first {
+    margin-left: -80%;
+}
+
+#radio6:checked ~ .first {
+    margin-left: -100%;
+}
+
+#radio7:checked ~ .first {
+    margin-left: -120%;
+}
+
+#radio8:checked ~ .first {
+    margin-left: -140%;
+}
+
