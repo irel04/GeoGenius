@@ -9,8 +9,8 @@ body {
 }
 
 .slider {
-    width: 960px;
-    height: 540px;
+    width: 1320px;
+    height: 680px;
     border-radius: 10px;
     overflow: hidden;
 }
@@ -29,16 +29,16 @@ body {
 }
 
 .slide img {
-    width: 960px;
-    height: 540px;
+    width: 1320px;
+    height: 680px;
 }
 
 /* styling for manual slide navigation */
 
 .nav-manual {
     position: absolute;
-    width: 800px;
-    margin-top: -340px;
+    width: 1320px;
+    margin-top: -220px;
     display: flex;
     justify-content: center;
 }
@@ -97,9 +97,9 @@ body {
 .nav-auto {
     position: absolute;
     display: flex;
-    width: 800px;
+    width: 1320px;
     justify-content: center;
-    margin-top: 560px;
+    margin-top: 680px;
 }
 
 
@@ -107,7 +107,7 @@ body {
     border: 2px solid #D5F3FE;
     padding: 5px;
     border-radius: 10px;
-    transition: 1s;
+    transition: 5s;
     margin: 10px;
 }
 
