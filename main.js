@@ -144,15 +144,16 @@ function getQuestions(){
                     let rightAnswer = questions[currentIndex].right_answer;
                     li.classList.add('active');
                     
+                    // Check answer after 500ms
+                    setTimeout(()=>{
+                        check_answer(rightAnswer, qCount);
+                        questionNum(qCount);
+                    }, 500);
+
                     if (currentIndex + 1 < 10){
                         // increment index and the number of the item (qcount)
                         currentIndex++;
                         qCount++
-                        // Check answer after 500ms
-                        setTimeout(()=>{
-                            check_answer(rightAnswer, qCount);
-                            questionNum(qCount);
-                        }, 500);
                         
                         setTimeout(()=>{
                             //Remove previous image 
@@ -278,7 +279,7 @@ function generateQuestion(obj,region, category){
     }
 }
 
-function check_answer(rAnswer, count){
+function check_answer(rAnswer){
     let choosenAnswer;
     for (let i=0; i<QLis.length; i++){
         if (QLis[i].classList.contains('active')){
