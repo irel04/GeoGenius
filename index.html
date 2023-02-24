@@ -3,28 +3,97 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
     <title>GeoGenius</title>
 </head>
+<style>
+        img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            opacity: 90%;
+            z-index: -1;
+        }
+
+        .title {
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 90px;
+            font-weight: bolder;
+            color: white;
+            text-shadow: 2px 2px 5px #000000;
+            margin: 80px 0 80px 0;
+        }
+
+        span {
+            font-size: 80px;
+            padding: 10px;
+        }
+        
+        .options {
+            position: absolute;
+            top: 50%;  
+            left: 50%;  
+            transform: translate(-50%, -50%);
+            margin-top: 100px;
+            width: 480px;
+            height: 320px;
+            border-radius: 20px;
+            background: #fff;
+            box-shadow: 20px 40px 45px rgba(0,0,0,0.1);
+            opacity: 95%;
+        }
+
+        button {
+            position: absolute;
+            top: 50%;  
+            left: 50%;  
+            transform: translate(-50%, -50%);
+            border: none;
+            border-radius: 50px;
+            padding: 1.5rem;
+            cursor: pointer;
+            color: white;
+            background: #000336;
+            font-size: 2.5rem;
+            font-weight: bold;
+            letter-spacing: .1rem;
+            text-shadow: 2px 2px 5px #000000;
+            box-shadow: 20px 40px 45px rgba(0,0,0,0.1);
+        }
+
+        .play {
+            margin-top: 60px;
+            padding: 20px;
+            width: 280px;
+        }
+
+        .exit {
+            margin-top: -60px;
+            padding: 20px;
+            width: 280px;
+        }
+
+        button:hover {
+            background-color: #6FABD0;
+            color: #000336;
+        }
+</style>
 <body>
-    <h1 class="title" >GeoGenius</h1>
-    <div class="homepage_container">
-        <div class="options">
-            <ul class="homepage_btn">
-                <li id="play">Play</li>
-                <li id="settings">Settings</li>
-                <li id="exit">Exit</li>
-            </ul>
-        </div>
+    <img src="Selection-Image/bg-summary.png">
+    
+    <h1 class="title" >GE<span><i class="fa-solid fa-earth-asia"></i></span>GENIUS</h1>
+    <div class="options">
+        <button class="play">PLAY</button>
+        <button class="exit">EXIT</button>
     </div>
 
-    <video id="bg-video" autoplay muted loop>
-        <source src="bg1.mp4" type="video/mp4">
-    </video>
     <script>
         const play_bttn = document.getElementById('play');
-        const setting_bttn = document.getElementById('settings');
         const exit_bttn = document.getElementById('exit')
         play_bttn.addEventListener('click', ()=>{
             window.location = 'difficulty.html'
@@ -34,13 +103,9 @@
             exit_prompt = confirm('You are about to exit!');
             if (exit_prompt == true){
                 window.location = 'https://scontent.fmnl7-1.fna.fbcdn.net/v/t39.30808-6/332681161_692470179282262_932635732603468077_n.jpg?stp=cp6_dst-jpg&_nc_cat=1&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=_-T5zLo71-EAX_wJ7lS&_nc_ht=scontent.fmnl7-1.fna&oh=00_AfCPnoYzR1uVr6uNaqmBcSNAv3DeapoffFvr7fcoIONuCg&oe=63F95B58'
-            }
-            
+            }   
         })
         localStorage.setItem('new_score', 0)
     </script>
-
 </body>
 </html>
-
-

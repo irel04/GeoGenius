@@ -3,15 +3,6 @@ html {
     height: 100%;
     background-color: white;
 }
-ul {
-    list-style: none;
-}
-
-.homepage_btn li {
-    border: 1px solclass black;
-    width: 200px;
-    height: 40px;
-}
 
 body {
     margin: 0;
