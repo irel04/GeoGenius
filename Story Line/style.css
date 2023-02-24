@@ -92,3 +92,59 @@ body {
     margin-left: -140%;
 }
 
+/* styling for automatic navigation */
+
+.nav-auto {
+    position: absolute;
+    display: flex;
+    width: 800px;
+    justify-content: center;
+    margin-top: 560px;
+}
+
+
+.nav-auto div {
+    border: 2px solid #D5F3FE;
+    padding: 5px;
+    border-radius: 10px;
+    transition: 1s;
+    margin: 10px;
+}
+
+.nav-auto div:not(:last-child) {
+    margin-right: 40px;
+}
+
+#radio1:checked ~ .nav-auto .auto-btn1 {
+    background: #D5F3FE;
+}
+
+#radio2:checked ~ .nav-auto .auto-btn2 {
+    background: #D5F3FE;
+}
+
+#radio3:checked ~ .nav-auto .auto-btn3 {
+    background: #D5F3FE;
+}
+
+#radio4:checked ~ .nav-auto .auto-btn4 {
+    background: #D5F3FE;
+}
+
+#radio5:checked ~ .nav-auto .auto-btn5 {
+    background: #D5F3FE;
+}
+
+#radio6:checked ~ .nav-auto .auto-btn6 {
+    background: #D5F3FE;
+}
+
+#radio7:checked ~ .nav-auto .auto-btn7 {
+    background: #D5F3FE;
+}
+
+#radio8:checked ~ .nav-auto .auto-btn8 {
+    background: #D5F3FE;
+}
+
+
