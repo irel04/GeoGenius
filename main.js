@@ -191,7 +191,7 @@ function getQuestions(){
             
         }
     }
-    myRequest.open("GET", "questions.json", true);
+    myRequest.open("GET", "flag_questions/questions.json", true);
     myRequest.send();
 }
 getQuestions();
@@ -265,7 +265,7 @@ function region_selector(questions, category){
 
 function generateQuestion(obj,region, category){
     if(currentIndex < 10){
-        question_image.src= `${region}/${category}/${obj.img}`;
+        question_image.src= `flag_questions/${region}/${category}/${obj.img}`;
         // for generating options
         QLis.forEach((li, i) => {
             // dynamic id of every list
