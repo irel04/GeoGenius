@@ -93,9 +93,11 @@ function timerDisplay(q_parameter){
                 question_components[1].style.display ='None'
                 summaryDiv[0].style.display='flex';
                 summary_score.innerHTML = number_of_correct;
-                clearInterval(countDown);
                 count = 0;
-                
+                accumulated = parseFloat(new_score) + number_of_correct
+                localStorage.setItem('new_score', accumulated);
+                console.log(localStorage.getItem('new_score'));
+                choose_nextContinent();
             } 
         }
     }, 1000);

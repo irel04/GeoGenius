@@ -14,7 +14,6 @@ body {
     border-radius: 10px;
     overflow: hidden;
 }
-
 .slides {
     width: 1000%;
     height: 900px;
@@ -36,11 +35,8 @@ body {
 /* styling for manual slide navigation */
 
 .nav-manual {
-    position: absolute;
     width: 800px;
     margin-top: -340px;
-    display: flex;
-    justify-content: center;
 }
 
 .manual-btn {
@@ -145,6 +141,35 @@ body {
 
 #radio8:checked ~ .nav-auto .auto-btn8 {
     background: #D5F3FE;
+}
+/* clicking for next style */
+.click_here{
+    position: absolute;
+    display: none;
+    top: 15%;
+    left: 43%;
+    width: 200px;
+    animation: zoom-in-zoom-out 3s ease-in infinite;
+    background-color: antiquewhite;
+    cursor: pointer;
+}
+.click_here #next{
+    font-size: 20px;
+    padding-left: 55px;
+    
+}
+@keyframes zoom-in-zoom-out {
+    0% {
+        transform: scale(1,1);
+    }
+
+    50% {
+        transform: scale(1.1,1.1);
+    }
+
+    100% {
+        transform: scale(1,1);
+    }
 }
 
 
