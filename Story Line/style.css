@@ -9,8 +9,8 @@ body {
 }
 
 .slider {
-    width: 960px;
-    height: 540px;
+    width: 1320px;
+    height: 680px;
     border-radius: 10px;
     overflow: hidden;
 }
@@ -28,15 +28,18 @@ body {
 }
 
 .slide img {
-    width: 960px;
-    height: 540px;
+    width: 1320px;
+    height: 680px;
 }
 
 /* styling for manual slide navigation */
 
 .nav-manual {
-    width: 800px;
-    margin-top: -340px;
+    position: absolute;
+    width: 1320px;
+    margin-top: -220px;
+    display: flex;
+    justify-content: center;
 }
 
 .manual-btn {
@@ -93,9 +96,9 @@ body {
 .nav-auto {
     position: absolute;
     display: flex;
-    width: 800px;
+    width: 1320px;
     justify-content: center;
-    margin-top: 560px;
+    margin-top: 680px;
 }
 
 
@@ -103,7 +106,7 @@ body {
     border: 2px solid #D5F3FE;
     padding: 5px;
     border-radius: 10px;
-    transition: 1s;
+    transition: 5s;
     margin: 10px;
 }
 
@@ -146,7 +149,7 @@ body {
 .click_here{
     position: absolute;
     display: none;
-    top: 15%;
+    top: 8%;
     left: 43%;
     width: 200px;
     animation: zoom-in-zoom-out 3s ease-in infinite;

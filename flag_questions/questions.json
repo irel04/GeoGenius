@@ -1299,5 +1299,305 @@
             "Saint George's"
         ],
         "right_answer": "Washington, D.C."
+    },
+    {
+        "img": "Paris_France.png",
+        "options": [
+            "Algiers",
+            "Luanda",
+            "Porto-Novo",
+            "Paris"
+        ],
+        "right_answer": "Paris"
+    },
+    {
+        "img": "Madrid_Spain.png",
+        "options": [
+            "Gaborone",
+            "Ouagadougou",
+            "Gitega",
+            "Madrid"
+        ],
+        "right_answer": "Madrid"
+    },
+    {
+        "img": "Reykjavik_Iceland.png",
+        "options": [
+            "Praia",
+            "Yaounde",
+            "Bangui",
+            "Reykjavik"
+        ],
+        "right_answer": "Reykjavik"
+    },
+    {
+        "img": "Dublin_Ireland.png",
+        "options": [
+            "N'Djamena",
+            "Moroni",
+            "Kinshasa",
+            "Dublin"
+        ],
+        "right_answer": "Dublin"
+    },
+    {
+        "img": "Amsterdam_Netherlands.png",
+        "options": [
+            "Brazzaville",
+            "Yamoussoukro",
+            "Djibouti",
+            "Amsterdam"
+        ],
+        "right_answer": "Amsterdam"
+    },
+    {
+        "img": "Bern_Switzerland.png",
+        "options": [
+            "Cairo",
+            "Malabo",
+            "Oyala",
+            "Bern"
+        ],
+        "right_answer": "Bern"
+    },
+    {
+        "img": "Moscow_Russia.png",
+        "options": [
+            "Asmara",
+            "Mbabane",
+            "Lobamba",
+            "Moscow"
+        ],
+        "right_answer": "Moscow"
+    },
+    {
+        "img": "Rome_Italy.png",
+        "options": [
+            "Addis Ababa",
+            "Libreville",
+            "Banjul",
+            "Rome"
+        ],
+        "right_answer": "Rome"
+    },
+    {
+        "img": "London_UK.png",
+        "options": [
+            "Accra",
+            "Guinea",
+            "Bissau",
+            "London"
+        ],
+        "right_answer": "London"
+    },
+    {
+        "img": "Vatican City_Vatican.png",
+        "options": [
+            "Nairobi",
+            "Maseru",
+            "Monrovia",
+            "Vatican City"
+        ],
+        "right_answer": "Vatican City"
+    },
+    {
+        "img": "Buenos Aires_Argentina.png",
+        "options": [
+            "Saint John’s",
+            "Buenos Aires",
+            "Nassau",
+            "Bridgetown"
+        ],
+        "right_answer": "Buenos Aires"
+    },
+    {
+        "img": "Asuncion_Paraguay.png",
+        "options": [
+            "Ottawa",
+            "San Salvador",
+            "Asuncion",
+            "Saint George’s"
+        ],
+        "right_answer": "Asuncion"
+    },
+    {
+        "img": "Lima_Peru.png",
+        "options": [
+            "Port-au-Prince",
+            "Tegucigalpa",
+            "Kingston",
+            "Lima"
+        ],
+        "right_answer": "Lima"
+    },
+    {
+        "img": "Brasilia_Brazil.png",
+        "options": [
+            "Brasilia",
+            "Mexico City",
+            "Managua",
+            "Basseterre"
+        ],
+        "right_answer": "Brasilia"
+    },
+    {
+        "img": "Santiago_Chile.png",
+        "options": [
+            "Castries",
+            "Kingstown",
+            "Santiago",
+            "Washington D.C."
+        ],
+        "right_answer": "Santiago"
+    },
+    {
+        "img": "Bogota_Colombia.png",
+        "options": [
+            "Quito",
+            "Bogota",
+            "Funafuti",
+            "Stanley"
+        ],
+        "right_answer": "Bogota"
+    },
+    {
+        "img": "Georgetown_Guyana.png",
+        "options": [
+            "Georgetown",
+            "Stanley",
+            "Cayenne",
+            "Georgetown"
+        ],
+        "right_answer": "Georgetown"
+    },
+    {
+        "img": "Paramaribo_Suriname.png",
+        "options": [
+            "Asuncion",
+            "Lima",
+            "Paramaribo",
+            "Paramaribo"
+        ],
+        "right_answer": "Paramaribo"
+    },
+    {
+        "img": "Montevideo_Uruguay.png",
+        "options": [
+            "Montevideo",
+            "Montevideo",
+            "Caracas",
+            "Bogota"
+        ],
+        "right_answer": "Montevideo"
+    },
+    {
+        "img": "Caracas_Venezuela.png",
+        "options": [
+            "Castries",
+            "Caracas",
+            "Managua",
+            "Panama City"
+        ],
+        "right_answer": "Caracas"
+    },
+    {
+        "img": "Canberra_Australia.png",
+        "options": [
+            "Canberra",
+            "Port Moresby",
+            "Wellington",
+            "Suva"
+        ],
+        "right_answer": "Canberra"
+    },
+    {
+        "img": "Suva_Fiji.png",
+        "options": [
+            "Suva",
+            "Honiara",
+            "Canberra",
+            "Palikir"
+        ],
+        "right_answer": "Suva"
+    },
+    {
+        "img": "Tarawa_Kiribati.png",
+        "options": [
+            "Port Moresby",
+            "Tarawa",
+            "Port Vila",
+            "Funafuti"
+        ],
+        "right_answer": "Tarawa"
+    },
+    {
+        "img": "Nukualofa_Tonga.png",
+        "options": [
+            "Honiara",
+            "Nukualofa",
+            "Wellington",
+            "Canberra"
+        ],
+        "right_answer": "Nukualofa"
+    },
+    {
+        "img": "Funafuti_Tuvalu.png",
+        "options": [
+            "Palikir",
+            "Suva",
+            "Funafuti",
+            "Apia"
+        ],
+        "right_answer": "Funafuti"
+    },
+    {
+        "img": "Yaren_Nauru.png",
+        "options": [
+            "Majuro",
+            "Apia",
+            "Yaren",
+            "Tuvalu"
+        ],
+        "right_answer": "Yaren"
+    },
+    {
+        "img": "Wellington_New Zealand.png",
+        "options": [
+            "Melekeok",
+            "Port Vila",
+            "Nukualofa",
+            "Wellington"
+        ],
+        "right_answer": "Wellington"
+    },
+    {
+        "img": "Melekeok_Palau.png",
+        "options": [
+            "Nukualofa",
+            "Tarawa",
+            "Port Vila",
+            "Melekeok"
+        ],
+        "right_answer": "Melekeok"
+    },
+    {
+        "img": "Port Moresby_Papua New Guinea.png",
+        "options": [
+            "Majuro",
+            "Nukualofa",
+            "Port Moresby",
+            "Melekeok"
+        ],
+        "right_answer": "Port Moresby"
+    },
+    {
+        "img": "Apia_Samoa.png",
+        "options": [
+            "Nukualofa",
+            "Apia",
+            "Majuro",
+            "Tarawa"
+        ],
+        "right_answer": "Apia"
     }
 ]
