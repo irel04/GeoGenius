@@ -14,15 +14,21 @@ let summary_score = document.querySelector('#total_score span');
 let timeLeft = document.querySelector(".time-left");
 let dropdownBtn = document.querySelector(".btn");
 let dropdownMenu = document.querySelector('.settings');
+let proceed = document.querySelector('#choose_next')
 
 // Change the value to navigate from the regions and category
 let chosen_region = sessionStorage.getItem('region');
 let chosenCategory = sessionStorage.getItem('category');
 
-
+// Storage variable for number of items and total points
 let currentIndex=0;
 let number_of_correct = 0;
 let qCount = 1;
+
+let new_score = localStorage.getItem('new_score');
+
+
+
 
 // Selecting difficulty function()
 function selected_difficulty (){
@@ -170,7 +176,12 @@ function getQuestions(){
                             summaryDiv[0].style.display='flex';
                             summary_score.innerHTML = number_of_correct;
                             count = 0;
-                            localStorage.setItem('score', number_of_correct)
+                            accumulated = parseFloat(new_score) + number_of_correct
+                            localStorage.setItem('new_score', accumulated);
+                            console.log(localStorage.getItem('new_score'));
+                            choose_nextContinent();
+                            
+
                         }, 1000);
 
                     }
@@ -184,6 +195,13 @@ function getQuestions(){
     myRequest.send();
 }
 getQuestions();
+
+function choose_nextContinent(){
+    proceed.addEventListener('click', ()=>{
+        window.location = 'region.html'
+    })
+
+}
 
 function questionNum(num){
     if(currentIndex < 10){
