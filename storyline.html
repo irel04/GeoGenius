@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="Story Line/style.css">
     <title>Story Line</title>
 </head>
 <body>
@@ -23,29 +23,33 @@
             <input type="radio" name="radio-btn" id="radio8">
             <!--- radio buttons end-->
             <!--- slide image start-->
+           
             <div class="slide first">
-                <img src="1.png" alt="">
+                <img src="Story Line/1.png" alt="">
             </div>
             <div class="slide ">
-                <img src="2.png" alt="">
+                <img src="Story Line/2.png" alt="">
             </div>
             <div class="slide ">
-                <img src="3.png" alt="">
+                <img src="Story Line/3.png" alt="">
             </div>
             <div class="slide ">
-                <img src="4.png" alt="">
+                <img src="Story Line/4.png" alt="">
+            </div>
+            <div class="slide " >
+                <img src="Story Line/5.png" alt="">
             </div>
             <div class="slide ">
-                <img src="5.png" alt="">
+                <img src="Story Line/6.png" alt="">
             </div>
             <div class="slide ">
-                <img src="6.png" alt="">
+                <img src="Story Line/7.png" alt="">
             </div>
             <div class="slide ">
-                <img src="7.png" alt="">
+                <img src="Story Line/8.png" alt="">
             </div>
-            <div class="slide ">
-                <img src="8.png" alt="">
+            <div class="click_here">
+                <div id="next">Click Here</div>
             </div>
             <!--- slide image end -->
             <!-- automatic navigation start -->
@@ -76,16 +80,35 @@
         <!--- manual navigation end -->
     </div>
     <!-- image slider end-->
-
     <script type="text/javascript">
-        var counter = 1;
-        setInterval(function(){
-            document.getElementById('radio' + counter).checked = true;
-            counter++;
-            if(counter > 8){
-                counter = 1;
-            }
-        }, 5000);
+        const click_btn = document.getElementsByClassName('click_here')
+        let counter = 2;
+        // setInterval(function(){
+        //     document.getElementById('radio' + counter).checked = true;
+        //     counter++;
+        //     if(counter > 8){
+        //         counter = 1;
+        //     }
+        // }, 7000);
+        console.log(document.getElementById('radio' + counter))
+        click_btn[0].addEventListener('click', ()=>{
+                if (counter > 8){
+                    window.location = 'region.html' 
+                }
+                else{
+                    console.log(counter)
+                document.getElementById('radio' + counter).checked = true;
+                counter++; 
+                click_btn[0].style.display = 'none'; 
+                }
+                            
+            })
+        
+        
+        setInterval(() => {
+            click_btn[0].style.display = 'flex';
+        }, 8000)
+
     </script>
 </body>
 </html>
