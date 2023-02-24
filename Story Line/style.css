@@ -9,9 +9,8 @@ body {
 }
 
 .slider {
-    width: 1320px;
-    height: 680px;
-    border-radius: 10px;
+    width: 1535px;
+    height: 745px;
     overflow: hidden;
 }
 
@@ -29,18 +28,21 @@ body {
 }
 
 .slide img {
-    width: 1320px;
-    height: 680px;
+    width: 1535px;
+    height: 745px;
 }
 
 /* styling for manual slide navigation */
 
 .nav-manual {
     position: absolute;
-    width: 1320px;
+    top: 0;
+    left: 0;
+    width: 1535px;
     margin-top: -220px;
     display: flex;
     justify-content: center;
+    visibility: hidden;
 }
 
 .manual-btn {
@@ -48,8 +50,9 @@ body {
     padding: 5px;
     border-radius: 10px;
     cursor: pointer;
-    transition: 1s;
+    transition: 10s;
     margin: 10px;
+    visibility: hidden;
 }
 
 .manual-btn:not(:last-child) {
@@ -96,19 +99,22 @@ body {
 
 .nav-auto {
     position: absolute;
+    top: 0;
+    left: 0;
     display: flex;
-    width: 1320px;
+    width: 1535px;
     justify-content: center;
-    margin-top: 680px;
+    margin-top: 645px;
+    visibility: hidden;
 }
-
 
 .nav-auto div {
     border: 2px solid #D5F3FE;
     padding: 5px;
     border-radius: 10px;
-    transition: 5s;
+    transition: 10s;
     margin: 10px;
+    visibility: hidden;
 }
 
 .nav-auto div:not(:last-child) {
@@ -146,5 +152,3 @@ body {
 #radio8:checked ~ .nav-auto .auto-btn8 {
     background: #D5F3FE;
 }
-
-
