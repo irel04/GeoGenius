@@ -65,10 +65,26 @@
         text-align: center;
         margin-top: 5px;
     }
+    .regions span{
+        display: flex;
+        justify-content: center;
+    }
+    #current_points{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 30px;
+        font-weight: bolder;
+        position: absolute;
+        top: 10.5%;
+        left: 72%;
+        background-color: white;
+        padding: 10px 120px 10px 30px;
+        border-radius: 10px;
+    }
 </style>
 <body>
     <video src="bg.mp4" muted loop autoplay></video>
     <h2 class="title">SELECT REGION</h2>
+    <div id="current_points">Total Points: <span></span></div>
     <div class="slide-container">
         <div class="wiper mySwiper slide-content">
             <div class="swiper-wrapper main-card">
@@ -78,23 +94,23 @@
                 </div>
                 <div class="swiper-slide card">
                     <img class="image" src="Selection-Image/asia-region.png" width="300" height="300">
-                    <h4 class="regions">ASIA</h4>
+                    <h4 class="regions">ASIA <span class="required">(Needed: 25pts)</span></h4>
                 </div>
                 <div class="swiper-slide card">
                     <img class="image" src="Selection-Image/oceania-region.png" width="300" height="300">
-                    <h4 class="regions">OCEANIA</h4>
+                    <h4 class="regions">OCEANIA<span class="required">(Needed: 50pts)</span></h4>
                 </div>
                 <div class="swiper-slide card">
                     <img class="image" src="Selection-Image/north-america-region.png" width="300" height="300">
-                    <h4 class="regions">NORTH AMERICA</h4>
+                    <h4 class="regions">NORTH AMERICA<span class="required">(Needed: 75pts)</span></h4>
                 </div>
                 <div class="swiper-slide card">
                     <img class="image" src="Selection-Image/south-america-region.png" width="300" height="300">
-                    <h4 class="regions">SOUTH AMERICA</h4>
+                    <h4 class="regions">SOUTH AMERICA<span class="required">(Needed: 100pts)</span></h4>
                 </div>
                 <div class="swiper-slide card">
                     <img class="image" src="Selection-Image/europe-region.png" width="300" height="300">
-                    <h4 class="regions">EUROPE</h4>
+                    <h4 class="regions">EUROPE<span class="required">(Needed: 125pts)</span></h4>
                 </div>     
             </div>
         </div>
@@ -127,7 +143,11 @@
     <script>
         click_SF2 = new Audio();
         click_SF2.src = 'click.wav';
-
+        const span_elm = document.getElementsByClassName('required')
+        const total_points = document.querySelector('#current_points span')
+        console.log(localStorage.getItem('new_score'))
+        total_points.innerHTML = localStorage.getItem('new_score')
+        
         region_bgMusic = new Audio();
         region_bgMusic.src = 'Woodland Fantasy.mp3';
         region_bgMusic.play();
@@ -153,13 +173,18 @@
            
             if (totalScore > needed_points){
                 select_region[1].style.background = '';
+                span_elm[0].remove()
                 if(totalScore > 2*needed_points){
                     select_region[2].style.background = '';
+                    span_elm[1].remove()
                     if (totalScore > 3*needed_points){
                         select_region[3].style.background ='';
+                        span_elm[2].remove()
                         if(totalScore > 4*needed_points){
                             select_region[4].style.background = '';
+                            span_elm[3].remove()
                             if(totalScore > 5*needed_points){
+                                span_elm[4].remove()
                                 select_region[5].style.background='';
                             }
                         }
