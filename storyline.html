@@ -81,6 +81,11 @@
     </div>
     <!-- image slider end-->
     <script type="text/javascript">
+        story_bgMusic = new Audio();
+        story_bgMusic.src = 'TownTheme.mp3';
+        story_bgMusic.play();
+        story_bgMusic.loop = true;
+
         const click_btn = document.getElementsByClassName('click_here')
         let counter = 2;
         // setInterval(function(){
@@ -107,7 +112,7 @@
         
         setInterval(() => {
             click_btn[0].style.display = 'flex';
-        }, 8000)
+        }, 6000)
 
     </script>
 </body>

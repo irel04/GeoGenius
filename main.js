@@ -36,10 +36,10 @@ function selected_difficulty (){
         return 21
     }
     else if (sessionStorage.getItem('difficulty') == 'Medium'){
-        return 16
+        return 11
     }
     else if (sessionStorage.getItem('difficulty') == 'Hard'){
-        return 3
+        return 6
     }
     
     
@@ -105,10 +105,10 @@ function timerDisplay(q_parameter){
 
 function getQuestions(){
     // BG Music
-    // game_music = new Audio();
-    // game_music.src = 'on_game_music.wav';
-    // game_music.play();
-    // game_music.loop = true;
+    game_music = new Audio();
+    game_music.src = 'flag_questions/on_game_music.wav';
+    game_music.play();
+    game_music.loop = true;
 
     let myRequest = new XMLHttpRequest();
     myRequest.onreadystatechange =function(){
