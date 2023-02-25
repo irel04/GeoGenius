@@ -155,18 +155,55 @@ body {
 .click_here{
     position: absolute;
     display: none;
-    top: 8%;
-    left: 43%;
-    width: 200px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: -300px;
+    width: 150px;
     animation: zoom-in-zoom-out 3s ease-in infinite;
-    background-color: antiquewhite;
     cursor: pointer;
 }
-.click_here #next{
-    font-size: 20px;
-    padding-left: 55px;
-    
+
+/* CSS */
+.click_here {
+  --b: 3px;   /* border thickness */
+  --s: .45em; /* size of the corner */
+  --color: #fff;
+  
+  padding: calc(.5em + var(--s)) calc(.9em + var(--s));
+  color: var(--color);
+  --_p: var(--s);
+  background: conic-gradient(from 90deg at var(--b) var(--b),#0000 90deg,var(--color) 0)
+    var(--_p) var(--_p)/calc(100% - var(--b) - 2*var(--_p)) calc(100% - var(--b) - 2*var(--_p));
+  transition: .3s linear, color 0s, background-color 0s;
+  outline: var(--b) solid #0000;
+  outline-offset: 1.5em;
+  font-size: 16px;
+
+  border: 0;
+
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
 }
+
+.click_here:hover,
+.click_here:focus-visible{
+  --_p: 0px;
+  outline-color: var(--color);
+  outline-offset: .05em;
+}
+
+.click_here:active {
+  background: var(--color);
+  color: #fff;
+}
+.click_here #next{
+    font-size: 23px;
+    padding: 10px 0 10px 25px;    
+    text-shadow: 2px 2px 5px #000000;
+}
+
 @keyframes zoom-in-zoom-out {
     0% {
         transform: scale(1,1);
@@ -180,5 +217,3 @@ body {
         transform: scale(1,1);
     }
 }
-
-

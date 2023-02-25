@@ -50,21 +50,46 @@
         }
 
         button {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            border: none;
-            border-radius: 50px;
-            padding: 1.5rem;
+            background-color: #0078d0;
+            border: 0;
+            border-radius: 56px;
+            color: #fff;
             cursor: pointer;
-            color: white;
-            background: linear-gradient(90deg,#1e359c,#55e7fc);
+            display: inline-block;
+            font-family: 2rem;
             font-size: 2.5rem;
-            font-weight: bold;
+            font-weight: 600;
+            outline: 0;
+            padding: 16px 21px;
+            position: absolute;
+            top: 37.5%;
+            text-align: center;
+            text-decoration: none;
+            transition: all .3s;
+            touch-action: manipulation;
+            margin: 0 20px 0 90px;
             letter-spacing: .1rem;
             text-shadow: 2px 2px 5px #000000;
-            box-shadow: 20px 40px 45px rgba(0,0,0,0.1);
+        }
+
+        button:before {
+            background-color: initial;
+            background-image: linear-gradient(#fff 0, rgba(255, 255, 255, 0) 100%);
+            border-radius: 125px;
+            content: "";
+            height: 50%;
+            left: 4%;
+            opacity: .5;
+            position: absolute;
+            top: 0;
+            transition: all .3s;
+            width: 92%;
+        }
+
+        button:hover {
+            box-shadow: rgba(255, 255, 255, .2) 0 3px 15px inset, rgba(0, 0, 0, .1) 0 3px 5px, rgba(0, 0, 0, .1) 0 10px 13px;
+            transform: scale(1.05);
+            color: #000336;
         }
 
         #play {
@@ -79,9 +104,10 @@
             width: 280px;
         }
 
-        button:hover {
-            background-color: #6FABD0;
-            color: #000336;
+        @media (min-width: 768px) {
+        button {
+            padding: 16px 48px;
+            }
         }
 </style>
 <body>
