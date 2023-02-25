@@ -9,7 +9,7 @@
 </head>
 <style>
         img {
-            position: absolute;
+            position: relative;
             top: 0;
             left: 0;
             width: 100%;
@@ -20,18 +20,21 @@
         }
 
         .title {
-            text-align: center;
-            font-family: Arial, Helvetica, sans-serif;
-            font-size: 90px;
-            font-weight: bolder;
-            color: white;
-            text-shadow: 2px 2px 5px #000000;
-            margin: 80px 0 80px 0;
+        position: relative;
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 90px;
+        font-weight: bolder;
+        color: #1a7ae8;
+        margin: 80px 0 80px 0;
+        text-shadow: 2px 2px 5px #000000;
         }
 
         span {
+            text-shadow: 2px 2px 5px #000000;
             font-size: 80px;
             padding: 10px;
+            position: relative;
         }
 
         .options {
@@ -43,8 +46,8 @@
             width: 480px;
             height: 320px;
             border-radius: 20px;
-            background: #fff;
-            box-shadow: 20px 40px 45px rgba(0,0,0,0.1);
+            background: transparent;
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
             opacity: 95%;
         }
 
@@ -82,9 +85,20 @@
             background-color: #6FABD0;
             color: #3ab3cf;
         }
+
+        #myVideo {
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        min-width: 100%;
+        min-height: 100%;
+        }
+
 </style>
 <body>
-    <img src="Selection-Image/bg-summary.png">
+    <video autoplay muted loop id="myVideo">
+        <source src="index_bg.mp4" type="video/mp4">
+    </video>
     
     <h1 class="title" >GE<span><i class="fa-solid fa-earth-asia"></i></span>GENIUS</h1>
     <div class="options">
