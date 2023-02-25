@@ -125,6 +125,13 @@
     </script>
     <!-- For selecting regions -->
     <script>
+        click_SF2 = new Audio();
+        click_SF2.src = 'click.wav';
+
+        region_bgMusic = new Audio();
+        region_bgMusic.src = 'Woodland Fantasy.mp3';
+        region_bgMusic.play();
+        region_bgMusic.loop = true;
         const select_region = document.getElementsByClassName('swiper-slide')
 
         select_region[1].style.background = 'gray'
@@ -134,12 +141,13 @@
         select_region[5].style.background = 'gray'
         
         select_region[0].addEventListener('click', (e)=>{
+            click_SF2.play()
             window.location = 'category.html'
             sessionStorage.setItem('region', 'Africa')
         })
 
          // Unlocked other continent by atleast scoring 24 points in each continent
-        needed_points = 2
+        needed_points = 3
          
         function unlocked(totalScore){
            
@@ -162,6 +170,7 @@
         unlocked(localStorage.getItem('new_score'))
 
         select_region[1].addEventListener('click', (e)=>{
+            click_SF2.play()
             if(localStorage.getItem('new_score') > needed_points){
                 window.location = 'category.html'
                 sessionStorage.setItem('region', 'Asia')
@@ -171,6 +180,7 @@
             }
         })
         select_region[2].addEventListener('click', (e)=>{
+            click_SF2.play()
             if(localStorage.getItem('new_score') > 2*needed_points){
                 window.location = 'category.html'
                 sessionStorage.setItem('region', 'Oceania')
@@ -180,6 +190,7 @@
             }
         })
         select_region[3].addEventListener('click', (e)=>{
+            click_SF2.play()
             if(localStorage.getItem('new_score') > 3*needed_points){
                 window.location = 'category.html'
                 sessionStorage.setItem('region', 'North and South America')
@@ -189,6 +200,7 @@
             }
         })
         select_region[4].addEventListener('click', (e)=>{
+            click_SF2.play()
             if(localStorage.getItem('new_score') > 4*needed_points){
                 window.location = 'category.html'
                 sessionStorage.setItem('region', 'North and South America')
@@ -198,6 +210,7 @@
             }
         })
         select_region[5].addEventListener('click', (e)=>{
+            click_SF2.play()
             if(localStorage.getItem('new_score') > 5*needed_points){
                 window.location = 'category.html'
                 sessionStorage.setItem('region', 'Europe')
