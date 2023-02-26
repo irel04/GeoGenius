@@ -172,8 +172,8 @@
         
         select_region[0].addEventListener('click', (e)=>{
             click_SF2.play()
-            window.location = 'category.html'
             sessionStorage.setItem('region', 'Africa')
+            window.location = 'difficulty.html'
         })
 
          // Unlocked other continent by atleast scoring 24 points in each continent
@@ -206,8 +206,8 @@
         select_region[1].addEventListener('click', (e)=>{
             click_SF2.play()
             if(localStorage.getItem('new_score') > needed_points){
-                window.location = 'category.html'
                 sessionStorage.setItem('region', 'Asia')
+                window.location = 'difficulty.html'
             }
             else{
                 e.preventDefault();
@@ -216,8 +216,8 @@
         select_region[2].addEventListener('click', (e)=>{
             click_SF2.play()
             if(localStorage.getItem('new_score') > 2*needed_points){
-                window.location = 'category.html'
                 sessionStorage.setItem('region', 'Oceania')
+                window.location = 'difficulty.html'
             }
             else{
                 e.preventDefault();
@@ -226,8 +226,8 @@
         select_region[3].addEventListener('click', (e)=>{
             click_SF2.play()
             if(localStorage.getItem('new_score') > 3*needed_points){
-                window.location = 'category.html'
                 sessionStorage.setItem('region', 'North and South America')
+                window.location = 'difficulty.html'
             }
             else{
                 e.preventDefault();
@@ -236,8 +236,8 @@
         select_region[4].addEventListener('click', (e)=>{
             click_SF2.play()
             if(localStorage.getItem('new_score') > 4*needed_points){
-                window.location = 'category.html'
                 sessionStorage.setItem('region', 'North and South America')
+                window.location = 'difficulty.html'
             }
             else{
                 e.preventDefault();
@@ -246,8 +246,8 @@
         select_region[5].addEventListener('click', (e)=>{
             click_SF2.play()
             if(localStorage.getItem('new_score') > 5*needed_points){
-                window.location = 'category.html'
                 sessionStorage.setItem('region', 'Europe')
+                window.location = 'difficulty.html'
             }
             else{
                 e.preventDefault();
