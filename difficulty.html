@@ -106,6 +106,10 @@
         </div>
     </div>
 <script>
+    difficulty_bgMusic = new Audio();
+    difficulty_bgMusic.src = 'Woodland Fantasy.mp3';
+    difficulty_bgMusic.play();
+    difficulty_bgMusic.loop = true;
     let click_SF1 = new Audio();
     click_SF1.src = 'click.wav';
     const choose_difficulty = document.getElementsByClassName('box');
