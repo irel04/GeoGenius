@@ -98,23 +98,23 @@
                 </div>
                 <div class="swiper-slide card">
                     <img class="image" src="Selection-Image/asia-region.png" width="300" height="300">
-                    <h4 class="regions">ASIA <span class="required">(Needed: 25pts)</span></h4>
+                    <h4 class="regions">ASIA <span class="required" id="rq1">(Needed: 25pts)</span></h4>
                 </div>
                 <div class="swiper-slide card">
                     <img class="image" src="Selection-Image/oceania-region.png" width="300" height="300">
-                    <h4 class="regions">OCEANIA<span class="required">(Needed: 50pts)</span></h4>
+                    <h4 class="regions">OCEANIA<span class="required" id="rq2">(Needed: 50pts)</span></h4>
                 </div>
                 <div class="swiper-slide card">
                     <img class="image" src="Selection-Image/north-america-region.png" width="300" height="300">
-                    <h4 class="regions">NORTH AMERICA<span class="required">(Needed: 75pts)</span></h4>
+                    <h4 class="regions">NORTH AMERICA<span class="required" id="rq3">(Needed: 75pts)</span></h4>
                 </div>
                 <div class="swiper-slide card">
                     <img class="image" src="Selection-Image/south-america-region.png" width="300" height="300">
-                    <h4 class="regions">SOUTH AMERICA<span class="required">(Needed: 100pts)</span></h4>
+                    <h4 class="regions">SOUTH AMERICA<span class="required" id="rq4">(Needed: 100pts)</span></h4>
                 </div>
                 <div class="swiper-slide card">
                     <img class="image" src="Selection-Image/europe-region.png" width="300" height="300">
-                    <h4 class="regions">EUROPE<span class="required">(Needed: 125pts)</span></h4>
+                    <h4 class="regions">EUROPE<span class="required" id="rq5">(Needed: 125pts)</span></h4>
                 </div>     
             </div>
         </div>
@@ -145,9 +145,15 @@
     </script>
     <!-- For selecting regions -->
     <script>
+        // span document for required score
+        const span1 = document.getElementById('rq1')
+        const span2 = document.getElementById('rq2')
+        const span3 = document.getElementById('rq3')
+        const span4 = document.getElementById('rq4')
+        const span5 = document.getElementById('rq5')
+
         click_SF2 = new Audio();
         click_SF2.src = 'click.wav';
-        const span_elm = document.getElementsByClassName('required')
         const total_points = document.querySelector('#current_points span')
         console.log(localStorage.getItem('new_score'))
         total_points.innerHTML = localStorage.getItem('new_score')
@@ -172,23 +178,22 @@
 
          // Unlocked other continent by atleast scoring 24 points in each continent
         needed_points = 3
-         
         function unlocked(totalScore){
            
             if (totalScore > needed_points){
                 select_region[1].style.background = '';
-                span_elm[0].remove()
+                span1.remove()
                 if(totalScore > 2*needed_points){
                     select_region[2].style.background = '';
-                    span_elm[1].remove()
+                    span2.remove()
                     if (totalScore > 3*needed_points){
                         select_region[3].style.background ='';
-                        span_elm[2].remove()
+                        span3.remove()
                         if(totalScore > 4*needed_points){
                             select_region[4].style.background = '';
-                            span_elm[3].remove()
+                            span4.remove()
                             if(totalScore > 5*needed_points){
-                                span_elm[4].remove()
+                                span5.remove()
                                 select_region[5].style.background='';
                             }
                         }
