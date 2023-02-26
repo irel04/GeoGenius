@@ -139,7 +139,7 @@
         let click_SF = new Audio();
         let index_sound = new Audio();
         click_SF.src = 'click.wav';
-        index_sound.src = 'Soliloquy';
+        index_sound.src = 'Soliloquy.mp3';
         index_sound.play();
         
         const play_bttn = document.getElementById('play');
@@ -152,7 +152,7 @@
         exit_bttn.addEventListener('click', ()=>{
             exit_prompt = confirm('You are about to exit!');
             if (exit_prompt == true){
-                window.close()
+                window.close
             }   
         })
         localStorage.setItem('new_score', 0)
