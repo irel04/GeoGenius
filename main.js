@@ -87,7 +87,7 @@ function timerDisplay(q_parameter){
                 count = selected_difficulty()
             }
 
-            if (currentIndex == 10){
+            if (currentIndex + 1 == 10){
                 question_components = document.getElementsByClassName('content')
                 question_components[0].style.display ='None'
                 question_components[1].style.display ='None'
@@ -98,7 +98,12 @@ function timerDisplay(q_parameter){
                 localStorage.setItem('new_score', accumulated);
                 console.log(localStorage.getItem('new_score'));
                 choose_nextContinent();
-            } 
+
+                //Ending 
+                if(localStorage.getItem('new_score') > 160){
+                    window.location = 'index.html'
+                }
+} 
         }
     }, 1000);
 }
@@ -183,6 +188,10 @@ function getQuestions(){
                             localStorage.setItem('new_score', accumulated);
                             console.log(localStorage.getItem('new_score'));
                             choose_nextContinent();
+                            //Ending 
+                            if(localStorage.getItem('new_score') > 160){
+                                window.location = 'storyline_Ending.html'
+                            }
                             
 
                         }, 1000);
