@@ -3,8 +3,8 @@
         "img": "Angola Flag.jpg",
         "options": [
             "Egypt",
-            "Comoros",
-            "Burundi",
+            "Uganda",
+            "Tunisia",
             "Angola"
         ],
         "right_answer": "Angola"
@@ -12,10 +12,10 @@
     {
         "img": "Benin Flag.jpg",
         "options": [
-            "Chad",
+            "Sudan",
             "Benin",
-            "Eritrea",
-            "Ghana"
+            "Nigeria",
+            "Morocco"
         ],
         "right_answer": "Benin"
     },
@@ -23,9 +23,9 @@
         "img": "Botswana Flag.jpg",
         "options": [
             "Botswana",
-            "Angola",
-            "Cameroon",
-            "Comoros"
+            "Liberia",
+            "Kenya",
+            "Guinea"
         ],
         "right_answer": "Botswana"
     },
@@ -33,9 +33,9 @@
         "img": "Eritrea Flag.png",
         "options": [
             "Eritrea",
-            "Argentina",
-	        "Benin",
-            "Ghana"
+            "Lesotho",
+	        "Zambia",
+            "Malawi"
         ],
         "right_answer": "Eritrea"
     },
@@ -43,9 +43,9 @@
         "img": "Burundi Flag.png",
         "options": [
             "Burundi",
-            "Botswana",
-	        "Angola",
-            "Comoros"
+            "Madagascar",
+	        "Rwanda",
+            "Senegal"
         ],
         "right_answer": "Burundi"
     },
@@ -53,9 +53,9 @@
         "img": "Cameroon Flag.png",
         "options": [
             "Guatemala",
-            "Eritrea",
+            "Somalia",
             "Cameroon",
-	        "Benin"
+	        "Tanzania"
         ],
         "right_answer": "Cameroon"
     },
@@ -63,9 +63,9 @@
         "img": "Egypt Flag.png",
         "options": [
             "Guatemala",
-	        "Angola",
+	        "Seychelles",
             "Egypt",
-            "Botswana"
+            "Zimbabwe"
         ],
         "right_answer": "Egypt"
     },
@@ -73,8 +73,8 @@
         "img": "Chad Flag.png",
         "options": [
             "Guatemala",
-	        "Benin",
-            "Cameroon",
+	        "Mali",
+            "Namibia",
             "Chad"
         ],
         "right_answer": "Chad"
@@ -82,19 +82,19 @@
     {
         "img": "Comoros Flag.png",
         "options": [
-            "Botswana",
-	        "Egypt",
+            "Kenya",
+	        "Libya",
             "Comoros",
-            "Burundi"
+            "Mauritius"
         ],
         "right_answer": "Comoros"
     },
     {
         "img": "Ghana Flag.png",
         "options": [
-            "Cameroon",
-            "Chad",
-            "Eritrea",
+            "Zambia",
+            "Niger",
+            "Somalia",
             "Ghana"
         ],
         "right_answer": "Ghana"
@@ -112,10 +112,10 @@
     {
         "img": "Brunei Flag.png",
         "options": [
-            "Bahrain",
-            "Bangladesh",
+            "Philippines",
+            "China",
 	        "Brunei",
-            "Bhutan"
+            "Thailand"
         ],
         "right_answer": "Brunei"
     },
@@ -143,7 +143,7 @@
         "img": "Turkmenistan Flag.png",
         "options": [
             "Turkey",
-            "Uzbekistan",
+            "Japan",
 	        "Turkmenistan",
             "Pakistan"
         ],
@@ -153,9 +153,9 @@
         "img": "Laos Flag.png",
         "options": [
             "Mongolia",
-	        "Thailand",
+	        "Taiwan",
             "Laos",
-            "Malaysia"
+            "India"
         ],
         "right_answer": "Laos"
     },
@@ -175,7 +175,7 @@
             "Thailand",
             "Singapore",
 	        "Taiwan",
-            "Vietnam"
+            "Turkey"
         ],
         "right_answer": "Taiwan"
     },
