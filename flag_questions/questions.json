@@ -403,7 +403,7 @@
         "img": "Australia Flag.png",
         "options": [
             "Australia",
-            "Palau",
+            "New Zealand",
             "Vanuatu",
 	        "Nauru"
         ],
@@ -434,7 +434,7 @@
         "options": [
             "Vanuatu",
             "Samoa",
-            "Fiji",
+            "New Zealand",
 	        "Palau"
         ],
         "right_answer": "Samoa"
@@ -483,9 +483,9 @@
         "img": "Nauru Flag.png",
         "options": [
             "Australia",
-            "Tuvalu",
+            "Nauru",
             "Micronesia",
-	        "Samoa"
+	        "Fiji"
         ],
         "right_answer": "Nauru"
     },
@@ -752,7 +752,7 @@
     {
         "img": "Belgium_Map.png",
         "options": [
-            "France",
+            "Norway",
             "Malta",
             "Belgium",
 	        "Poland"
@@ -794,7 +794,7 @@
         "options": [
             "Sweden",
             "Netherlands",
-            "Croatia",
+            "Vatican City",
 	        "France"
         ],
         "right_answer": "France"
@@ -852,7 +852,7 @@
     {
         "img": "Chile map.png",
         "options": [
-            "Mexico",
+            "Paraguay",
             "Chile",
 	        "Nicaragua",
             "Panama"
@@ -885,7 +885,7 @@
             "Panama",
             "Colombia",
 	        "Guyana",
-            "Mexico"
+            "Uruguay"
         ],
         "right_answer": "Colombia"
     },
@@ -932,9 +932,9 @@
     {
         "img": "Samoa Map.png",
         "options": [
-            "Australia",
+            "Kiribati",
             "Samoa",
-            "Micronesia",
+            "Tuvalu",
 	        "Palau"
         ],
         "right_answer": "Samoa"
@@ -944,7 +944,7 @@
         "options": [
             "Samoa",
             "Micronesia",
-            "New Zealand",
+            "Fiji",
 	        "Tuvalu"
         ],
         "right_answer": "Tuvalu"
