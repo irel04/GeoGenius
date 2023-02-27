@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Story Line/style.css">
+    <link rel="stylesheet" href="Story Line/style_NorthSouth_America.css">
     <title>Story Line</title>
 
 </head>
@@ -23,36 +23,20 @@
             <input type="radio" name="radio-btn" id="radio2">
             <input type="radio" name="radio-btn" id="radio3">
             <input type="radio" name="radio-btn" id="radio4">
-            <input type="radio" name="radio-btn" id="radio5">
-            <input type="radio" name="radio-btn" id="radio6">
-            <input type="radio" name="radio-btn" id="radio7">
-            <input type="radio" name="radio-btn" id="radio8">
             <!--- radio buttons end-->
             <!--- slide image start-->
            
             <div class="slide first">
-                <img src="Story Line/Start/1.png" alt="">
+                <img src="Story Line/North and South America/1.png" alt="">
             </div>
             <div class="slide ">
-                <img src="Story Line/Start/2.png" alt="">
+                <img src="Story Line/North and South America/2.png" alt="">
             </div>
             <div class="slide ">
-                <img src="Story Line/Start/3.png" alt="">
+                <img src="Story Line/North and South America/3.png" alt="">
             </div>
             <div class="slide ">
-                <img src="Story Line/Start/4.png" alt="">
-            </div>
-            <div class="slide " >
-                <img src="Story Line/Start/5.png" alt="">
-            </div>
-            <div class="slide ">
-                <img src="Story Line/Start/6.png" alt="">
-            </div>
-            <div class="slide ">
-                <img src="Story Line/Start/7.png" alt="">
-            </div>
-            <div class="slide ">
-                <img src="Story Line/Start/8.png" alt="">
+                <img src="Story Line/North and South America/4.png" alt="">
             </div>
             <div class="click_here">
                 <div id="next">Click Here</div>
@@ -64,10 +48,7 @@
                 <div class="auto-btn2"></div>
                 <div class="auto-btn3"></div>
                 <div class="auto-btn4"></div>
-                <div class="auto-btn5"></div>
-                <div class="auto-btn6"></div>
-                <div class="auto-btn7"></div>
-                <div class="auto-btn8"></div>
+
             </div>
             <!-- automatic navigation end -->
         </div>
@@ -77,10 +58,6 @@
             <label for="radio2" class="manual-btn"></label>
             <label for="radio3" class="manual-btn"></label>
             <label for="radio4" class="manual-btn"></label>
-            <label for="radio5" class="manual-btn"></label>
-            <label for="radio6" class="manual-btn"></label>
-            <label for="radio7" class="manual-btn"></label>
-            <label for="radio8" class="manual-btn"></label>
 
         </div>
         <!--- manual navigation end -->
@@ -88,7 +65,7 @@
     <!-- image slider end-->
     <script type="text/javascript">
         story_bgMusic = new Audio();
-        story_bgMusic.src = 'TownTheme.mp3';
+        story_bgMusic.src = 'mystical_theme.mp3';
         story_bgMusic.play();
         story_bgMusic.loop = true;
 
@@ -103,8 +80,8 @@
         // }, 7000);
         console.log(document.getElementById('radio' + counter))
         click_btn[0].addEventListener('click', ()=>{
-                if (counter > 8){
-                    window.location = 'region.html'
+                if (counter > 4){
+                    window.location = 'difficulty.html'
                 }
                 else{
                     console.log(counter)

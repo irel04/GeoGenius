@@ -126,6 +126,9 @@
     <video autoplay muted loop id="myVideo">
         <source src="Selection-Image/bg_index.mp4" type="video/mp4">
     </video>
+    <audio id="song">
+        <source src="Soliloquy.mp3">
+    </audio>
     
     <h1 class="title" >GE<span><i class="fa-solid fa-earth-asia"></i></span>GENIUS</h1>
     <h1 class="title1" >GE<span><i class="fa-solid fa-earth-asia"></i></span>GENIUS</h1>
@@ -136,17 +139,21 @@
     </div>
 
     <script>
+        window.addEventListener('click', () => {
+            document.getElementById("song").play();
+        });
+
         let click_SF = new Audio();
         let index_sound = new Audio();
         click_SF.src = 'click.wav';
-        index_sound.src = 'Soliloquy';
+        index_sound.src = 'Soliloquy.mp3';
         index_sound.play();
         
         const play_bttn = document.getElementById('play');
         const exit_bttn = document.getElementById('exit')
         play_bttn.addEventListener('click', ()=>{
             click_SF.play()
-            window.location = 'difficulty.html'
+            window.location = 'storyline.html'
         });
 
         exit_bttn.addEventListener('click', ()=>{
@@ -156,6 +163,11 @@
             }   
         })
         localStorage.setItem('new_score', 0)
+        sessionStorage.setItem('skipAfrica', 0)
+        sessionStorage.setItem('skipAsia', 0)
+        sessionStorage.setItem('skipOceania', 0)
+        sessionStorage.setItem('skipEurope', 0)
+        sessionStorage.setItem('skipNorthSouth_America', 0)
     </script>
 </body>
 </html>
