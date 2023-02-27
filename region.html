@@ -145,13 +145,18 @@
     </script>
     <!-- For selecting regions -->
     <script>
+        sessionStorage.setItem('skipAfrica', 0)
+        sessionStorage.setItem('skipAsia', 0)
+        sessionStorage.setItem('skipOceania', 0)
+        sessionStorage.setItem('skipEurope', 0)
+        sessionStorage.setItem('skipNorthSouth_America', 0)
         // span document for required score
         const span1 = document.getElementById('rq1')
         const span2 = document.getElementById('rq2')
         const span3 = document.getElementById('rq3')
         const span4 = document.getElementById('rq4')
         const span5 = document.getElementById('rq5')
-
+        localStorage.setItem('new_score', 150)
         click_SF2 = new Audio();
         click_SF2.src = 'click.wav';
         const total_points = document.querySelector('#current_points span')
@@ -230,7 +235,7 @@
             if(localStorage.getItem('new_score') > 2*needed_points){
                 sessionStorage.setItem('region', 'Oceania')
                 if(sessionStorage.getItem('skipOceania') == 0){
-                    window.location = 'storyline_Asia.html'
+                    window.location = 'storyline_Oceania.html'
                     sessionStorage.setItem('skipOceania', 1)
                 }
                 else{
