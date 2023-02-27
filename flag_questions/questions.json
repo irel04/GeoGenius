@@ -1200,106 +1200,6 @@
         "right_answer": "Tokyo"
     },
     {
-        "img": "Havana_Cuba.png",
-        "options": [
-            "Havana",
-            "Managua",
-            "San Jose",
-            "Nassau"
-        ],
-        "right_answer": "Havana"
-    },
-    {
-        "img": "Kingston_Jamaica.png",
-        "options": [
-            "Havana",
-            "Kingston",
-            "Ottawa",
-            "Mexico"
-        ],
-        "right_answer": "Kingston"
-    },
-    {
-        "img": "Managua_Nicaragua.png",
-        "options": [
-            "Managua",
-            "Belmopan",
-            "Castries",
-            "Roseau"
-        ],
-        "right_answer": "Managua"
-    },
-    {
-        "img": "Mexico_Mexico.png",
-        "options": [
-            "Bogota",
-            "Panama City",
-            "Mexico",
-            "San Salvador"
-        ],
-        "right_answer": "Mexico"
-    },
-    {
-        "img": "Nassau_Bahamas.png",
-        "options": [
-            "Kingston",
-            "Roseau",
-            "Nassau",
-            "Havana"
-        ],
-        "right_answer": "Nassau"
-    },
-    {
-        "img": "Ottawa_Canada.png",
-        "options": [
-            "Saint George's",
-            "Ottawa",
-            "San Jose",
-            "Castries"
-        ],
-        "right_answer": "Ottawa"
-    },
-    {
-        "img": "Port-au-Prince_Haiti.png",
-        "options": [
-            "Port-au-Prince",
-            "Santo Domingo",
-            "San Salvador",
-            "Belmopan"
-        ],
-        "right_answer": "Port-au-Prince"
-    },
-    {
-        "img": "Santo Domingo_Dominican Republic.png",
-        "options": [
-            "Roseau",
-            "Kingston",
-            "Managua",
-            "Santo Domingo"
-        ],
-        "right_answer": "Santo Domingo"
-    },
-    {
-        "img": "Tegucigalpa_Honduras.png",
-        "options": [
-            "Tegucigalpa",
-            "Sa Jose",
-            "Bridgetown",
-            "Saint John's"
-        ],
-        "right_answer": "Tegucigalpa"
-    },
-    {
-        "img": "Washington, D.C._USA.png",
-        "options": [
-            "Bridgetown",
-            "Washington, D.C.",
-            "Kingston",
-            "Saint George's"
-        ],
-        "right_answer": "Washington, D.C."
-    },
-    {
         "img": "Paris_France.png",
         "options": [
             "Algiers",
@@ -1400,106 +1300,106 @@
         "right_answer": "Vatican City"
     },
     {
-        "img": "Buenos Aires_Argentina.png",
+        "img": "Havana_Cuba.png",
         "options": [
-            "Saint John’s",
-            "Buenos Aires",
-            "Nassau",
-            "Bridgetown"
+            "Havana",
+            "Managua",
+            "San Jose",
+            "Nassau"
         ],
-        "right_answer": "Buenos Aires"
+        "right_answer": "Havana"
     },
     {
-        "img": "Asuncion_Paraguay.png",
+        "img": "Kingston_Jamaica.png",
         "options": [
+            "Havana",
+            "Kingston",
             "Ottawa",
-            "San Salvador",
-            "Asuncion",
-            "Saint George’s"
+            "Mexico"
         ],
-        "right_answer": "Asuncion"
+        "right_answer": "Kingston"
     },
     {
-        "img": "Lima_Peru.png",
+        "img": "Managua_Nicaragua.png",
+        "options": [
+            "Managua",
+            "Belmopan",
+            "Castries",
+            "Roseau"
+        ],
+        "right_answer": "Managua"
+    },
+    {
+        "img": "Mexico_Mexico.png",
+        "options": [
+            "Bogota",
+            "Panama City",
+            "Mexico",
+            "San Salvador"
+        ],
+        "right_answer": "Mexico"
+    },
+    {
+        "img": "Nassau_Bahamas.png",
+        "options": [
+            "Kingston",
+            "Roseau",
+            "Nassau",
+            "Havana"
+        ],
+        "right_answer": "Nassau"
+    },
+    {
+        "img": "Ottawa_Canada.png",
+        "options": [
+            "Saint George's",
+            "Ottawa",
+            "San Jose",
+            "Castries"
+        ],
+        "right_answer": "Ottawa"
+    },
+    {
+        "img": "Port-au-Prince_Haiti.png",
         "options": [
             "Port-au-Prince",
-            "Tegucigalpa",
+            "Santo Domingo",
+            "San Salvador",
+            "Belmopan"
+        ],
+        "right_answer": "Port-au-Prince"
+    },
+    {
+        "img": "Santo Domingo_Dominican Republic.png",
+        "options": [
+            "Roseau",
             "Kingston",
-            "Lima"
-        ],
-        "right_answer": "Lima"
-    },
-    {
-        "img": "Brasilia_Brazil.png",
-        "options": [
-            "Brasilia",
-            "Mexico City",
             "Managua",
-            "Basseterre"
+            "Santo Domingo"
         ],
-        "right_answer": "Brasilia"
+        "right_answer": "Santo Domingo"
     },
     {
-        "img": "Santiago_Chile.png",
+        "img": "Tegucigalpa_Honduras.png",
         "options": [
-            "Castries",
-            "Kingstown",
-            "Santiago",
-            "Washington D.C."
+            "Tegucigalpa",
+            "Sa Jose",
+            "Bridgetown",
+            "Saint John's"
         ],
-        "right_answer": "Santiago"
+        "right_answer": "Tegucigalpa"
     },
     {
-        "img": "Bogota_Colombia.png",
+        "img": "Washington, D.C._USA.png",
         "options": [
-            "Quito",
-            "Bogota",
-            "Funafuti",
-            "Stanley"
+            "Bridgetown",
+            "Washington, D.C.",
+            "Kingston",
+            "Saint George's"
         ],
-        "right_answer": "Bogota"
+        "right_answer": "Washington, D.C."
     },
-    {
-        "img": "Georgetown_Guyana.png",
-        "options": [
-            "Georgetown",
-            "Stanley",
-            "Cayenne",
-            "Georgetown"
-        ],
-        "right_answer": "Georgetown"
-    },
-    {
-        "img": "Paramaribo_Suriname.png",
-        "options": [
-            "Asuncion",
-            "Lima",
-            "Paramaribo",
-            "Paramaribo"
-        ],
-        "right_answer": "Paramaribo"
-    },
-    {
-        "img": "Montevideo_Uruguay.png",
-        "options": [
-            "Montevideo",
-            "Montevideo",
-            "Caracas",
-            "Bogota"
-        ],
-        "right_answer": "Montevideo"
-    },
-    {
-        "img": "Caracas_Venezuela.png",
-        "options": [
-            "Castries",
-            "Caracas",
-            "Managua",
-            "Panama City"
-        ],
-        "right_answer": "Caracas"
-    },
-    {
+     {
         "img": "Canberra_Australia.png",
         "options": [
             "Canberra",

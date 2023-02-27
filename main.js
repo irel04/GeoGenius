@@ -100,10 +100,13 @@ function timerDisplay(q_parameter){
                 choose_nextContinent();
 
                 //Ending 
-                if(localStorage.getItem('new_score') > 160){
-                    window.location = 'index.html'
+                if (sessionStorage.getItem('ending')==0){
+                    if(localStorage.getItem('new_score') > 160){
+                        window.location = 'storyline_ending.html'
+                        sessionStorage.setItem('ending', 1)
+                    }
                 }
-} 
+    } 
         }
     }, 1000);
 }
@@ -189,11 +192,12 @@ function getQuestions(){
                             console.log(localStorage.getItem('new_score'));
                             choose_nextContinent();
                             //Ending 
-                            if(localStorage.getItem('new_score') > 160){
-                                window.location = 'storyline_Ending.html'
+                            if (sessionStorage.getItem('ending')==0){
+                                if(localStorage.getItem('new_score') > 160){
+                                    window.location = 'storyline_ending.html'
+                                    sessionStorage.setItem('ending', 1)
+                                }
                             }
-                            
-
                         }, 1000);
 
                     }
