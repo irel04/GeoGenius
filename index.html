@@ -126,6 +126,9 @@
     <video autoplay muted loop id="myVideo">
         <source src="Selection-Image/bg_index.mp4" type="video/mp4">
     </video>
+    <audio id="song">
+        <source src="Soliloquy.mp3">
+    </audio>
     
     <h1 class="title" >GE<span><i class="fa-solid fa-earth-asia"></i></span>GENIUS</h1>
     <h1 class="title1" >GE<span><i class="fa-solid fa-earth-asia"></i></span>GENIUS</h1>
@@ -136,6 +139,10 @@
     </div>
 
     <script>
+        window.addEventListener('click', () => {
+            document.getElementById("song").play();
+        });
+
         let click_SF = new Audio();
         let index_sound = new Audio();
         click_SF.src = 'click.wav';
@@ -146,7 +153,7 @@
         const exit_bttn = document.getElementById('exit')
         play_bttn.addEventListener('click', ()=>{
             click_SF.play()
-            window.location = 'difficulty.html'
+            window.location = 'storyline.html'
         });
 
         exit_bttn.addEventListener('click', ()=>{
