@@ -9,7 +9,6 @@
 
 :root {
     --white: #ffffff;
-    --violet: #673ab7;
     --light: #d5f3fe;
     --blue: #000336;
 }
@@ -62,21 +61,57 @@ h1 {
 }
 
 .settings{
-    width: 100px;
+    position: absolute;
+    top: 15%;
+    left: 83%;
+    width: 210px;
     float: inline-end;
-    margin-left: 80px;
+    padding: 10px;
+    border-radius: 20px;
+    background: var(--light);
 }
 
 .settings a {
-    font-size: 16px;
     display: block;
     align-items: center;
-    padding: 5px 20px;
+    padding: 10px 20px;
+    color: var(--blue);
+}
+
+.set-btn {
+    border-radius: 40em;
+    border-style: none;
+    box-shadow: #ADCFFF 0 -12px 6px inset;
+    box-sizing: border-box;
+    color: #000000;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: 600;
+    width: 150px;
+    outline: none;
+    padding: 1rem 1.5rem;
+    text-align: center;
+    text-decoration: none;
+    transition: all .15s;
+    touch-action: manipulation;
+}
+
+.set-btn:hover {
+    background-color: #3C99DC;
+    box-shadow: var(--blue) 0 -6px 8px inset;
+    transform: scale(1.125);
     color: var(--white);
 }
 
-.settings a:hover {
-    background: #EEE;
+.set-btn:active {
+    transform: scale(1.025);
+}
+
+@media (min-width: 768px) {
+    .set-btn {
+        font-size: 1.2rem;
+        padding: .75rem 2rem;
+    }
 }
 
 .btn {

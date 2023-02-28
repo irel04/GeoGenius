@@ -8,6 +8,12 @@
     <title>Select Difficulty</title>
 </head>
 <style>
+    :root {
+    --white: #ffffff;
+    --light: #d5f3fe;
+    --blue: #000336;
+    }
+
     video {
         position: absolute;
         top: 0;
@@ -18,14 +24,95 @@
         opacity: 0.8;
         z-index: -1;
     }
-    .title{
+    .title {
         text-align: center;
         font-family: Arial, Helvetica, sans-serif;
         font-size: 60px;
         font-weight: bolder;
-        color: white;
+        color:var(--white);
         text-shadow: 2px 2px 5px #000000;
         margin: 80px 0 80px 0;
+    }
+
+    /* Dropdown Button -- Settings */
+    .dropdown {
+        position: absolute;
+        top: 70px;
+        left: 60px;
+        z-index: 2;
+    }
+
+    .settings{
+        position: absolute;
+        top: 15%;
+        left: 83%;
+        width: 230px;
+        float: inline-end;
+        padding: 10px;
+        border-radius: 20px;
+        background: var(--light);
+        box-shadow: 20px 40px 45px rgba(0,0,0,0.1);
+    }
+
+    .settings a {
+        display: block;
+        align-items: center;
+        padding: 10px 20px;
+        color: var(--blue);
+    }
+
+    /* CSS */
+    .set-btn {
+        background-color: #FFFFFF;
+        border-radius: 40em;
+        border-style: none;
+        box-shadow: #ADCFFF 0 -12px 6px inset;
+        box-sizing: border-box;
+        width: 190px;
+        color: #000000;
+        cursor: pointer;
+        display: inline-block;
+        font-weight: 600;
+        text-align: center;
+        text-decoration: none;
+        transition: all .15s;
+        touch-action: manipulation;
+    }
+
+    .set-btn:hover {
+        background-color: #3c99dc;
+        box-shadow: var(--blue) 0 -6px 8px inset;
+        transform: scale(1.1);
+        color: var(--white);
+    }
+
+    .set-btn:active {
+        transform: scale(1.);
+    }
+
+    @media (min-width: 768px) {
+        .set-btn  {
+            font-size: 1.2rem;
+            padding: .75rem 2rem;
+        }
+    }
+        
+    .btn {
+        color: white;
+        border: none;
+        padding: 10px;
+        width: 120px;
+        background: none;
+        cursor: pointer;
+    }
+
+    .btn i {
+        background: none;
+        font-size: 60px;
+    }
+
+    .hide {
+        display: none;
     }
 
     .container {
@@ -87,65 +174,26 @@
 
     .choices {
         font-size: 30px;
-        font-family: Arial;
         text-align: center;
         margin-top: -90px;
-    }
-    .dropdown {
-        position: absolute;
-        top: 55px;
-        left: 40px;
-    }
-
-    .settings{
-        width: 100px;
-        float: inline-end;
-        margin-left: 80px;
-    }
-
-    .settings a {
-        font-family: 'Gothic A1', sans-serif;
-        font-size: 16px;
-        display: block;
-        align-items: center;
-        padding: 5px 20px;
-        color: white;
-    }
-
-    .settings a:hover {
-        background: #EEE;
-    }
-
-    .btn {
-        border: none;
-        padding-left: 80px;
-        padding-top: 30px;
-        width: 120px;
-        background: none;
-        cursor: pointer;
-    }
-
-    .btn i {
-        background: none;
-        font-size: 60px;
-        color: white;
-    }
-
-    .hide {
-        display: none;
-    }
-    a {
-    text-decoration: none;
     }
 </style>
 <body>
     <div class="dropdown">
-            <button class="btn"><i class="fa-solid fa-gear"></i></button>
-            <div class="settings hide">
-                <a href="region.html">Region</a>
-                <a href="index.html">Exit</a>
-            </div>
+        <button class="btn"><i class="fa-solid fa-gear"></i></button>
+        <div class="settings hide">
+            <a href="region.html">
+                <button class="region set-btn">REGION</button>
+            </a>
+            <a href="index.html">
+                <button class="help set-btn">INSTRUCTIONS</button>
+            </a>
+            <a href="index.html">
+                <button class="quit set-btn">QUIT</button>
+            </a>
         </div>
+    </div>
+
     <video src="Selection-Image/bg.mp4" muted loop autoplay></video>
     <h2 class="title">SELECT DIFFICULTY</h2>
     <div class="container">
@@ -159,6 +207,7 @@
             <img class="image" src="Selection-Image/hard-mode.png" width="400" height="400">
         </div>
     </div>
+
 <script>
     difficulty_bgMusic = new Audio();
     difficulty_bgMusic.src = 'Woodland Fantasy.mp3';
