@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"/>    
     <link rel="stylesheet" href="Story Line/style_Europe.css">
     <title>Story Line</title>
 
@@ -42,9 +43,12 @@
             <div class="slide ">
                 <img src="Story Line/Europe/5.png" alt="">
             </div>
+
             <div class="click_here">
-                <div id="next">Next</div>
+                <div id="next">Next<i class="fa-solid fa-caret-right"></i></div>
+                <div id="skip">Skip<i class="fa-solid fa-forward"></i></div>
             </div>
+
             <!--- slide image end -->
             <!-- automatic navigation start -->
             <div class="nav-auto">
@@ -76,6 +80,7 @@
         story_bgMusic.loop = true;
 
         const click_btn = document.getElementsByClassName('click_here')
+        const skip_bttn = document.getElementById('skip')
         let counter = 2;
         // setInterval(function(){
         //     document.getElementById('radio' + counter).checked = true;
@@ -97,8 +102,10 @@
                 }
                             
             })
-        
-        
+        skip_bttn.addEventListener('click', ()=>{
+            window.location = 'region.html';          
+        })
+           
         setInterval(() => {
             click_btn[0].style.display = 'flex';
         }, 5000)

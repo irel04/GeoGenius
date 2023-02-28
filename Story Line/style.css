@@ -188,17 +188,3 @@ body {
     padding-left: 5px;
     padding-top: 2.5px;
 }
-
-@keyframes zoom-in-zoom-out {
-    0% {
-        transform: scale(1,1);
-    }
-
-    50% {
-        transform: scale(1.1,1.1);
-    }
-
-    100% {
-        transform: scale(1,1);
-    }
-}

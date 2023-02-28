@@ -122,65 +122,39 @@ body {
     background: #D5F3FE;
 }
 
-/* clicking for next style */
 .click_here {
-    display: none;
-    margin-top: -300px;
-    width: 150px;
-    animation: zoom-in-zoom-out 3s ease-in infinite;
     cursor: pointer;
 }
 
-/* CSS */
-.click_here div{
-    --b: 3px;   /* border thickness */
-    --s: .45em; /* size of the corner */
-    --color: #fff;
-    
-    padding: calc(.5em + var(--s)) calc(.9em + var(--s));
-    color: var(--color);
-    --_p: var(--s);
-    background: conic-gradient(from 90deg at var(--b) var(--b),#0000 90deg,var(--color) 0)
-        var(--_p) var(--_p)/calc(100% - var(--b) - 2*var(--_p)) calc(100% - var(--b) - 2*var(--_p));
-    transition: .3s linear, color 0s, background-color 0s;
-    outline: var(--b) solid #0000;
-    outline-offset: 1.5em;
-    font-size: 16px;
-
-    border: 0;
-
-    user-select: none;
-    -webkit-user-select: none;
-    touch-action: manipulation;
-}
-
-.click_here div:hover,
-.click_here div:focus-visible{
-    --_p: 0px;
-    outline-color: var(--color);
-    outline-offset: .05em;
-}
-
-.click_here div:active {
-    background: var(--color);
+#next {
+    position: absolute;
+    top: 23%;
+    left: 87.5%;
     color: #fff;
-}
-.click_here div {
-    font-size: 23px;
+    font-size: 25px;
+    margin-right: 80px;
     padding: 20px 40px 20px 40px;    
     text-shadow: 2px 2px 5px #000000;
 }
 
-@keyframes zoom-in-zoom-out {
-    0% {
-        transform: scale(1,1);
-    }
+#next i {
+    font-size: 30px;
+    position: absolute;
+    padding-left: 10px;
+    padding-top: 2.5px;
+}
 
-    50% {
-        transform: scale(1.1,1.1);
-    }
+#skip {
+    position: absolute;
+    top: 20%;
+    left: 90%;
+    color: #fff;
+    font-size: 25px;
+    text-shadow: 2px 2px 5px #000000;
+}
 
-    100% {
-        transform: scale(1,1);
-    }
+#skip i {
+    position: absolute;
+    padding-left: 5px;
+    padding-top: 2.5px;
 }
