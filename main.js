@@ -22,7 +22,9 @@ wrong_sfx.src = 'flag_questions/wrong_sound_effect.mp3';
 let more_info_bttn = document.querySelector('#more_info')
 let more_info_span = document.querySelector('#more_info span')
 
-
+//Tic toc
+let tic_toc = new Audio();
+tic_toc.src = 'flag_questions/Clock Ticking  Sound Effect.mp3'
 
 // Change the value to navigate from the regions and category
 let chosen_region = sessionStorage.getItem('region');
@@ -81,8 +83,9 @@ dropdownBtn.addEventListener('click', () => {
 // Timer
 function timerDisplay(q_parameter){
     countDown = setInterval(() => {
-        
+
         if (count > 0){
+            tic_toc.play();
             count--;
         }
         timeLeft.innerHTML = `${count}s`;
