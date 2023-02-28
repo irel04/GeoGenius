@@ -78,8 +78,12 @@ let North_South_America =[];
 // Ocenia array for the question
 let Oceania =[];
 
+let click_SF = new Audio();
+click_SF.src = 'click.wav';
+
 // Dropdown Button
 dropdownBtn.addEventListener('click', () => {
+    click_SF.play()
     // Get dropdown settings and hide class
     dropdownMenu.classList.toggle('hide');
 });

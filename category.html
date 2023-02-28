@@ -148,6 +148,8 @@
         </div>
     </div>
     <script>
+        let click_SF = new Audio();
+        click_SF.src = 'click.wav';
         region_bgMusic = new Audio();
         region_bgMusic.src = 'Woodland Fantasy.mp3';
         region_bgMusic.volume = 0.2;
@@ -156,22 +158,26 @@
         const select_category = document.getElementsByClassName("box");
         select_category[0].addEventListener('click', ()=>{
             window.location='flag_questions.html'
+            click_SF.play()
             sessionStorage.setItem('category', 'Maps')
         })
         select_category[1].addEventListener('click', ()=>{
             window.location='flag_questions.html'
+            click_SF.play()
             sessionStorage.setItem('category', 'Capital')
         })
         select_category[2].addEventListener('click', ()=>{
             window.location='flag_questions.html'
+            click_SF.play()
             sessionStorage.setItem('category', 'Flags')
         })
         let dropdownBtn = document.querySelector(".btn");
         let dropdownMenu = document.querySelector('.settings');
         // Dropdown Button
         dropdownBtn.addEventListener('click', () => {
-        // Get dropdown settings and hide class
-        dropdownMenu.classList.toggle('hide');
+            click_SF.play()
+            // Get dropdown settings and hide class
+            dropdownMenu.classList.toggle('hide');
         });
     </script>
 </body>
