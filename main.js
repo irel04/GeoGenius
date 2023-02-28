@@ -22,7 +22,13 @@ wrong_sfx.src = 'flag_questions/wrong_sound_effect.mp3';
 let more_info_bttn = document.querySelector('#more_info')
 let more_info_span = document.querySelector('#more_info span')
 
+//Tic toc
+let tic_toc = new Audio();
+tic_toc.src = 'flag_questions/Tick.mp3'
 
+//bg music
+let bg_music = new Audio();
+bg_music.src = 'flag_questions/HouseForest.mp3'
 
 // Change the value to navigate from the regions and category
 let chosen_region = sessionStorage.getItem('region');
@@ -81,8 +87,9 @@ dropdownBtn.addEventListener('click', () => {
 // Timer
 function timerDisplay(q_parameter){
     countDown = setInterval(() => {
-        
+
         if (count > 0){
+            tic_toc.play();
             count--;
         }
         timeLeft.innerHTML = `${count}s`;
@@ -158,7 +165,9 @@ function timerDisplay(q_parameter){
 }
 
 function getQuestions(){
-
+    bg_music.volume = 0.3;    
+    bg_music.play()
+    bg_music.loop = true;
     let myRequest = new XMLHttpRequest();
     myRequest.onreadystatechange =function(){
         if(this.readyState === 4 && this.status === 200){
