@@ -419,6 +419,40 @@ h1 {
     }
 }
 
+
+/* For trivia CSS */
+.trivia_container{
+    background: #FFD990;
+    display: none;
+    position: absolute;
+    top: 53%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 600px;
+    height: 300px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 95%;
+    border-radius: 10px;
+
+}
+.trivia_container h3{
+    position: relative;
+    top: 10%;
+}
+.trivia_container button{
+    position: absolute;
+    top: 82%;
+    left: 41%;
+    width: 100px;
+    font-size: 20px;
+}
+#trivia{
+    padding: 50px 80px 100px 80px;
+    font-size: 25px
+}
+
 /* Making the elements responsive */
 @media(min-width: 375px){
     h1,h3, .status, .count{

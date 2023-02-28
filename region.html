@@ -173,6 +173,7 @@
         select_region[5].style.background = 'gray'
         
         select_region[0].addEventListener('click', (e)=>{
+            click_SF2.volume = 1
             click_SF2.play()
             sessionStorage.setItem('region', 'Africa')
             if(sessionStorage.getItem('skipAfrica') == 0){
@@ -211,9 +212,7 @@
             }
         }
         unlocked(localStorage.getItem('new_score'))
-
         select_region[1].addEventListener('click', (e)=>{
-            click_SF2.play()
             if(localStorage.getItem('new_score') > needed_points){
                 sessionStorage.setItem('region', 'Asia')
                 if(sessionStorage.getItem('skipAsia') == 0){
