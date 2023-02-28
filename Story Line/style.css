@@ -160,7 +160,7 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     margin-top: -300px;
-    width: 150px;
+    width: 200px;
     animation: zoom-in-zoom-out 3s ease-in infinite;
     cursor: pointer;
 }
@@ -199,11 +199,25 @@ body {
     background: var(--color);
     color: #fff;
 }
-.click_here div {
+
+#next {
     font-size: 23px;
     margin-right: 80px;
     padding: 20px 40px 20px 40px;    
     text-shadow: 2px 2px 5px #000000;
+}
+
+#skip {
+    margin-left: 280px;
+    font-size: 23px;
+    padding: 20px 100px 20px 60px;    
+    text-shadow: 2px 2px 5px #000000;
+}
+
+#skip i {
+    position: absolute;
+    padding-left: 10px;
+    padding-top: 2.5px;
 }
 
 @keyframes zoom-in-zoom-out {
