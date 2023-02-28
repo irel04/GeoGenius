@@ -153,7 +153,7 @@ body {
 }
 
 /* clicking for next style */
-.click_here{
+.click_here {
     position: absolute;
     display: none;
     top: 50%;
@@ -166,7 +166,7 @@ body {
 }
 
 /* CSS */
-.click_here {
+.click_here div{
     --b: 3px;   /* border thickness */
     --s: .45em; /* size of the corner */
     --color: #fff;
@@ -188,20 +188,21 @@ body {
     touch-action: manipulation;
 }
 
-.click_here:hover,
-.click_here:focus-visible{
+.click_here div:hover,
+.click_here div:focus-visible{
     --_p: 0px;
     outline-color: var(--color);
     outline-offset: .05em;
 }
 
-.click_here:active {
+.click_here div:active {
     background: var(--color);
     color: #fff;
 }
-.click_here #next{
+.click_here div {
     font-size: 23px;
-    padding: 10px 0 10px 25px;    
+    margin-right: 80px;
+    padding: 20px 40px 20px 40px;    
     text-shadow: 2px 2px 5px #000000;
 }
 
