@@ -15,7 +15,10 @@ let timeLeft = document.querySelector(".time-left");
 let dropdownBtn = document.querySelector(".btn");
 let dropdownMenu = document.querySelector('.settings');
 let proceed = document.querySelector('#choose_next')
-
+let correct_sfx = new Audio()
+correct_sfx.src = 'flag_questions/completetask_0.mp3';
+let wrong_sfx =  new Audio();
+wrong_sfx.src = 'flag_questions/wrong_sound_effect.mp3';
 // Change the value to navigate from the regions and category
 let chosen_region = sessionStorage.getItem('region');
 let chosenCategory = sessionStorage.getItem('category');
@@ -112,11 +115,6 @@ function timerDisplay(q_parameter){
 }
 
 function getQuestions(){
-    // BG Music
-    game_music = new Audio();
-    game_music.src = 'flag_questions/on_game_music.wav';
-    game_music.play();
-    game_music.loop = true;
 
     let myRequest = new XMLHttpRequest();
     myRequest.onreadystatechange =function(){
@@ -300,11 +298,14 @@ function check_answer(rAnswer){
         if (QLis[i].classList.contains('active')){
             choosenAnswer = QLis[i].dataset.answer;
             if (rAnswer == choosenAnswer){;
+                
                 QLis[i].classList.add('success');
                 number_of_correct ++;
+                correct_sfx.play()
                 score.innerHTML = number_of_correct ;
             }else {
                 QLis[i].classList.add('wrong');
+                wrong_sfx.play()
             }
         }
     }  
