@@ -96,6 +96,7 @@
         story_bgMusic.loop = true;
 
         const click_btn = document.getElementsByClassName('click_here')
+        const skip_bttn = document.getElementById('skip')
         let counter = 2;
         // setInterval(function(){
         //     document.getElementById('radio' + counter).checked = true;
@@ -117,7 +118,10 @@
                 }
                             
             })
-        
+        skip_bttn.addEventListener('click', ()=>{
+            window.location = 'region.html';          
+        })
+    
         
         setInterval(() => {
             click_btn[0].style.display = 'flex';

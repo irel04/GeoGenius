@@ -128,13 +128,14 @@
     <script>
         window.addEventListener('click', () => {
             document.getElementById("song").play();
+            document.getElementById("song").volume = 0.1;
         });
 
         let click_SF = new Audio();
         let index_sound = new Audio();
         click_SF.src = 'click.wav';
-        index_sound.src = 'Soliloquy.mp3';
-        index_sound.volume = 0.05;
+        index_sound.src = 'Soliloquy.mp3'
+        index_sound.volume = 0.1;
         index_sound.play();
         
         const play_bttn = document.getElementById('play');
@@ -150,7 +151,7 @@
                 window.location = 'https://www.google.com/'
             }   
         })
-        localStorage.setItem('new_score', 0)
+        localStorage.setItem('new_score', 165)
         sessionStorage.setItem('skipAfrica', 0)
         sessionStorage.setItem('skipAsia', 0)
         sessionStorage.setItem('skipOceania', 0)
