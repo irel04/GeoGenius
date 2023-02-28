@@ -323,6 +323,14 @@ h1 {
     text-align: center;
 }
 
+#more_info {
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 15px;
+}
+
 #choose_next {
     align-items: center;
     background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);

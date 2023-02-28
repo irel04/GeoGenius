@@ -19,6 +19,11 @@ let correct_sfx = new Audio()
 correct_sfx.src = 'flag_questions/completetask_0.mp3';
 let wrong_sfx =  new Audio();
 wrong_sfx.src = 'flag_questions/wrong_sound_effect.mp3';
+let more_info_bttn = document.querySelector('#more_info')
+let more_info_span = document.querySelector('#more_info span')
+
+
+
 // Change the value to navigate from the regions and category
 let chosen_region = sessionStorage.getItem('region');
 let chosenCategory = sessionStorage.getItem('category');
@@ -101,6 +106,43 @@ function timerDisplay(q_parameter){
                 localStorage.setItem('new_score', accumulated);
                 console.log(localStorage.getItem('new_score'));
                 choose_nextContinent();
+
+                if(chosen_region == 'Africa'){
+                    more_info_span.innerHTML = 'Africa'
+                }
+                else if(chosen_region == 'Asia'){
+
+                    more_info_span.innerHTML = 'Asia'
+                }
+                else if(chosen_region == 'Europe'){
+                    more_info_span.innerHTML = 'Europe'
+                }
+                else if(chosen_region == 'North and South America'){
+                    more_info_span.innerHTML = 'America'
+                }
+                else if(chosen_region == 'Oceania'){
+                    more_info_span.innerHTML = 'Oceania'
+                }
+
+                //event listener for more info
+                more_info.addEventListener('click', ()=>{
+                    if(chosen_region == 'Africa'){
+                        window.location = 'https://education.nationalgeographic.org/resource/africa-physical-geography/'
+                    }
+                    else if(chosen_region == 'Asia'){
+                        window.location = 'https://education.nationalgeographic.org/resource/asia/'
+                    }
+                    else if(chosen_region == 'Europe'){
+                        window.location = 'https://education.nationalgeographic.org/resource/europe-physical-geography/'
+                    }
+                    else if(chosen_region == 'North and South America'){
+                        window.location = 'https://www.nationsonline.org/oneworld/america.htm'
+                    }
+                    else if(chosen_region == 'Oceania'){
+                        window.location = 'https://education.nationalgeographic.org/resource/oceania-physical-geography/'
+                    }
+                
+                })
 
                 //Ending 
                 if (sessionStorage.getItem('ending')==0){
@@ -189,6 +231,42 @@ function getQuestions(){
                             localStorage.setItem('new_score', accumulated);
                             console.log(localStorage.getItem('new_score'));
                             choose_nextContinent();
+                            
+                            if(chosen_region == 'Africa'){
+                                more_info_span.innerHTML = 'Africa'
+                            }
+                            else if(chosen_region == 'Asia'){
+            
+                                more_info_span.innerHTML = 'Asia'
+                            }
+                            else if(chosen_region == 'Europe'){
+                                more_info_span.innerHTML = 'Europe'
+                            }
+                            else if(chosen_region == 'North and South America'){
+                                more_info_span.innerHTML = 'America'
+                            }
+                            else if(chosen_region == 'Oceania'){
+                                more_info_span.innerHTML = 'Oceania'
+                            }
+            
+                            //event listener for more info
+                            more_info.addEventListener('click', ()=>{
+                                if(chosen_region == 'Africa'){
+                                    window.location = 'https://education.nationalgeographic.org/resource/africa-physical-geography/'
+                                }
+                                else if(chosen_region == 'Asia'){
+                                    window.location = 'https://education.nationalgeographic.org/resource/asia/'
+                                }
+                                else if(chosen_region == 'Europe'){
+                                    window.location = 'https://education.nationalgeographic.org/resource/europe-physical-geography/'
+                                }
+                                else if(chosen_region == 'North and South America'){
+                                    window.location = 'https://www.nationsonline.org/oneworld/america.htm'
+                                }
+                                else if(chosen_region == 'Oceania'){
+                                    window.location = 'https://education.nationalgeographic.org/resource/oceania-physical-geography/'
+                                }})
+
                             //Ending 
                             if (sessionStorage.getItem('ending')==0){
                                 if(localStorage.getItem('new_score') > 160){
