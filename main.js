@@ -23,7 +23,7 @@ let more_info_bttn = document.querySelector('#more_info');
 let more_info_span = document.querySelector('#more_info span');
 let trivia_div = document.querySelector('.trivia_container');
 let trivia = document.querySelector('#trivia');
-
+let trivia_h3 = document.querySelector('.trivia_container h3');
 // time to pause next question
 let my_interval = 1000;
 
@@ -219,7 +219,7 @@ function getQuestions(){
                         questionNum(qCount);
                     }, 500);
                     
-                    
+
                     
                     if (currentIndex + 1 < 10){
                         // increment index and the number of the item (qcount)
@@ -294,7 +294,7 @@ function getQuestions(){
                                     sessionStorage.setItem('ending', 1)
                                 }
                             }
-                        }, 1000);
+                        }, 5000);
 
                     }
                     
@@ -401,6 +401,7 @@ function check_answer(rAnswer, obj){
                 correct_sfx.play()
                 score.innerHTML = number_of_correct;
                 trivia_div.style.display = 'flex';
+                trivia_h3.innerHTML = 'Did you know?'
                 trivia.innerHTML = obj.q_trivia;
                 setTimeout(() => {
                     trivia_div.style.display = 'none';
@@ -410,6 +411,12 @@ function check_answer(rAnswer, obj){
                 QLis[i].classList.add('wrong');
                 wrong_sfx.volume = 0.1;
                 wrong_sfx.play()
+                trivia_div.style.display = 'flex';
+                trivia_h3.innerHTML = 'Shot PUNO'
+                trivia.innerHTML = 'HAHAHA MALI';
+                setTimeout(() => {
+                    trivia_div.style.display = 'none';
+                }, 4435);
             }
         }
     }  

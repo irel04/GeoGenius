@@ -7,7 +7,8 @@
             "Tunisia",
             "Angola"
         ],
-        "right_answer": "Angola"
+        "right_answer": "Angola",
+        "q_trivia": "Angola was once part of the central and west African Kingdom of Kongo"
     },
     {
         "img": "Benin Flag.jpg",
@@ -28,7 +29,9 @@
             "Kenya",
             "Guinea"
         ],
-        "right_answer": "Botswana"
+        "right_answer": "Botswana",
+        "q_trivia": "In Botswana, diamonds are forever. It is the second largest diamond producers in the world."
+        
     },
     {
         "img": "Eritrea Flag.png",
@@ -38,7 +41,8 @@
 	        "Zambia",
             "Malawi"
         ],
-        "right_answer": "Eritrea"
+        "right_answer": "Eritrea",
+        "q_trivia": "The name Eritrea comes from the ancient Greek “Erythra Thalassa” meaning the Red Sea."
     },
     {
         "img": "Burundi Flag.png",
@@ -48,7 +52,8 @@
 	        "Rwanda",
             "Senegal"
         ],
-        "right_answer": "Burundi"
+        "right_answer": "Burundi",
+        "q_trivia": "Burundi is a landlocked —entirely encompassed by land with no access to the sea— country"
     },
     {
         "img": "Cameroon Flag.png",
@@ -58,7 +63,9 @@
             "Cameroon",
 	        "Tanzania"
         ],
-        "right_answer": "Cameroon"
+        "right_answer": "Cameroon",
+        "q_trivia": "Archaeological evidence suggests that Cameroon has been inhabited by humans for at least 50,000 years"
+
     },
     {
         "img": "Egypt Flag.png",
@@ -68,7 +75,8 @@
             "Egypt",
             "Zimbabwe"
         ],
-        "right_answer": "Egypt"
+        "right_answer": "Egypt",
+        "q_trivia": "On average, only an inch of rain falls in Egypt per year."
     },
     {
         "img": "Chad Flag.png",
@@ -78,7 +86,8 @@
             "Namibia",
             "Chad"
         ],
-        "right_answer": "Chad"
+        "right_answer": "Chad",
+        "q_trivia": "People of Chad use Kakaki, a long metal trumpet in ceremonial music."
     },
     {
         "img": "Comoros Flag.png",
@@ -88,7 +97,8 @@
             "Comoros",
             "Mauritius"
         ],
-        "right_answer": "Comoros"
+        "right_answer": "Comoros",
+        "q_trivia": "Comoros is known as the “Perfume Isles” due to their fragrant plant life"
     },
     {
         "img": "Ghana Flag.png",
@@ -98,7 +108,8 @@
             "Somalia",
             "Ghana"
         ],
-        "right_answer": "Ghana"
+        "right_answer": "Ghana",
+        "q_trivia": "Gold accounts for nearly half (49%) of all of Ghana exports, valued at $8.35 billion"
     },
     {
         "img": "Afghanistan Flag.png",
@@ -508,7 +519,8 @@
             "Niger",
             "Angola"
         ],
-        "right_answer": "Angola"
+        "right_answer": "Angola",
+        "q_trivia": "Angola was once part of the central and west African Kingdom of Kongo"
     },
     {
         "img": "Benin Map.png",
@@ -518,7 +530,8 @@
             "Zambia",
             "Uganda"
         ],
-        "right_answer": "Benin"
+        "right_answer": "Benin",
+        "q_trivia": "Benin is named after the body of water on which it lies, the Bight of Benin."
     },
     {
         "img": "Botswana Map.png",
@@ -528,7 +541,8 @@
             "Kenya",
             "Lesotho"
         ],
-        "right_answer": "Botswana"
+        "right_answer": "Botswana",
+        "q_trivia": "In Botswana, diamonds are forever. It is the second largest diamond producers in the world."
     },
     {
         "img": "Burundi Map.png",
@@ -538,7 +552,8 @@
 	        "Morocco",
             "Senegal"
         ],
-        "right_answer": "Burundi"
+        "right_answer": "Burundi",
+        "q_trivia": "Burundi is a landlocked —entirely encompassed by land with no access to the sea— country"
     },
     {
         "img": "Cameroon Map.png",
@@ -548,7 +563,9 @@
 	        "Cameroon",
             "Mozambique"
         ],
-        "right_answer": "Cameroon"
+        "right_answer": "Cameroon",
+        "q_trivia": "Archaeological evidence suggests that Cameroon has been inhabited by humans for at least 50,000 years"
+
     },
     {
         "img": "Chad Map.png",
@@ -558,7 +575,8 @@
             "Chad",
 	        "Zimbabwe"
         ],
-        "right_answer": "Chad"
+        "right_answer": "Chad",
+        "q_trivia": "People of Chad use Kakaki, a long metal trumpet in ceremonial music."
     },
     {
         "img": "Comoros Map.png",
@@ -568,7 +586,8 @@
             "Nigeria",
             "Comoros"
         ],
-        "right_answer": "Comoros"
+        "right_answer": "Comoros",
+        "q_trivia": "Comoros is known as the “Perfume Isles” due to their fragrant plant life"
     },
     {
         "img": "Egypt Map.png",
@@ -578,7 +597,8 @@
             "Mauritius",
             "Seychelles"
         ],
-        "right_answer": "Egypt"
+        "right_answer": "Egypt",
+        "q_trivia": "On average, only an inch of rain falls in Egypt per year."
     },
     {
         "img": "Eritrea Map.png",
@@ -588,7 +608,8 @@
             "Zimbabwe",
             "Tunisia"
         ],
-        "right_answer": "Eritrea"
+        "right_answer": "Eritrea",
+        "q_trivia": "The name Eritrea comes from the ancient Greek “Erythra Thalassa” meaning the Red Sea."
     },
     {
         "img": "Ghana Map.png",
@@ -598,7 +619,8 @@
             "Ghana",
             "Sudan"
         ],
-        "right_answer": "Ghana"
+        "right_answer": "Ghana",
+        "q_trivia": "Gold accounts for nearly half (49%) of all of Ghana exports, valued at $8.35 billion"
     },
     {
         "img": "Armenia Map.png",
@@ -1028,7 +1050,8 @@
             "Antananarivo",
             "Gaborone"
         ],
-        "right_answer": "Cairo"
+        "right_answer": "Cairo",
+        "q_trivia": "On average, only an inch of rain falls in Egypt per year."
     },
     {
         "img": "Dodoma_Tanzania.png",
