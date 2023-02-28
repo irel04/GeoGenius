@@ -73,6 +73,8 @@
     </div>
     <!-- image slider end-->
     <script type="text/javascript">
+        let click_SF = new Audio();
+        click_SF.src = 'click.wav';
         let ending_music = new Audio();
         ending_music.src = 'Victory1.mp3';
         ending_music.volume = 0.1;
@@ -103,6 +105,7 @@
                             
             })
         skip_bttn.addEventListener('click', ()=>{
+            click_SF.play()
             window.location = 'region.html';          
         })
 
