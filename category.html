@@ -94,21 +94,28 @@
         </div>
     </div>
     <script>
+        click_SF3 = new Audio();
+        click_SF3.src = 'click.wav';
+
         region_bgMusic = new Audio();
         region_bgMusic.src = 'Woodland Fantasy.mp3';
         region_bgMusic.volume = 0.2;
         region_bgMusic.play();
         region_bgMusic.loop = true;
         const select_category = document.getElementsByClassName("box");
+        
         select_category[0].addEventListener('click', ()=>{
+            click_SF3.play()
             window.location='flag_questions.html'
             sessionStorage.setItem('category', 'Maps')
         })
         select_category[1].addEventListener('click', ()=>{
+            click_SF3.play()
             window.location='flag_questions.html'
             sessionStorage.setItem('category', 'Capital')
         })
         select_category[2].addEventListener('click', ()=>{
+            click_SF3.play()
             window.location='flag_questions.html'
             sessionStorage.setItem('category', 'Flags')
         })

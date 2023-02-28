@@ -19,8 +19,13 @@ let correct_sfx = new Audio()
 correct_sfx.src = 'flag_questions/completetask_0.mp3';
 let wrong_sfx =  new Audio();
 wrong_sfx.src = 'flag_questions/wrong_sound_effect.mp3';
-let more_info_bttn = document.querySelector('#more_info')
-let more_info_span = document.querySelector('#more_info span')
+let more_info_bttn = document.querySelector('#more_info');
+let more_info_span = document.querySelector('#more_info span');
+let trivia_div = document.querySelector('.trivia_container');
+let trivia = document.querySelector('#trivia');
+
+// time to pause next question
+let my_interval = 1000;
 
 //Tic toc
 let tic_toc = new Audio();
@@ -164,6 +169,7 @@ function timerDisplay(q_parameter){
     }, 1000);
 }
 
+
 function getQuestions(){
     bg_music.volume = 0.3;    
     bg_music.play()
@@ -193,7 +199,6 @@ function getQuestions(){
                 region_selector(questions, chosenCategory)
                 questions = Oceania.sort(() => Math.random() - Math.random()).slice(0, 10)
             }
-            console.log(questions)
             
             // call the function for generate questions
             generateQuestion(questions[currentIndex], chosen_region, chosenCategory)
@@ -206,15 +211,16 @@ function getQuestions(){
                     
                     // Check answer after 500ms
                     setTimeout(()=>{
-                        check_answer(rightAnswer, qCount);
+                        check_answer(rightAnswer, questions[currentIndex-1]);
                         questionNum(qCount);
                     }, 500);
-
+                    
+                    
+                    
                     if (currentIndex + 1 < 10){
                         // increment index and the number of the item (qcount)
                         currentIndex++;
                         qCount++
-                        
                         setTimeout(()=>{
                             //Remove previous image 
                             question_image.src='';
@@ -225,9 +231,9 @@ function getQuestions(){
                             // Add questions again
                             generateQuestion(questions[currentIndex], chosen_region, chosenCategory);
                             timerDisplay();
-                            clearInterval(countDown);
+                            clearInterval(countDown)
                             count = selected_difficulty();
-                        }, 1000)
+                        }, 5000)
                     }
                     else if (currentIndex + 1 == 10){
                         setTimeout(() => {
@@ -380,17 +386,22 @@ function generateQuestion(obj,region, category){
     }
 }
 
-function check_answer(rAnswer){
+function check_answer(rAnswer, obj){
     let choosenAnswer;
     for (let i=0; i<QLis.length; i++){
         if (QLis[i].classList.contains('active')){
             choosenAnswer = QLis[i].dataset.answer;
             if (rAnswer == choosenAnswer){;
-                
                 QLis[i].classList.add('success');
                 number_of_correct ++;
                 correct_sfx.play()
-                score.innerHTML = number_of_correct ;
+                score.innerHTML = number_of_correct;
+                trivia_div.style.display = 'flex';
+                trivia.innerHTML = obj.q_trivia;
+                setTimeout(() => {
+                    trivia_div.style.display = 'none';
+                }, 4435);
+                
             }else {
                 QLis[i].classList.add('wrong');
                 wrong_sfx.volume = 0.1;
