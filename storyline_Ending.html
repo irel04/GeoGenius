@@ -71,7 +71,7 @@
     <script type="text/javascript">
         let ending_music = new Audio();
         ending_music.src = 'Victory1.mp3';
-        story_bgMusic.volume = 0.3;
+        ending_music.volume = 0.1;
         ending_music.play();
         ending_music.loop = true;
 
@@ -87,7 +87,7 @@
         console.log(document.getElementById('radio' + counter))
         click_btn[0].addEventListener('click', ()=>{
                 if (counter > 5){
-                    window.location = 'difficulty.html'
+                    window.location = 'region.html'
                 }
                 else{
                     console.log(counter)

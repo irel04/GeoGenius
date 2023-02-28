@@ -383,6 +383,7 @@ function check_answer(rAnswer){
                 score.innerHTML = number_of_correct ;
             }else {
                 QLis[i].classList.add('wrong');
+                wrong_sfx.volume = 0.1;
                 wrong_sfx.play()
             }
         }
