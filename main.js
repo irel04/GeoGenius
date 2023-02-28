@@ -81,6 +81,7 @@ dropdownBtn.addEventListener('click', () => {
 // Timer
 function timerDisplay(q_parameter){
     countDown = setInterval(() => {
+        
         if (count > 0){
             count--;
         }
