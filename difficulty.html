@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Select Difficulty</title>
 </head>
@@ -90,8 +91,56 @@
         text-align: center;
         margin-top: -90px;
     }
+    .dropdown {
+        position: absolute;
+        top: 55px;
+        left: 40px;
+    }
+
+    .settings{
+        width: 100px;
+        float: inline-end;
+        margin-left: 80px;
+    }
+
+    .settings a {
+        font-size: 16px;
+        display: block;
+        align-items: center;
+        padding: 5px 20px;
+        color: var(--blue);
+    }
+
+    .settings a:hover {
+        background: #EEE;
+    }
+
+    .btn {
+        color: var(--blue);
+        border: none;
+        padding: 10px;
+        width: 120px;
+        background: none;
+        cursor: pointer;
+    }
+
+    .btn i {
+        background: none;
+        font-size: 60px;
+    }
+
+    .hide {
+        display: none;
+    }
 </style>
 <body>
+    <div class="dropdown">
+            <button class="btn"><i class="fa-solid fa-gear"></i></button>
+            <div class="settings hide">
+                <a href="region.html">Region</a>
+                <a href="index.html">Exit</a>
+            </div>
+        </div>
     <video src="Selection-Image/bg.mp4" muted loop autoplay></video>
     <h2 class="title">SELECT DIFFICULTY</h2>
     <div class="container">
@@ -129,6 +178,14 @@
         sessionStorage.setItem('difficulty', 'Hard')
         window.location = 'category.html';
     })
+    let dropdownBtn = document.querySelector(".btn");
+    let dropdownMenu = document.querySelector('.settings');
+    // Dropdown Button
+    dropdownBtn.addEventListener('click', () => {
+    // Get dropdown settings and hide class
+    dropdownMenu.classList.toggle('hide');
+    });
+
 
 </script>
 </body>
