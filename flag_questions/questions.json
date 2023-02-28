@@ -1030,7 +1030,8 @@
             "Luan",
 	        "Porto-Novo"
         ],
-        "right_answer": "Abuja"
+        "right_answer": "Abuja",
+        "q_trivia": "Nigeria has seen its population surge from 95 million in 1990 to 201 million in 2019"
     },
     {
         "img": "Antananarivo_Madagascar.png",
@@ -1040,7 +1041,8 @@
             "Luan",
             "Antananarivo"
         ],
-        "right_answer": "Antananarivo"
+        "right_answer": "Antananarivo",
+        "q_trivia": "Madagascar is often called the Eighth Continent"
     },
     {
         "img": "Cairo_Egypt.png",
@@ -1050,7 +1052,8 @@
             "Antananarivo",
             "Gaborone"
         ],
-        "right_answer": "Cairo"
+        "right_answer": "Cairo",
+        "q_trivia": "The shape of ancient pyramids is thought to have been inspired by the spreading rays of the sun."
     },
     {
         "img": "Dodoma_Tanzania.png",
@@ -1060,7 +1063,8 @@
             "Abuja",
             "Dodoma"
         ],
-        "right_answer": "Dodoma"
+        "right_answer": "Dodoma",
+        "q_trivia": "Over 120 languages are spoken in Tanzania, most of them from the Bantu family"
     },
     {
         "img": "Harare_Zimbabwe.png",
@@ -1070,7 +1074,8 @@
             "Harare",
             "Abuja"
         ],
-        "right_answer": "Harare"
+        "right_answer": "Harare",
+        "q_trivia": "The first people of the country were the Bantu-speaking Iron Age farmers that settled in the region around AD 300."
     },
     {
         "img": "Kampala_Uganda.png",
@@ -1080,7 +1085,8 @@
             "Luan",
             "Rabat"
         ],
-        "right_answer": "Kampala"
+        "right_answer": "Kampala",
+        "q_trivia": "In fact, Uganda is one of the world best bird-watching destinations."
     },
     {
         "img": "Khartoum_Sudan.png",
@@ -1090,7 +1096,8 @@
             "Abuja",
             "Kampala"
         ],
-        "right_answer": "Khartoum"
+        "right_answer": "Khartoum",
+        "q_trivia": "The name “Sudan” translates to “the land of the blacks” in Arabic."
     },
     {
         "img": "Nairobi_Kenya.png",
@@ -1100,7 +1107,8 @@
             "Rabat",
             "Tripoli"
         ],
-        "right_answer": "Nairobi"
+        "right_answer": "Nairobi",
+        "q_trivia": "At 5,199m (17,057ft) Mount Kenya is the second-highest mountain in Africa."
     },
     {
         "img": "Rabat_Morocco.png",
@@ -1110,7 +1118,8 @@
             "Luan",
             "Bangui"
         ],
-        "right_answer": "Rabat"
+        "right_answer": "Rabat",
+        "q_trivia": "Morocco has nine UNESCO World Heritage Sites. In Africa, only South Africa (10) has more."
     },
     {
         "img": "Tripoli_Libya.png",
@@ -1120,7 +1129,8 @@
             "Cairo",
             "Asmara"
         ],
-        "right_answer": "Tripoli"
+        "right_answer": "Tripoli",
+        "q_trivia": "King Idris reigned from 1951 until he was overthrown by Colonel Gaddafi (also spelled Qadhafi) in 1969."
     },
     {
         "img": "Abu Dhabi_UAE.png",

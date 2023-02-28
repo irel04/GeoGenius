@@ -112,7 +112,8 @@ function timerDisplay(q_parameter){
                 count = selected_difficulty()
             }
 
-            if (currentIndex + 1 == 10){
+            if (currentIndex == 10){
+                console.log('True')
                 question_components = document.getElementsByClassName('content')
                 question_components[0].style.display ='None'
                 question_components[1].style.display ='None'
@@ -211,6 +212,7 @@ function getQuestions(){
             QLis.forEach(li => {
                 li.addEventListener('click', () => {
                     let rightAnswer = questions[currentIndex].right_answer;
+                    console.log(rightAnswer)
                     li.classList.add('active');
                     
                     // Check answer after 500ms
@@ -235,8 +237,8 @@ function getQuestions(){
                             // Add questions again
                             generateQuestion(questions[currentIndex], chosen_region, chosenCategory);
                             timerDisplay();
-                            clearInterval(countDown)
                             count = selected_difficulty();
+                            clearInterval(countDown);
                         }, 5000)
                     }
                     else if (currentIndex + 1 == 10){
@@ -294,7 +296,7 @@ function getQuestions(){
                                     sessionStorage.setItem('ending', 1)
                                 }
                             }
-                        }, 5000);
+                        }, 5001);
 
                     }
                     
@@ -412,8 +414,8 @@ function check_answer(rAnswer, obj){
                 wrong_sfx.volume = 0.1;
                 wrong_sfx.play()
                 trivia_div.style.display = 'flex';
-                trivia_h3.innerHTML = 'Shot PUNO'
-                trivia.innerHTML = 'HAHAHA MALI';
+                trivia_h3.innerHTML = "Correct Answer:"
+                trivia.innerHTML = obj.right_answer;
                 setTimeout(() => {
                     trivia_div.style.display = 'none';
                 }, 4435);
