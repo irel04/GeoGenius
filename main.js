@@ -24,7 +24,11 @@ let more_info_span = document.querySelector('#more_info span')
 
 //Tic toc
 let tic_toc = new Audio();
-tic_toc.src = 'flag_questions/Clock Ticking  Sound Effect.mp3'
+tic_toc.src = 'flag_questions/Tick.mp3'
+
+//bg music
+let bg_music = new Audio();
+bg_music.src = 'flag_questions/HouseForest.mp3'
 
 // Change the value to navigate from the regions and category
 let chosen_region = sessionStorage.getItem('region');
@@ -161,7 +165,9 @@ function timerDisplay(q_parameter){
 }
 
 function getQuestions(){
-
+    bg_music.volume = 0.3;    
+    bg_music.play()
+    bg_music.loop = true;
     let myRequest = new XMLHttpRequest();
     myRequest.onreadystatechange =function(){
         if(this.readyState === 4 && this.status === 200){
