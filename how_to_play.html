@@ -112,9 +112,10 @@
         <div id="skip">Start<i class="fa-solid fa-forward"></i></div>
     </div>
 <script>
-    function switchToNextPage() {
-      window.location.href = "region.html";
-    }
+    const video = document.querySelector('video');
+    video.addEventListener('ended', function() {
+        window.location.href = "region.html";
+    });
 
     let click_SF = new Audio();
     click_SF.src = 'click.wav';
