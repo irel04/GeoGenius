@@ -930,8 +930,7 @@
             "Vanuatu",
 	        "Nauru"
         ],
-        "right_answer": "Australia",
-        "q_trivia": "Australia is the world's largest inhabited island in the world."
+        "right_answer": "Australia"
     },
     {
         "img": "Vanuatu Map.png",
@@ -941,8 +940,7 @@
 	        "Fiji",
             "Kiribati"
         ],
-        "right_answer": "Vanuatu",
-        "q_trivia": "The islands of Vanuatu were well known as cannibals."
+        "right_answer": "Vanuatu"
     },
     {
         "img": "Fiji Map.png",
@@ -952,8 +950,7 @@
 	        "Palau",
             "Fiji"
         ],
-        "right_answer": "Fiji",
-        "q_trivia": "There are 322 islands in Fiji but 90 per cent of its territory is water. "
+        "right_answer": "Fiji"
     },
     {
         "img": "Samoa Map.png",
@@ -963,8 +960,7 @@
             "Tuvalu",
 	        "Palau"
         ],
-        "right_answer": "Samoa",
-        "q_trivia": "Samoa is known as the “Cradle of Polynesia”, the Polynesian homeland."
+        "right_answer": "Samoa"
     },
     {
         "img": "Tuvalu Map.png",
@@ -974,8 +970,7 @@
             "Fiji",
 	        "Tuvalu"
         ],
-        "right_answer": "Tuvalu",
-        "q_trivia": "Tuvalu is the world's smallest sovereign country. "
+        "right_answer": "Tuvalu"
     },
     {
         "img": "Micronesia Map.png",
@@ -985,8 +980,7 @@
 	        "New Zealand",
             "Micronesia"
         ],
-        "right_answer": "Micronesia",
-        "q_trivia": "The earliest human dispersal into Micronesia was made around 3600 years B.P. "
+        "right_answer": "Micronesia"
     },
     {
         "img": "Palau Map.png",
@@ -996,8 +990,7 @@
             "Samoa",
 	        "Australia"
         ],
-        "right_answer": "Palau",
-        "q_trivia": "Palau is a tropical archipelago in the western Pacific, known for its matchless island scenery."
+        "right_answer": "Palau"
     },
     {
         "img": "Kiribati Map.png",
@@ -1007,8 +1000,7 @@
             "Samoa",
 	        "New Zealand"
         ],
-        "right_answer": "Kiribati",
-        "q_trivia": "Kiribati was once known the Gilbert Islands,that gained independence on July 12, 1979."
+        "right_answer": "Kiribati"
     },
     {
         "img": "Nauru Map.png",
@@ -1018,8 +1010,7 @@
             "Nauru",
 	        "New Zealand"
         ],
-        "right_answer": "Nauru",
-        "q_trivia": "Nauru was first settled around 3,000 years ago by twelve Micronesian and Polynesian peoples."
+        "right_answer": "Nauru"
     },
     {
         "img": "Tonga Map.png",
@@ -1029,8 +1020,7 @@
             "Fiji",
 	        "New Zealand"
         ],
-        "right_answer": "Tonga",
-        "q_trivia": "Tonga is arguably most famous for its whale swimming experiences."
+        "right_answer": "Tonga"
     },
     {
         "img": "Abuja_Nigeria.png",
