@@ -239,7 +239,7 @@ function getQuestions(){
                             timerDisplay();
                             count = selected_difficulty();
                             clearInterval(countDown);
-                        }, 5000)
+                        }, 4001)
                     }
                     else if (currentIndex + 1 == 10){
                         setTimeout(() => {
@@ -407,7 +407,7 @@ function check_answer(rAnswer, obj){
                 trivia.innerHTML = obj.q_trivia;
                 setTimeout(() => {
                     trivia_div.style.display = 'none';
-                }, 4435);
+                }, 3000);
                 
             }else {
                 QLis[i].classList.add('wrong');
@@ -418,7 +418,7 @@ function check_answer(rAnswer, obj){
                 trivia.innerHTML = obj.right_answer;
                 setTimeout(() => {
                     trivia_div.style.display = 'none';
-                }, 4435);
+                }, 2000);
             }
         }
     }  
