@@ -438,6 +438,8 @@ h1 {
 .trivia_container h3{
     position: relative;
     top: 15%;
+    color: red;
+    font-size: 3.5rem;
 }
 .trivia_container button{
     position: absolute;
@@ -447,8 +449,8 @@ h1 {
     font-size: 20px;
 }
 #trivia{
-    padding: 80px;
-    font-size: 25px;
+    padding: 80px 60px 80px 60px;
+    font-size: 23px;
     text-align: center;
 }
 
