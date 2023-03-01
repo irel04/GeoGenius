@@ -715,7 +715,7 @@
             "Maldives"
         ],
         "right_answer": "Brunei",
-        "q_trivia": "Brunei has the largest residential palace in the world. "
+        "q_trivia": "Brunei has the largest residential palace in the world according to Guiness Book of World's Record. "
     },
     {
         "img": "Burma Map.png",
@@ -726,7 +726,7 @@
             "Burma"
         ],
         "right_answer": "Burma", 
-        "q_trivia": "Burma has the finest rubies in the World"
+        "q_trivia": "Burma has the finest rubies in the World and over 90% of the world's rubies come from Burma."
     },
     {
         "img": "Cambodia Map.png",
@@ -737,7 +737,7 @@
 	        "Lebanon"
         ],
         "right_answer": "Cambodia", 
-        "q_trivia": "Millions of active landmines are still scattered across the country."
+        "q_trivia": "Cambodia’s New Year’s celebrations is held in mid-April each year and marks the end of the traditional harvest season."
     },
     {
         "img": "Japan Map.png",
@@ -869,7 +869,7 @@
             "Finland"
         ],
         "right_answer": "Greece",
-        "q_trivia": "Greece has 18 UNESCO World Heritage Sites including the Acropolis of Athens and the Temple of Apollo!!!"
+        "q_trivia": "Greece has eighteen UNESCO World Heritage Sites including the Acropolis of Athens and the Temple of Apollo!!!"
     },
     {
         "img": "France_Map.png",
@@ -902,7 +902,7 @@
             "Panama"
         ],
         "right_answer": "Brazil",
-        "q_trivia": "Brazil has won the FIFA World Cup five times, more than any other nation."
+        "q_trivia": "Brazil has won the FIFA World Cup finals five times, more than any other nation."
     },
     {
         "img": "Peru Map.png",
@@ -913,7 +913,7 @@
 	        "Chile"
         ],
         "right_answer": "Peru",
-        "q_trivia": "The Amazon River begin its journey in Peru!!!"
+        "q_trivia": "The Amazon River begins its journey high up in the Peruvian Andes near Machu Picchu in Peru!!!"
     },
     {
         "img": "Panama Map.png",
