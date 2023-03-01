@@ -1550,7 +1550,8 @@
             "Wellington",
             "Suva"
         ],
-        "right_answer": "Canberra"
+        "right_answer": "Canberra",
+         "q_trivia": "Canberra is renowned for being a 100% renewable energy city with approximately 70% of the ACT dedicated to nature parks."
     },
     {
         "img": "Suva_Fiji.png",
@@ -1560,7 +1561,8 @@
             "Canberra",
             "Palikir"
         ],
-        "right_answer": "Suva"
+        "right_answer": "Suva",
+        "q_trivia": "Suva is now one of the largest urban centres in the South Pacific islands."
     },
     {
         "img": "Tarawa_Kiribati.png",
@@ -1570,7 +1572,8 @@
             "Port Vila",
             "Funafuti"
         ],
-        "right_answer": "Tarawa"
+        "right_answer": "Tarawa",
+        "q_trivia": "During World War II, the island of Tarawa was captured by the Japanese and later by the US forces in a brutal battle."
     },
     {
         "img": "Nukualofa_Tonga.png",
@@ -1580,7 +1583,8 @@
             "Wellington",
             "Canberra"
         ],
-        "right_answer": "Nukualofa"
+        "right_answer": "Nukualofa",
+        "q_trivia": "The ancestors of modern people lived on the territory of modern Nukualofa as early as 3.3 thousand years ago."
     },
     {
         "img": "Funafuti_Tuvalu.png",
@@ -1590,7 +1594,8 @@
             "Funafuti",
             "Apia"
         ],
-        "right_answer": "Funafuti"
+        "right_answer": "Funafuti",
+        "q_trivia": "Funafuti is the most populous of the country's nine atolls."
     },
     {
         "img": "Yaren_Nauru.png",
@@ -1600,7 +1605,8 @@
             "Yaren",
             "Tuvalu"
         ],
-        "right_answer": "Yaren"
+        "right_answer": "Yaren",
+        "q_trivia": "Yaren is unofficially the capital city of Nauru"
     },
     {
         "img": "Wellington_New Zealand.png",
@@ -1610,7 +1616,8 @@
             "Nukualofa",
             "Wellington"
         ],
-        "right_answer": "Wellington"
+        "right_answer": "Wellington",
+        "q_trivia": "Wellington replaced Auckland as the capital city of New Zealand in 1865."
     },
     {
         "img": "Melekeok_Palau.png",
@@ -1620,7 +1627,8 @@
             "Port Vila",
             "Melekeok"
         ],
-        "right_answer": "Melekeok"
+        "right_answer": "Melekeok",
+        "q_trivia": "Melekeok is located on the east coast of Palau's largest island, Babeldaob."
     },
     {
         "img": "Port Moresby_Papua New Guinea.png",
@@ -1630,7 +1638,8 @@
             "Port Moresby",
             "Melekeok"
         ],
-        "right_answer": "Port Moresby"
+        "right_answer": "Port Moresby",
+        "q_trivia": "Port Moresby was named in honour of Captain John Moresby's father, Admiral Sir Fairfax Moresby."
     },
     {
         "img": "Apia_Samoa.png",
@@ -1640,6 +1649,7 @@
             "Majuro",
             "Tarawa"
         ],
-        "right_answer": "Apia"
+        "right_answer": "Apia",
+        "q_trivia": "Apia Harbour is Samoa’s biggest and busiest port."
     }
 ]
