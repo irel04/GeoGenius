@@ -418,7 +418,7 @@ function check_answer(rAnswer, obj){
                 trivia.innerHTML = obj.right_answer;
                 setTimeout(() => {
                     trivia_div.style.display = 'none';
-                }, 2000);
+                }, 3000);
             }
         }
     }  
