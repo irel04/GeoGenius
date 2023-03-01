@@ -395,7 +395,7 @@
             "Chile"
         ],
         "right_answer": "Chile",
-        "q_trivia": "Chile is one of the longest countries in the world extending for a whopping 4,329 km from north to south."
+        "q_trivia": "Chile is considered by many to be the world capital of astronomy, and it is a great place to go stargazing!"
     },
     {
         "img": "Cuba Flag.png",
@@ -891,7 +891,7 @@
             "Argentina"
         ],
         "right_answer": "Argentina",
-        "q_trivia": "Argentina is the Second Largest Country in South America."
+        "q_trivia": "Argentina is the second largest country in South America."
     },
     {
         "img": "Brazil Map.png",
@@ -946,7 +946,7 @@
             "Panama"
         ],
         "right_answer": "Chile",
-        "q_trivia": " Many consider Chile to be the world capital of astronomy."
+        "q_trivia": "Chile is one of the longest countries in the world extending for a whopping 4,329 km from north to south."
     },
     {
         "img": "Cuba Map.png",
@@ -979,7 +979,7 @@
             "Uruguay"
         ],
         "right_answer": "Colombia",
-        "q_trivia": "Colombia has the second most celebrated Holiday in the world!"
+        "q_trivia": "Colombia has the second most celebrated Holiday in the world! They celebrate 18 national holidays a year."
     },
     {
         "img": "Mexico Map.png",
@@ -1243,7 +1243,7 @@
             "Beirut"
         ],
         "right_answer": "Beijing",
-        "q_trivia": "Beijing is one of the oldest cities in the world."
+        "q_trivia": "Beijing is one of the oldest cities in the world with over 3,000 years of history."
     },
     {
         "img": "Jerusalem_Israel.png",
@@ -1276,7 +1276,7 @@
             "Tokyo"
         ],
         "right_answer": "Manila",
-        "q_trivia": "The name Manila came from a flower."
+        "q_trivia": "Manila is home to the oldest Chinatown in the world located in Binondo."
     },
     {
         "img": "Pyongyang_North Korea.png",
@@ -1287,7 +1287,7 @@
             "Ashgabat"
         ],
         "right_answer": "Pyongyang",
-        "q_trivia": "One of the nicknames of Pyongyang is Ryugyong which means 'Capital Of Willows.'"
+        "q_trivia": "Pyongyang is also known as Ryugyong which means 'Capital Of Willows.'"
     },
     {
         "img": "Seoul_South Korea.png",
@@ -1331,7 +1331,7 @@
             "Paris"
         ],
         "right_answer": "Paris",
-        "q_trivia": "Paris is one of the most-visited cities in the world."
+        "q_trivia": "Paris is one of the most-visited cities in the world, and it is often called La Ville Lumière or the City of Light."
     },
     {
         "img": "Madrid_Spain.png",
@@ -1419,7 +1419,7 @@
             "London"
         ],
         "right_answer": "London",
-        "q_trivia": "The London Underground is the oldest underground railway network in the world"
+        "q_trivia": "The London underground is the oldest underground railway network in the world"
     },
     {
         "img": "Vatican City_Vatican.png",
