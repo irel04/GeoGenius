@@ -1331,7 +1331,7 @@
             "Paris"
         ],
         "right_answer": "Paris",
-        "q_trivia": ""
+        "q_trivia": "Paris is one of the most-visited cities in the world."
     },
     {
         "img": "Madrid_Spain.png",
@@ -1341,7 +1341,8 @@
             "Gitega",
             "Madrid"
         ],
-        "right_answer": "Madrid"
+        "right_answer": "Madrid",
+        "q_trivia": "The population of Madrid has grown by more than 2 million people since the 1900’s."
     },
     {
         "img": "Reykjavik_Iceland.png",
@@ -1351,7 +1352,8 @@
             "Bangui",
             "Reykjavik"
         ],
-        "right_answer": "Reykjavik"
+        "right_answer": "Reykjavik",
+        "q_trivia": "Reykjavik became the first non-native-English native city to be designated a UNESCO City of Literature."
     },
     {
         "img": "Dublin_Ireland.png",
@@ -1361,7 +1363,8 @@
             "Kinshasa",
             "Dublin"
         ],
-        "right_answer": "Dublin"
+        "right_answer": "Dublin",
+        "q_trivia": "Dublin was a Christian ecclesiastical settlement even before the Vikings arrived in 841."
     },
     {
         "img": "Amsterdam_Netherlands.png",
@@ -1371,7 +1374,8 @@
             "Djibouti",
             "Amsterdam"
         ],
-        "right_answer": "Amsterdam"
+        "right_answer": "Amsterdam",
+        "q_trivia": "Amsterdam is a city that’s been around since the 1200s when it was founded as a fishing village. "
     },
     {
         "img": "Bern_Switzerland.png",
@@ -1381,7 +1385,8 @@
             "Oyala",
             "Bern"
         ],
-        "right_answer": "Bern"
+        "right_answer": "Bern",
+        "q_trivia": "Toblerone, still produced entirely in Bern, is probably the most famous of Swiss chocolates."
     },
     {
         "img": "Moscow_Russia.png",
@@ -1391,7 +1396,8 @@
             "Lobamba",
             "Moscow"
         ],
-        "right_answer": "Moscow"
+        "right_answer": "Moscow",
+        "q_trivia": "The Moscow Kremlin is the world’s largest medieval fortress."
     },
     {
         "img": "Rome_Italy.png",
@@ -1401,7 +1407,8 @@
             "Banjul",
             "Rome"
         ],
-        "right_answer": "Rome"
+        "right_answer": "Rome",
+        "q_trivia": "Rome stole the title of “capital city” from Florence in 1870."
     },
     {
         "img": "London_UK.png",
@@ -1411,7 +1418,8 @@
             "Bissau",
             "London"
         ],
-        "right_answer": "London"
+        "right_answer": "London",
+        "q_trivia": "The London Underground is the oldest underground railway network in the world"
     },
     {
         "img": "Vatican City_Vatican.png",
@@ -1421,7 +1429,8 @@
             "Monrovia",
             "Vatican City"
         ],
-        "right_answer": "Vatican City"
+        "right_answer": "Vatican City",
+        "q_trivia": "The Sistine Chapel is one of the greatest treasures of the Vatican City. "
     },
     {
         "img": "Havana_Cuba.png",
